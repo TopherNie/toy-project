@@ -127,7 +127,6 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
     // Single
     type = SINGLE;
 
-    //OK LA!
 }
 
 

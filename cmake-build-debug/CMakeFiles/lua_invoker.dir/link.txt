@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/lua_invoker.dir/main/lua_invoker.cpp.o  -o lua_invoker.exe -Wl,--out-implib,liblua_invoker.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

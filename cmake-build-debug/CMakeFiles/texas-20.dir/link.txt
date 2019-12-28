@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/texas-20.dir/CFR/zhajinhua/src/cfr_zjh.cpp.o  -o texas-20.exe -Wl,--out-implib,libtexas-20.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

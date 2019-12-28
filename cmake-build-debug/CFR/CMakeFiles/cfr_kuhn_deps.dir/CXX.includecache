@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../CFR/include/cfr_kuhn.h
+string
+-
+
+../Common/include/tools.h
+string
+-
+sstream
+-
+map
+-
+vector
+-
+
+/cygdrive/d/documents/code/toy-project/CFR/src/cfr_kuhn.cpp
+map
+-
+string
+-
+iostream
+-
+cfr_kuhn.h
+/cygdrive/d/documents/code/toy-project/CFR/src/cfr_kuhn.h
+tools.h
+/cygdrive/d/documents/code/toy-project/CFR/src/tools.h
+

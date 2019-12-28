@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/documents/code/toy-project/main/generate_random.cpp
+iostream
+-
+sys/time.h
+-
+fstream
+-
+
+/cygdrive/d/documents/code/toy-project/main/py_invoker.cpp
+cstdio
+-
+string
+-
+

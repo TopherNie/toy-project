@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/zjh.dir/CFR/zhajinhua/src/cfr_zjh.cpp.o  -o zjh.exe -Wl,--out-implib,libzjh.dll.a -Wl,--major-image-version,0,--minor-image-version,0 CFR/libzjh_deps.a 

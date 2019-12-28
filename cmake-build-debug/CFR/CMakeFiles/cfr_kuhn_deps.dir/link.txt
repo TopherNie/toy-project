@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libcfr_kuhn_deps.a  CMakeFiles/cfr_kuhn_deps.dir/__/Common/src/template_func.cpp.o CMakeFiles/cfr_kuhn_deps.dir/__/Common/src/tools.cpp.o CMakeFiles/cfr_kuhn_deps.dir/src/cfr_kuhn.cpp.o CMakeFiles/cfr_kuhn_deps.dir/src/cfr_rsp.cpp.o CMakeFiles/cfr_kuhn_deps.dir/src/cfr_rsp_2.cpp.o
+/usr/bin/ranlib.exe libcfr_kuhn_deps.a

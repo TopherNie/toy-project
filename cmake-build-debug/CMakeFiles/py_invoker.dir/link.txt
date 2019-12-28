@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/py_invoker.dir/main/py_invoker.cpp.o  -o py_invoker.exe -Wl,--out-implib,libpy_invoker.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

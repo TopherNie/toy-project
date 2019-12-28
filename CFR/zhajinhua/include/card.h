@@ -16,22 +16,25 @@
 #define HAND_NUM 4
 
 
-#define SINGLE 0
-#define PAIR 1
-#define STRAIGHT 2
-#define FLUSH 3
-#define FLUSH_STRAIGHT 4
-#define LEOPARD 5
+#define SINGLE 1
+#define PAIR 2
+#define STRAIGHT 3
+#define FLUSH 4
+#define FLUSH_STRAIGHT 5
+#define LEOPARD 6
 
 using namespace std;
 
-const string CARD_SUITS[]  = {"s", "h", "c"};
-const string CARD_RANKS[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+extern const string CARD_SUITS[];
+extern const string CARD_RANKS[];
+extern const int CARD_RANK_SIZE;
 
 extern map<int, string> TYPE_MAP;
 
 vector<string> dealCards(string &priCard1, string &priCard2);
 
 void analyzeCards(const vector<string>& cards, int &type, int &maxRank);
+
+void compare(const vector<string>& p1Cards, const vector<string>& p2Cards, int &winner, int &type);
 
 #endif //TOY_PROJECT_CARD_H

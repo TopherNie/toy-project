@@ -11,8 +11,7 @@ int main()
 {
     string p1Card, p2Card;
     vector<string> cardList = dealCards(p1Card, p2Card);
-
-    vector<string> testCards{"7s", "6s", "6c", "8s"};
+    vector<string> testCards{"7s", "2s", "6c", "6h"};
     int type{};
     int maxRank{};
     analyzeCards(testCards, type, maxRank);

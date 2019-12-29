@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/generate_random.dir/main/generate_random.cpp.o  -o generate_random.exe -Wl,--out-implib,libgenerate_random.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

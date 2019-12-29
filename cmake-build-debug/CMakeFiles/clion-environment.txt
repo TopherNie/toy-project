@@ -1,4 +1,0 @@
-ToolSet: 3.0.7 (local)@D:\software\Cygwin\install
-Options: 
-
-Options:

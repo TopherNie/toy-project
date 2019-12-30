@@ -1,0 +1,5 @@
+/cmake-build-debug
+.idea
+.project
+.settings
+.ipynb_checkpoints

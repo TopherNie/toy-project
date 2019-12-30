@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libzjh_deps.a  CMakeFiles/zjh_deps.dir/__/Common/src/template_func.cpp.o CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.o CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.o CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o CMakeFiles/zjh_deps.dir/zhajinhua/src/room.cpp.o
+/usr/bin/ranlib.exe libzjh_deps.a

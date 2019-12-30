@@ -14,6 +14,7 @@
 #define CARD_NUM RANK_NUM * SUIT_NUM
 #define STD_HAND_NUM 3
 #define HAND_NUM 4
+#define PRIVATE_NUM 2
 
 
 #define SINGLE 1

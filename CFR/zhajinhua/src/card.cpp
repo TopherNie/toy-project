@@ -9,6 +9,7 @@
 
 #include "card.h"
 #include <tools.h>
+#include <player.h>
 
 const string CARD_SUITS[] = {"s", "h", "c", "d"};
 const string CARD_RANKS[] = {"0", "1", "2", "3", "4", "5", "6"};
@@ -24,7 +25,7 @@ map<int, string> TYPE_MAP = {
         {LEOPARD, "Leopard"}
 };
 
-vector<string> dealCards(string &priCard1, string &priCard2)
+vector<string> dealCards(vector<string> &priCards1, vector<string> &priCards2)
 {
     vector<string> remainCards;
     for (const string& suit: CARD_SUITS)
@@ -37,10 +38,13 @@ vector<string> dealCards(string &priCard1, string &priCard2)
     }
     shuffle(remainCards.begin(), remainCards.end(), mt19937(random_device()()));
     int size = remainCards.size();
-    priCard1 = remainCards.at(size - 1);
-    remainCards.pop_back();
-    priCard2 = remainCards.at(size - 2);
-    remainCards.pop_back();
+    for (int i = 0; i < 2 * PRIVATE_NUM;  i += 2)
+    {
+        priCards1.push_back(remainCards.at(size - 1 - i));
+        remainCards.pop_back();
+        priCards2.push_back(remainCards.at(size - 2 - i));
+        remainCards.pop_back();
+    }
     return remainCards;
 }
 
@@ -153,18 +157,18 @@ void compare(const vector<string>& p1Cards, const vector<string>& p2Cards, int &
             winner = 0;
         } else if (p1MaxRank > p2MaxRank){
             type = p1Type;
-            winner = 1;
+            winner = PLAYER_1;
         } else{
             type = p2Type;
-            winner = 2;
+            winner = PLAYER_2;
         }
 
     } else if (p1Type > p2Type){
         type = p1Type;
-        winner = 1;
+        winner = PLAYER_1;
     } else{
         type = p2Type;
-        winner = 2;
+        winner = PLAYER_2;
     }
 }
 

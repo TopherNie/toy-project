@@ -335,6 +335,33 @@ zhajinhua/src/cfr_zjh.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.s
 .PHONY : zhajinhua/src/cfr_zjh.cpp.s
 
+zhajinhua/src/main.o: zhajinhua/src/main.cpp.o
+
+.PHONY : zhajinhua/src/main.o
+
+# target to build an object file
+zhajinhua/src/main.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o
+.PHONY : zhajinhua/src/main.cpp.o
+
+zhajinhua/src/main.i: zhajinhua/src/main.cpp.i
+
+.PHONY : zhajinhua/src/main.i
+
+# target to preprocess a source file
+zhajinhua/src/main.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.i
+.PHONY : zhajinhua/src/main.cpp.i
+
+zhajinhua/src/main.s: zhajinhua/src/main.cpp.s
+
+.PHONY : zhajinhua/src/main.s
+
+# target to generate assembly for a file
+zhajinhua/src/main.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.s
+.PHONY : zhajinhua/src/main.cpp.s
+
 zhajinhua/src/player.o: zhajinhua/src/player.cpp.o
 
 .PHONY : zhajinhua/src/player.o
@@ -362,32 +389,32 @@ zhajinhua/src/player.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.s
 .PHONY : zhajinhua/src/player.cpp.s
 
-zhajinhua/src/room.o: zhajinhua/src/room.cpp.o
+zhajinhua/src/round.o: zhajinhua/src/round.cpp.o
 
-.PHONY : zhajinhua/src/room.o
+.PHONY : zhajinhua/src/round.o
 
 # target to build an object file
-zhajinhua/src/room.cpp.o:
-	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/room.cpp.o
-.PHONY : zhajinhua/src/room.cpp.o
+zhajinhua/src/round.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o
+.PHONY : zhajinhua/src/round.cpp.o
 
-zhajinhua/src/room.i: zhajinhua/src/room.cpp.i
+zhajinhua/src/round.i: zhajinhua/src/round.cpp.i
 
-.PHONY : zhajinhua/src/room.i
+.PHONY : zhajinhua/src/round.i
 
 # target to preprocess a source file
-zhajinhua/src/room.cpp.i:
-	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/room.cpp.i
-.PHONY : zhajinhua/src/room.cpp.i
+zhajinhua/src/round.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.i
+.PHONY : zhajinhua/src/round.cpp.i
 
-zhajinhua/src/room.s: zhajinhua/src/room.cpp.s
+zhajinhua/src/round.s: zhajinhua/src/round.cpp.s
 
-.PHONY : zhajinhua/src/room.s
+.PHONY : zhajinhua/src/round.s
 
 # target to generate assembly for a file
-zhajinhua/src/room.cpp.s:
-	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/room.cpp.s
-.PHONY : zhajinhua/src/room.cpp.s
+zhajinhua/src/round.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.s
+.PHONY : zhajinhua/src/round.cpp.s
 
 # Help Target
 help:
@@ -420,12 +447,15 @@ help:
 	@echo "... zhajinhua/src/cfr_zjh.o"
 	@echo "... zhajinhua/src/cfr_zjh.i"
 	@echo "... zhajinhua/src/cfr_zjh.s"
+	@echo "... zhajinhua/src/main.o"
+	@echo "... zhajinhua/src/main.i"
+	@echo "... zhajinhua/src/main.s"
 	@echo "... zhajinhua/src/player.o"
 	@echo "... zhajinhua/src/player.i"
 	@echo "... zhajinhua/src/player.s"
-	@echo "... zhajinhua/src/room.o"
-	@echo "... zhajinhua/src/room.i"
-	@echo "... zhajinhua/src/room.s"
+	@echo "... zhajinhua/src/round.o"
+	@echo "... zhajinhua/src/round.i"
+	@echo "... zhajinhua/src/round.s"
 .PHONY : help
 
 

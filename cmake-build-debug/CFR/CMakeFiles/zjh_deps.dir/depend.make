@@ -8,12 +8,20 @@ CFR/CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.o: ../Common/src/template_fu
 CFR/CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.o: ../Common/src/tools.cpp
 
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o: ../CFR/zhajinhua/include/card.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o: ../CFR/zhajinhua/include/player.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o: ../Common/include/tools.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o: ../Common/src/template_func.cpp
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o: ../CFR/zhajinhua/src/card.cpp
 
-CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.o: ../CFR/zhajinhua/include/card.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.o: ../CFR/zhajinhua/src/cfr_zjh.cpp
 
-CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/room.cpp.o: ../CFR/zhajinhua/src/room.cpp
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o: ../CFR/zhajinhua/include/card.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o: ../CFR/zhajinhua/src/main.cpp
+
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o: ../CFR/zhajinhua/include/player.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o: ../CFR/zhajinhua/src/player.cpp
+
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/include/player.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/include/round.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/src/round.cpp
 

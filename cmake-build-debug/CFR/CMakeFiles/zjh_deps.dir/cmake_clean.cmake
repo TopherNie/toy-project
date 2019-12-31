@@ -3,8 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.o"
   "CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o"
   "CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.o"
+  "CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o"
   "CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o"
-  "CMakeFiles/zjh_deps.dir/zhajinhua/src/room.cpp.o"
+  "CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o"
   "libzjh_deps.a"
   "libzjh_deps.pdb"
 )

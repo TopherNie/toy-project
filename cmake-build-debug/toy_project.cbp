@@ -560,13 +560,16 @@
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/cfr_zjh.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/main.cpp">
 			<Option target="zjh"/>
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/room.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/Common/src/template_func.cpp">

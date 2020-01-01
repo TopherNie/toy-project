@@ -2,16 +2,16 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="toy_project" targetName="zjh_deps" />
-      <config projectName="toy_project" targetName="test_pid" />
-      <config projectName="toy_project" targetName="py_invoker" />
-      <config projectName="toy_project" targetName="lua_invoker" />
-      <config projectName="toy_project" targetName="crf_rsp" />
-      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
       <config projectName="toy_project" targetName="generate_random" />
+      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
+      <config projectName="toy_project" targetName="lua_invoker" />
+      <config projectName="toy_project" targetName="zjh_deps" />
+      <config projectName="toy_project" targetName="crf_rsp" />
+      <config projectName="toy_project" targetName="test_pid" />
       <config projectName="toy_project" targetName="cfr_kuhn" />
-      <config projectName="toy_project" targetName="crf_rsp_2" />
+      <config projectName="toy_project" targetName="py_invoker" />
       <config projectName="toy_project" targetName="zjh" />
+      <config projectName="toy_project" targetName="crf_rsp_2" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -20,8 +20,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="">
+    <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/cfr_zjh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/cfr_zjh.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +43,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -52,9 +62,9 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Common/python36/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -82,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.zjh">
+  <component name="RunManager" selected="Python.hand_highlight">
     <configuration name="cfr_kuhn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="cfr_kuhn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="cfr_kuhn">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -257,8 +267,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_win_card_index" />
         <item itemvalue="Python.hand_highlight" />
+        <item itemvalue="Python.test_win_card_index" />
         <item itemvalue="Python.montecarlo_python" />
         <item itemvalue="Python.hand_evaluator" />
         <item itemvalue="Python.test_list" />
@@ -266,7 +276,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -289,6 +299,14 @@
       <workItem from="1577511585163" duration="502000" />
       <workItem from="1577512094145" duration="203000" />
       <workItem from="1577512303785" duration="5942000" />
+      <workItem from="1577756009667" duration="1099000" />
+      <workItem from="1577757111084" duration="157000" />
+      <workItem from="1577757274876" duration="265000" />
+      <workItem from="1577757542549" duration="4565000" />
+      <workItem from="1577764075072" duration="1204000" />
+      <workItem from="1577766951088" duration="1002000" />
+      <workItem from="1577768099217" duration="6231000" />
+      <workItem from="1577841235678" duration="8782000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>
@@ -340,7 +358,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit in CLion" />
     <MESSAGE value="Test push in CLion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test push in CLion" />
+    <MESSAGE value="Some small programs" />
+    <MESSAGE value="Some small programs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some small programs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,6 +369,11 @@
           <url>file://$PROJECT_DIR$/python/find_largest/hand_evaluator.py</url>
           <line>119</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/find_largest/hand_highlight.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp</url>

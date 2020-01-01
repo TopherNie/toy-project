@@ -16,11 +16,11 @@ struct Node
     int currentPlayer;
     int street;
     vector<string> board;
-    vector<string> bets;
+    vector<int> bets;
     bool isTerminal;
     int depth;
     int pot;
-    vector<vector<double>> strategy;
+    double** strategy;
 };
 
 struct Tree

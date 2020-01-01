@@ -14,8 +14,6 @@
 const string CARD_SUITS[] = {"s", "h", "c", "d"};
 const string CARD_RANKS[] = {"0", "1", "2", "3", "4", "5", "6"};
 
-const int CARD_RANK_SIZE = sizeof(CARD_RANKS) / sizeof(string);
-
 map<int, string> TYPE_MAP = {
         {SINGLE, "Single"},
         {PAIR, "Pair"},
@@ -25,27 +23,39 @@ map<int, string> TYPE_MAP = {
         {LEOPARD, "Leopard"}
 };
 
-vector<string> dealCards(vector<string> &priCards1, vector<string> &priCards2)
+vector<string> initCards(vector<string> cardList)
 {
-    vector<string> remainCards;
-    for (const string& suit: CARD_SUITS)
+    if (cardList.empty())
     {
-        for (const auto & r : CARD_RANKS)
+        for (const string& suit: CARD_SUITS)
         {
-            string card = r + suit;
-            remainCards.push_back(card);
+            for (const auto & r : CARD_RANKS)
+            {
+                string card = r + suit;
+                cardList.push_back(card);
+            }
         }
     }
-    shuffle(remainCards.begin(), remainCards.end(), mt19937(random_device()()));
-    int size = remainCards.size();
-    for (int i = 0; i < 2 * PRIVATE_NUM;  i += 2)
+    shuffle(cardList.begin(), cardList.end(), mt19937(random_device()()));
+    return cardList;
+}
+
+void dealCards(vector<string> &cards, vector<Player *> &players, int street)
+{
+    // The number of cards dealt to per player.
+    int numPer = 1;
+    if (street == PRE_FLOP)
     {
-        priCards1.push_back(remainCards.at(size - 1 - i));
-        remainCards.pop_back();
-        priCards2.push_back(remainCards.at(size - 2 - i));
-        remainCards.pop_back();
+        numPer = 2;
     }
-    return remainCards;
+    for (auto &p: players)
+    {
+        for (int i = 0; i < numPer; i++)
+        {
+            p -> cards.push_back(cards.at(cards.size() - 1));
+            cards.pop_back();
+        }
+    }
 }
 
 int card2Rank(const string &card)
@@ -142,33 +152,33 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
 
 }
 
-void compare(const vector<string>& p1Cards, const vector<string>& p2Cards, int &winner, int &type)
+void compare(const vector<string>& p0Cards, const vector<string>& p1Cards, int &winner, int &type)
 {
-    int p1Type{}, p2Type{};
-    int p1MaxRank{}, p2MaxRank{};
+    int p0Type{}, p1Type{};
+    int p0MaxRank{}, p1MaxRank{};
+    analyzeCards(p0Cards, p0Type, p0MaxRank);
     analyzeCards(p1Cards, p1Type, p1MaxRank);
-    analyzeCards(p2Cards, p2Type, p2MaxRank);
-    if (p1Type == p2Type)
+    if (p0Type == p1Type)
     {
-        if (p1MaxRank == p2MaxRank)
+        if (p0MaxRank == p1MaxRank)
         {
             // Draw
-            type = p1Type;
+            type = p0Type;
             winner = 0;
-        } else if (p1MaxRank > p2MaxRank){
+        } else if (p0MaxRank > p1MaxRank){
+            type = p0Type;
+            winner = PLAYER_0;
+        } else{
             type = p1Type;
             winner = PLAYER_1;
-        } else{
-            type = p2Type;
-            winner = PLAYER_2;
         }
 
-    } else if (p1Type > p2Type){
+    } else if (p0Type > p1Type){
+        type = p0Type;
+        winner = PLAYER_0;
+    } else{
         type = p1Type;
         winner = PLAYER_1;
-    } else{
-        type = p2Type;
-        winner = PLAYER_2;
     }
 }
 

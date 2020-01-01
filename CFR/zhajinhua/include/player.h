@@ -8,19 +8,26 @@
 #include <vector>
 #include <string>
 
+#define PLAYER_0 0
 #define PLAYER_1 1
-#define PLAYER_2 2
+
+#define SMALL_BLIND "s"
+#define BIG_BLIND "b"
+#define CHECK "k"
+#define FLOP "f"
+#define CALL "c";
 
 using namespace std;
 
 struct Player
 {
     int id;
+    bool isRobot;
     vector<string> cards;
-    int totalBets;
+    vector<string> history;
     int totalChips;
 
-    void act(int bets);
+    void play(int bets);
 };
 
 #endif //TOY_PROJECT_PLAYER_H

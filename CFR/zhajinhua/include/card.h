@@ -8,6 +8,13 @@
 #include <string>
 #include <vector>
 #include <map>
+#include "player.h"
+
+#define PRE_FLOP 0
+#define FLOP 1
+#define TURN 2
+
+#define BASIC_BET 1
 
 #define RANK_NUM 10
 #define SUIT_NUM 3
@@ -15,7 +22,6 @@
 #define STD_HAND_NUM 3
 #define HAND_NUM 4
 #define PRIVATE_NUM 2
-
 
 #define SINGLE 1
 #define PAIR 2
@@ -28,11 +34,12 @@ using namespace std;
 
 extern const string CARD_SUITS[];
 extern const string CARD_RANKS[];
-extern const int CARD_RANK_SIZE;
 
 extern map<int, string> TYPE_MAP;
 
-vector<string> dealCards(string &priCard1, string &priCard2);
+vector<string> initCards(vector<string> cardList);
+
+void dealCards(vector<string> &cards, vector<Player *> &players, int street);
 
 void analyzeCards(const vector<string>& cards, int &type, int &maxRank);
 

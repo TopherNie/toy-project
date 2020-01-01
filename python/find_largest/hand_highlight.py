@@ -24,6 +24,7 @@ def cal_score_to_hot_encoding_str(hand_str):
 
 
 def calc_score(hand):
+    card_size = len(hand)
     """Assign a calc_score to the hand so it can be compared with other hands"""
     rcount_dict = {CARD_RANKS_ORIGINAL.find(r): ''.join(hand).count(r) for r, _ in hand}
     rcounts = rcount_dict.items()
@@ -33,20 +34,21 @@ def calc_score(hand):
     straight = False
 
     potential_threeofakind = score[0] == 3
-    potential_twopair = score == (2, 2, 1, 1, 1)
-    potential_pair = score == (2, 1, 1, 1, 1, 1)
+    potential_twopair = score == (2, 2, 1, 1, 1) or score == (2, 2, 1, 1) or score == (2, 2, 1)
+    potential_pair = score == (2, 1, 1, 1, 1, 1) or score == (2, 1, 1, 1, 1) or score == (2, 1, 1, 1)
 
     if score[0:2] == (3, 2) or score[0:2] == (3, 3):  # fullhouse (three of a kind and pair, or two three of a kind)
         card_ranks = (card_ranks[0], card_ranks[1])
         score = (3, 2)
-    elif score[0:4] == (2, 2, 2, 1):  # special case: convert three pair to two pair
+    elif score[0:4] == (2, 2, 2, 1) or score[0:3] == (2, 2, 2):  # special case: convert three pair to two pair
         score = (2, 2, 1)  # as three pair are not worth more than two pair
         kicker = max(card_ranks[2], card_ranks[3])  # avoid for example 11,8,6,7
         card_ranks = (card_ranks[0], card_ranks[1], kicker)
     elif score[0] == 4:  # four of a kind
         score = (4,)
-        sorted_card_ranks = sorted(card_ranks, reverse=True)  # avoid for example 11,8,9
-        card_ranks = (sorted_card_ranks[0], sorted_card_ranks[1])
+        # sorted_card_ranks = sorted(card_ranks, reverse=True)  # avoid for example 11,8,9
+        # card_ranks = (sorted_card_ranks[0], sorted_card_ranks[1])
+        card_ranks = (card_ranks[0], card_ranks[1])
     elif len(score) >= 5:  # high card, flush, straight and straight flush
         # straight
         if 12 in card_ranks:  # adjust if 5 high straight
@@ -155,8 +157,7 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
 
 
 if __name__ == "__main__":
-    import sys
-    hand_str = sys.argv[1]
+    hand_str = "9c-9h-3d-Ks-9d-9s"
     re = cal_score_to_hot_encoding_str(hand_str)
     print(re)
 

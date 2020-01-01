@@ -3,3 +3,5 @@
 .project
 .settings
 .ipynb_checkpoints
+.svn
+/python/find_largest/__pycache__

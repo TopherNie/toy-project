@@ -389,6 +389,33 @@ zhajinhua/src/player.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.s
 .PHONY : zhajinhua/src/player.cpp.s
 
+zhajinhua/src/robot.o: zhajinhua/src/robot.cpp.o
+
+.PHONY : zhajinhua/src/robot.o
+
+# target to build an object file
+zhajinhua/src/robot.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o
+.PHONY : zhajinhua/src/robot.cpp.o
+
+zhajinhua/src/robot.i: zhajinhua/src/robot.cpp.i
+
+.PHONY : zhajinhua/src/robot.i
+
+# target to preprocess a source file
+zhajinhua/src/robot.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.i
+.PHONY : zhajinhua/src/robot.cpp.i
+
+zhajinhua/src/robot.s: zhajinhua/src/robot.cpp.s
+
+.PHONY : zhajinhua/src/robot.s
+
+# target to generate assembly for a file
+zhajinhua/src/robot.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.s
+.PHONY : zhajinhua/src/robot.cpp.s
+
 zhajinhua/src/round.o: zhajinhua/src/round.cpp.o
 
 .PHONY : zhajinhua/src/round.o
@@ -453,6 +480,9 @@ help:
 	@echo "... zhajinhua/src/player.o"
 	@echo "... zhajinhua/src/player.i"
 	@echo "... zhajinhua/src/player.s"
+	@echo "... zhajinhua/src/robot.o"
+	@echo "... zhajinhua/src/robot.i"
+	@echo "... zhajinhua/src/robot.s"
 	@echo "... zhajinhua/src/round.o"
 	@echo "... zhajinhua/src/round.i"
 	@echo "... zhajinhua/src/round.s"

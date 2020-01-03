@@ -16,11 +16,18 @@ CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o: ../CFR/zhajinhua/src/card.
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.o: ../CFR/zhajinhua/src/cfr_zjh.cpp
 
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o: ../CFR/zhajinhua/include/card.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o: ../CFR/zhajinhua/include/player.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o: ../CFR/zhajinhua/include/round.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/main.cpp.o: ../CFR/zhajinhua/src/main.cpp
 
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o: ../CFR/zhajinhua/include/player.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o: ../CFR/zhajinhua/src/player.cpp
 
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o: ../CFR/zhajinhua/include/player.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o: ../CFR/zhajinhua/include/robot.h
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o: ../CFR/zhajinhua/src/robot.cpp
+
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/include/card.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/include/player.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/include/round.h
 CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o: ../CFR/zhajinhua/src/round.cpp

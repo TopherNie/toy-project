@@ -550,12 +550,6 @@
 			<Option target="crf_rsp_2"/>
 			<Option target="cfr_kuhn_deps"/>
 		</Unit>
-		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include/round.h">
-			<Option target="cfr_kuhn_deps"/>
-		</Unit>
-		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include/tree.h">
-			<Option target="cfr_kuhn_deps"/>
-		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/card.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
@@ -567,6 +561,12 @@
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.h">
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp">

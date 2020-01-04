@@ -9,18 +9,24 @@ SUITS_ORIGINAL = 'cdhs'
 
 
 def cal_score_to_hot_encoding_str(hand_str):
-    if not hand_str:
-        print("The parameter [hand_str] is empty!")
-        return -1
-    sep = "-"
-    hand = hand_str.split(sep)
-
-    hand_type, win_card_indexes = calc_score(hand)
-    hand_size = len(hand)
-    hot_encoding_list = [1 if i in win_card_indexes else 0 for i in range(0, hand_size)]
-    hot_encoding_str_list = map(lambda x: str(x), hot_encoding_list)
-    hot_encoding_str = sep.join(hot_encoding_str_list)
-    return hand_type + " " + hot_encoding_str
+    re = "ERROR: "
+    try:
+        if not hand_str:
+            re = re + "The parameter [hand_str] is empty!"
+            print(re)
+        else:
+            sep = "-"
+            hand = hand_str.split(sep)
+            hand_type, win_card_indexes = calc_score(hand)
+            hand_size = len(hand)
+            hot_encoding_list = [1 if i in win_card_indexes else 0 for i in range(0, hand_size)]
+            hot_encoding_str_list = map(lambda x: str(x), hot_encoding_list)
+            hot_encoding_str = sep.join(hot_encoding_str_list)
+            re = hand_type + " " + hot_encoding_str
+    except Exception as e:
+        re = re + str(e)
+        print(re)
+    return re
 
 
 def calc_score(hand):
@@ -156,8 +162,12 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
 
 
 if __name__ == "__main__":
-    hand_str = "Ac-5h-3d-Ks-2d-4s"
-    re = cal_score_to_hot_encoding_str(hand_str)
-    print(re)
-
+    hand_str = "6s-3d-Ac-7c-7s-Td-7d"
+    result = "ERROR:"
+    try:
+        result = cal_score_to_hot_encoding_str(hand_str)
+    except Exception as ex:
+        result = " ".join([result, str(ex)])
+    print("The result is: ")
+    print(result)
 

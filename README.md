@@ -1,4 +1,6 @@
 # toy-project
 
-Hello World!
-git push -u origin master
+Hello World!  
+git commit -am "This is a comment"  
+git push -u origin master   
+

@@ -14,7 +14,7 @@
 #define SMALL_BLIND "s"
 #define BIG_BLIND "b"
 #define CHECK "k"
-#define FLOP "f"
+#define FOLD "f"
 #define CALL "c";
 
 using namespace std;
@@ -27,7 +27,7 @@ struct Player
     vector<string> history;
     int totalChips;
 
-    void play(int bets);
+    virtual string play();
 };
 
 #endif //TOY_PROJECT_PLAYER_H

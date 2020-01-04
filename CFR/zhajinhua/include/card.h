@@ -37,7 +37,7 @@ extern const string CARD_RANKS[];
 
 extern map<int, string> TYPE_MAP;
 
-vector<string> initCards(vector<string> cardList);
+void initCards(vector<string> &cardList);
 
 void dealCards(vector<string> &cards, vector<Player *> &players, int street);
 

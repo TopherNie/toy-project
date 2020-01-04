@@ -24,7 +24,6 @@ def cal_score_to_hot_encoding_str(hand_str):
 
 
 def calc_score(hand):
-    card_size = len(hand)
     """Assign a calc_score to the hand so it can be compared with other hands"""
     rcount_dict = {CARD_RANKS_ORIGINAL.find(r): ''.join(hand).count(r) for r, _ in hand}
     rcounts = rcount_dict.items()
@@ -157,7 +156,7 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
 
 
 if __name__ == "__main__":
-    hand_str = "9c-9h-3d-Ks-9d-9s"
+    hand_str = "Ac-5h-3d-Ks-2d-4s"
     re = cal_score_to_hot_encoding_str(hand_str)
     print(re)
 

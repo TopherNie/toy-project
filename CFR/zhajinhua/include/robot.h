@@ -5,4 +5,11 @@
 #ifndef TOY_PROJECT_ROBOT_H
 #define TOY_PROJECT_ROBOT_H
 
+#include <player.h>
+
+struct Robot: Player{
+    bool isRobot = true;
+    string play();
+};
+
 #endif //TOY_PROJECT_ROBOT_H

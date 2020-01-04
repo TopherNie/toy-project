@@ -23,6 +23,7 @@ struct Round
     vector<string> cards;
 
     int addPlayer(Player* player);
+    int nextPlayer();
 
     int preFlop();
     int battle();

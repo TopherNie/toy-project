@@ -23,10 +23,11 @@ map<int, string> TYPE_MAP = {
         {LEOPARD, "Leopard"}
 };
 
-vector<string> initCards(vector<string> cardList)
+void initCards(vector<string> &cardList)
 {
-    if (cardList.empty())
+    if (cardList.size() != CARD_NUM)
     {
+        cardList.clear();
         for (const string& suit: CARD_SUITS)
         {
             for (const auto & r : CARD_RANKS)
@@ -37,7 +38,6 @@ vector<string> initCards(vector<string> cardList)
         }
     }
     shuffle(cardList.begin(), cardList.end(), mt19937(random_device()()));
-    return cardList;
 }
 
 void dealCards(vector<string> &cards, vector<Player *> &players, int street)
@@ -116,6 +116,7 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
                 maxRank = sThird;
                 break;
             }
+
         }
     }
 

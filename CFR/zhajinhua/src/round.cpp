@@ -24,6 +24,10 @@ int Round::addPlayer(Player * player)
     playerList.push_back(player);
 }
 
+int Round::nextPlayer()
+{
+    currentPlayer = (currentPlayer + 1) % playerList.size();
+}
 
 int Round::preFlop()
 {
@@ -37,7 +41,7 @@ int Round::preFlop()
         if (p -> id == currentPlayer)
         {
             // Small Blind
-            action.append(SMALL_BLIND).append(to_string(BASIC_BET)) ;
+            action.append(SMALL_BLIND).append(to_string(BASIC_BET));
         } else{
             // Big Blind
             action.append(BIG_BLIND).append(to_string(BASIC_BET * 2)) ;
@@ -48,7 +52,13 @@ int Round::preFlop()
 
 int Round::battle()
 {
-
+    for (int s = FLOP; s <= TURN; s ++)
+    {
+        for (auto &p: playerList)
+        {
+            p->play();
+        }
+    }
 }
 
 int Round::clear()

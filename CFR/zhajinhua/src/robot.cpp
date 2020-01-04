@@ -3,3 +3,9 @@
 //
 
 #include "robot.h"
+
+string Robot::play()
+{
+
+}
+

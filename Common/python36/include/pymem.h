@@ -96,7 +96,7 @@ PyAPI_FUNC(PyObject*) _PyTraceMalloc_GetTraceback(
    free.  These functions make sure that allocating 0 bytes returns a distinct
    non-NULL pointer (whenever possible -- if we're flat out of memory, NULL
    may be returned), even if the platform malloc and realloc don't.
-   Returned pointers must be checked for NULL explicitly.  No action is
+   Returned pointers must be checked for NULL explicitly.  No type is
    performed on failure (no exception is set, no warning is printed, etc).
 */
 

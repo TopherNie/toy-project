@@ -158,7 +158,9 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
             r_count = rcount_dict[rank]
             multiple_indexes = [get_card_index(hand, card, i) for i in range(r_count)]
             res += multiple_indexes
-    return sorted(res[: 5])
+        if len(res) >= 5:
+            break
+    return sorted(res)
 
 
 if __name__ == "__main__":

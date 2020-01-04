@@ -11,23 +11,35 @@
 #define PLAYER_0 0
 #define PLAYER_1 1
 
-#define SMALL_BLIND "s"
-#define BIG_BLIND "b"
-#define CHECK "k"
-#define FOLD "f"
-#define CALL "c";
+#define SMALL_BLIND 's'
+#define BIG_BLIND 'b'
+#define CHECK 'k'
+#define FOLD 'f'
+#define CALL 'c'
+#define RAISE 'r'
 
 using namespace std;
+
+struct Action
+{
+    char type;
+    int bets;
+};
 
 struct Player
 {
     int id;
     bool isRobot;
     vector<string> cards;
-    vector<string> history;
+    vector<Action*> history;
     int totalChips;
+    bool isOut;
 
-    virtual string play();
+    int roundBets();
+
+    virtual Action* play();
+
+    bool operator==(Player *player);
 };
 
 #endif //TOY_PROJECT_PLAYER_H

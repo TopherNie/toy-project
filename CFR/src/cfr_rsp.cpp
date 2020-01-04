@@ -91,12 +91,12 @@ void train(int iterations)
         int myAction = getAction(strategy);
         int otherAction = getAction(oppStrategy);
 
-        // Compute action utilities
+        // Compute type utilities
         actionUtility[otherAction] = 0;
         actionUtility[otherAction == NUM_ACTIONS - 1 ? 0: otherAction + 1] = 1;
         actionUtility[otherAction == 0 ? NUM_ACTIONS - 1: otherAction - 1] = -1;
 
-        // Accumulate action regrets
+        // Accumulate type regrets
         for (int a = 0; a < NUM_ACTIONS; a ++)
         {
             regretSum[a] = actionUtility[a] - actionUtility[myAction];

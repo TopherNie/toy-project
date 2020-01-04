@@ -18,14 +18,18 @@ struct Round
     int serial;
     int pot;
     int currentStreet;
-    int currentPlayer;
+    Player* startPlayer;
+    Player* currentPlayer;
     vector<Player*> playerList;
     vector<string> cards;
+    int lastUserBet;
 
     int addPlayer(Player* player);
+    int nextRoundStartPlayer();
     int nextPlayer();
 
     int preFlop();
+    int settle(Player* winner);
     int battle();
     int clear();
     

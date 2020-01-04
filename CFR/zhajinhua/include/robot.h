@@ -9,7 +9,7 @@
 
 struct Robot: Player{
     bool isRobot = true;
-    string play();
+    Action* play();
 };
 
 #endif //TOY_PROJECT_ROBOT_H

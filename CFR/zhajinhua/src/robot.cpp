@@ -4,7 +4,7 @@
 
 #include "robot.h"
 
-string Robot::play()
+Action* Robot::play()
 {
 
 }

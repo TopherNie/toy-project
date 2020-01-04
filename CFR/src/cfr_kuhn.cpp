@@ -126,20 +126,20 @@ double cfr(int cards[], string history, double p0, double p1)
         node = nodeMap[infoSet];
     }
 
-    // For each action, recursively call cfr with additional history and probability
+    // For each type, recursively call cfr with additional history and probability
     double* strategy = node -> getStrategy(player == 0 ? p0 : p1);
     double  util[NUM_ACTIONS]{};
     double nodeUtil = 0;
     for (int a = 0; a < NUM_ACTIONS; a ++)
     {
         string nextHistory = history + (a == 0 ? "p" : "b");
-        // Why minus sign here ? It's about the next action, so it's counter-factual.
+        // Why minus sign here ? It's about the next type, so it's counter-factual.
         util[a] = player == 0 ? - cfr(cards, nextHistory, p0 * strategy[a], p1) : - cfr(cards, nextHistory, p0, p1 * strategy[a]);
         nodeUtil += (strategy[a] * util[a]);
     }
 
 
-    // For each action, compute and accumulate counter-factual regret
+    // For each type, compute and accumulate counter-factual regret
     for (int a = 0; a < NUM_ACTIONS; a ++)
     {
         double regret = util[a] - nodeUtil;

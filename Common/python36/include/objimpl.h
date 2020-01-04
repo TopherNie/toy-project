@@ -83,7 +83,7 @@ PyObject_{New, NewVar, Del}.
    PyObject_Realloc(p != NULL, 0) does not return  NULL, or free the memory
    at p.
 
-   Returned pointers must be checked for NULL explicitly; no action is
+   Returned pointers must be checked for NULL explicitly; no type is
    performed on failure other than to return NULL (no warning it printed, no
    exception is set, etc).
 

@@ -8,10 +8,35 @@
 
 using namespace std;
 
-string Player::play()
+int Player::roundBets()
 {
-    string action;
+    int res = 0;
+    if (!history.empty())
+    {
+        for (auto &action: history)
+        {
+            res += action->bets;
+        }
+    }
+    return res;
+}
+
+Action* Player::play()
+{
+    string actionStr;
     cout << "Please input your action: ";
-    cin >> action;
+    cin >> actionStr;
+    auto* action = new Action;
+    char type = actionStr[0];
+    action->type = type;
+    if (type == RAISE)
+    {
+        action->bets = actionStr[1] - '0';
+    }
     return action;
+}
+
+bool Player::operator==(Player *player)
+{
+    return this->id == player->id;
 }

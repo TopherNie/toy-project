@@ -22,7 +22,19 @@
   <component name="ChangeListManager">
     <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/src/cfr_kuhn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/src/cfr_kuhn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/src/cfr_rsp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/src/cfr_rsp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/src/cfr_rsp_2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/src/cfr_rsp_2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/python36/include/objimpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/Common/python36/include/objimpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/python36/include/pymem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Common/python36/include/pymem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/py_invoker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main/py_invoker.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" afterDir="false" />
     </list>
@@ -35,6 +47,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -84,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hand_highlight">
+  <component name="RunManager" selected="CMake Application.zjh">
     <configuration name="cfr_kuhn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="cfr_kuhn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="cfr_kuhn">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -301,7 +314,8 @@
       <workItem from="1577841235678" duration="9061000" />
       <workItem from="1577934291909" duration="633000" />
       <workItem from="1578030859417" duration="8659000" />
-      <workItem from="1578100705029" duration="11200000" />
+      <workItem from="1578100705029" duration="20003000" />
+      <workItem from="1578129296021" duration="2986000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>

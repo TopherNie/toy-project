@@ -111,6 +111,7 @@ int destroy()
     PyGILState_Ensure();
     // Free resources.
     Py_Finalize();
+    pFunc = nullptr;
     cout << "Destroy Python environment successfully."  << endl;
     return 0;
 }

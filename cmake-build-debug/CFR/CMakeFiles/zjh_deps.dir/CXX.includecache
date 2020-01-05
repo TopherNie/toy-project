@@ -60,7 +60,7 @@ iostream
 algorithm
 -
 
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/card.cpp
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/card.cpp
 random
 -
 vector
@@ -70,19 +70,21 @@ map
 algorithm
 -
 card.h
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/card.h
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/card.h
 tools.h
 -
 player.h
 -
 
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/main.cpp
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/cfr_zjh.cpp
+
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/main.cpp
 iostream
 -
 round.h
 -
 
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/player.cpp
 iostream
 -
 player.h
@@ -90,13 +92,35 @@ player.h
 string
 -
 
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/robot.cpp
 robot.h
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.h
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/robot.h
 
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp
+D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/round.cpp
 iostream
 -
 round.h
+-
+
+D:/work/ChaosAILab/toy-project/Common/src/template_func.cpp
+map
+-
+string
+-
+vector
+-
+iostream
+-
+algorithm
+-
+
+D:/work/ChaosAILab/toy-project/Common/src/tools.cpp
+tools.h
+-
+random
+-
+iostream
+-
+algorithm
 -
 

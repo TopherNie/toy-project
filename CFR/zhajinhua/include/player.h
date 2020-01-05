@@ -31,6 +31,7 @@ struct Player
     int id;
     bool isRobot;
     vector<string> cards;
+    int cardsType;
     vector<Action*> history;
     int totalChips;
     bool isOut;

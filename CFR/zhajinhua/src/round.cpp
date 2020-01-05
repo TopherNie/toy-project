@@ -7,6 +7,32 @@
 
 using namespace std;
 
+vector<Player*> Round::inPlayers()
+{
+    vector<Player*> vec;
+    for (auto &p: playerList)
+    {
+        if (!p->isOut)
+        {
+            vec.push_back(p);
+        }
+    }
+    return vec;
+}
+
+int Round::inPlayerNum()
+{
+    int num = 0;
+    for (auto &p: playerList)
+    {
+        if (!p->isOut)
+        {
+            num ++;
+        }
+    }
+    return num;
+}
+
 int Round::addPlayer(Player * player)
 {
     int playerNum = playerList.size();
@@ -15,12 +41,7 @@ int Round::addPlayer(Player * player)
         cout << "The number of player cannot be more than 2" << endl;
         return -1;
     }
-    if (playerNum == 0)
-    {
-        player->id = PLAYER_0;
-    } else{
-        player->id = PLAYER_1;
-    }
+    player->id = playerNum;
     playerList.push_back(player);
 }
 
@@ -37,9 +58,9 @@ int Round::nextRoundStartPlayer()
 
 int Round::preFlop()
 {
-    initCards(cards);
+    initCards(allCards);
 
-    dealCards(cards, playerList, PRE_FLOP);
+    dealHoleCards(allCards, playerList);
     currentPlayer = startPlayer;
 
     // Small Blind
@@ -59,8 +80,15 @@ int Round::preFlop()
     nextPlayer();
 }
 
-int Round::settle(Player* winner)
+int Round::settle()
 {
+    Player* winner;
+    if (inPlayerNum() == 1)
+    {
+        winner = inPlayers().at(0);
+    } else{
+        winner = findWinnerByCard(playerList, boardCards);
+    }
     int winBets = 0;
     for (auto &p: playerList)
     {
@@ -79,17 +107,30 @@ int Round::settle(Player* winner)
 int Round::battle()
 {
     int playerSize = playerList.size();
-    for (int s = FLOP; s <= TURN; s ++)
+    // Street
+    int s = FLOP;
+
+    while (s <= TURN)
     {
+        dealPublicCard(allCards, boardCards);
         int i = 0;
         while (i < playerSize)
         {
             if (!currentPlayer->isOut)
             {
+                // Information board for human player
+                if (!currentPlayer->isRobot)
+                {
+                    cout << "" << endl;
+                }
                 Action* action = currentPlayer->play();
                 if (action->type == FOLD)
                 {
                     currentPlayer->isOut = true;
+                    if (inPlayerNum() <= 1)
+                    {
+                        return 0;
+                    }
                 } else if (action->type == CHECK)
                 {
                     // Nothing to do
@@ -106,8 +147,13 @@ int Round::battle()
                 currentPlayer->history.push_back(action);
                 i ++;
             }
+            if (s == TURN && i == playerSize - 1)
+            {
+                return 0;
+            }
+            nextPlayer();
         }
-        nextPlayer();
+        s ++;
     }
 }
 

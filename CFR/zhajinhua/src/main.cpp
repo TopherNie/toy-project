@@ -4,6 +4,9 @@
 
 #include <iostream>
 #include <round.h>
+#include <robot.h>
+
+#define ROUND_NUM 20
 
 
 using namespace std;
@@ -22,7 +25,16 @@ int main()
     Round round;
     auto you = new Player;
     round.addPlayer(you);
-    round.preFlop();
-    round.battle();
+    auto robot = new Robot;
+    round.addPlayer(robot);
+
+    for (unsigned int i = 0; i < ROUND_NUM;  i++)
+    {
+        round.preFlop();
+        round.battle();
+        round.settle();
+        round.clear();
+    }
+
 }
 

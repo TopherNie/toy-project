@@ -21,7 +21,8 @@ struct Round
     Player* startPlayer;
     Player* currentPlayer;
     vector<Player*> playerList;
-    vector<string> cards;
+    vector<string> allCards;
+    vector<string> boardCards;
     int lastUserBet;
 
     int addPlayer(Player* player);
@@ -29,9 +30,11 @@ struct Round
     int nextPlayer();
 
     int preFlop();
-    int settle(Player* winner);
+    int settle();
     int battle();
     int clear();
+    vector<Player*> inPlayers();
+    int inPlayerNum();
     
 };
 

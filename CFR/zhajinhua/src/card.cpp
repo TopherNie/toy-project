@@ -40,22 +40,22 @@ void initCards(vector<string> &cardList)
     shuffle(cardList.begin(), cardList.end(), mt19937(random_device()()));
 }
 
-void dealCards(vector<string> &cards, vector<Player *> &players, int street)
+void dealHoleCards(vector<string> &allCards, vector<Player *> &players)
 {
-    // The number of cards dealt to per player.
-    int numPer = 1;
-    if (street == PRE_FLOP)
-    {
-        numPer = 2;
-    }
     for (auto &p: players)
     {
-        for (int i = 0; i < numPer; i++)
+        for (int i = 0; i < HOLE_NUM; i++)
         {
-            p -> cards.push_back(cards.at(cards.size() - 1));
-            cards.pop_back();
+            p->cards.push_back(allCards.at(allCards.size() - 1));
+            allCards.pop_back();
         }
     }
+}
+
+void dealPublicCard(vector<string> &allCards, vector<string> &boardCards)
+{
+    boardCards.push_back(allCards.at(allCards.size() - 1));
+    allCards.pop_back();
 }
 
 int card2Rank(const string &card)
@@ -70,7 +70,7 @@ char card2Suit(const string &card)
 
 void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
 {
-    const int cardSize = cards.size();
+    unsigned int cardSize = cards.size();
     vector<int> cardRanks(cardSize);
     transform(cards.begin(), cards.end(), cardRanks.begin(), card2Rank);
     map<int, int> rankCounts = countVecEle<int>(cardRanks);
@@ -105,7 +105,7 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
     {
         // The map has been sorted by key automatically.
         vector<pair<int, int>> rankPairs(rankCounts.begin(), rankCounts.end());
-        for (int i = 0; i <= rankSize - STD_HAND_NUM; i ++)
+        for (unsigned int i = 0; i <= rankSize - STD_HAND_NUM; i ++)
         {
             int sFirst = rankPairs.at(i).first;
             int sSecond = rankPairs.at(i + 1).first;
@@ -153,34 +153,60 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
 
 }
 
-void compare(const vector<string>& p0Cards, const vector<string>& p1Cards, int &winner, int &type)
+Player* findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards)
 {
-    int p0Type{}, p1Type{};
-    int p0MaxRank{}, p1MaxRank{};
-    analyzeCards(p0Cards, p0Type, p0MaxRank);
-    analyzeCards(p1Cards, p1Type, p1MaxRank);
-    if (p0Type == p1Type)
+    // Initialize it as Draw
+    Player *winner = nullptr;
+    bool isDraw = true;
+    for (auto &p: playerList)
+    {
+        if (!p->isOut)
+        {
+            p->cards.insert(p->cards.end(), boardCards.begin(), boardCards.end());
+            if (winner == nullptr)
+            {
+                winner = p;
+                continue;
+            }
+            Player* tempWinner = compareCards(winner, p);
+            if (tempWinner == nullptr)
+            {
+                // Draw
+                continue;
+            }
+            if (isDraw)
+            {
+                isDraw = false;
+            }
+            if (tempWinner != winner)
+            {
+                winner = tempWinner;
+            }
+        }
+    }
+    return winner;
+}
+
+
+Player* compareCards(Player* p0, Player* p1)
+{
+    int p0MaxRank, p1MaxRank;
+    analyzeCards(p0->cards, p0->cardsType, p0MaxRank);
+    analyzeCards(p1->cards, p1->cardsType, p1MaxRank);
+    if (p0->cardsType == p1->cardsType)
     {
         if (p0MaxRank == p1MaxRank)
         {
             // Draw
-            type = p0Type;
-            winner = 0;
+            return nullptr;
         } else if (p0MaxRank > p1MaxRank){
-            type = p0Type;
-            winner = PLAYER_0;
-        } else{
-            type = p1Type;
-            winner = PLAYER_1;
+            return p0;
         }
-
-    } else if (p0Type > p1Type){
-        type = p0Type;
-        winner = PLAYER_0;
-    } else{
-        type = p1Type;
-        winner = PLAYER_1;
+        return p1;
+    } else if (p0->cardsType > p1->cardsType){
+        return p0;
     }
+    return p1;
 }
 
 

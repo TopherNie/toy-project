@@ -21,7 +21,7 @@
 #define CARD_NUM RANK_NUM * SUIT_NUM
 #define STD_HAND_NUM 3
 #define HAND_NUM 4
-#define PRIVATE_NUM 2
+#define HOLE_NUM 2
 
 #define SINGLE 1
 #define PAIR 2
@@ -39,10 +39,14 @@ extern map<int, string> TYPE_MAP;
 
 void initCards(vector<string> &cardList);
 
-void dealCards(vector<string> &cards, vector<Player *> &players, int street);
+void dealHoleCards(vector<string> &allCards, vector<Player *> &players);
+
+void dealPublicCard(vector<string> &allCards, vector<string> &boardCards);
 
 void analyzeCards(const vector<string>& cards, int &type, int &maxRank);
 
-void compare(const vector<string>& p1Cards, const vector<string>& p2Cards, int &winner, int &type);
+Player* findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards);
+
+Player* compareCards(Player* p0, Player* p1);
 
 #endif //TOY_PROJECT_CARD_H

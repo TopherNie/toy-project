@@ -11,8 +11,8 @@
 #include <tools.h>
 #include <player.h>
 
-const string CARD_SUITS[] = {"s", "h", "c", "d"};
-const string CARD_RANKS[] = {"0", "1", "2", "3", "4", "5", "6"};
+const string CARD_SUITS = "shcd";
+const string CARD_RANKS = "23456789TJQKA";
 
 map<int, string> TYPE_MAP = {
         {SINGLE, "Single"},
@@ -28,11 +28,12 @@ void initCards(vector<string> &cardList)
     if (cardList.size() != CARD_NUM)
     {
         cardList.clear();
-        for (const string& suit: CARD_SUITS)
+        for (char s : CARD_SUITS)
         {
-            for (const auto & r : CARD_RANKS)
+            for (char r : CARD_RANKS)
             {
-                string card = r + suit;
+                string card;
+                card.append(char2String(r)).append(char2String(s));
                 cardList.push_back(card);
             }
         }
@@ -153,38 +154,36 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
 
 }
 
-Player* findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards)
+vector<Player*> findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards)
 {
     // Initialize it as Draw
-    Player *winner = nullptr;
-    bool isDraw = true;
+    vector<Player*> winnerList;
     for (auto &p: playerList)
     {
         if (!p->isOut)
         {
             p->cards.insert(p->cards.end(), boardCards.begin(), boardCards.end());
-            if (winner == nullptr)
+            if (winnerList.empty())
             {
-                winner = p;
+                winnerList.push_back(p);
                 continue;
             }
-            Player* tempWinner = compareCards(winner, p);
+            Player* tempWinner = compareCards(winnerList.at(0), p);
+            // Draw
             if (tempWinner == nullptr)
             {
-                // Draw
+                winnerList.push_back(p);
                 continue;
             }
-            if (isDraw)
+            // New winner
+            if (tempWinner != winnerList.at(0))
             {
-                isDraw = false;
-            }
-            if (tempWinner != winner)
-            {
-                winner = tempWinner;
+                winnerList.clear();
+                winnerList.push_back(p);
             }
         }
     }
-    return winner;
+    return winnerList;
 }
 
 

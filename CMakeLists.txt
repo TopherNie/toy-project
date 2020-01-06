@@ -17,6 +17,7 @@ add_executable(cfr_kuhn CFR/src/cfr_kuhn.cpp)
 add_executable(test_pid main/test_pid.cpp)
 add_executable(py_invoker main/py_invoker.cpp)
 add_executable(zjh CFR/zhajinhua/src/main.cpp)
+add_executable(highlight main/highlight_card.cpp)
 
 add_subdirectory(CFR)
 

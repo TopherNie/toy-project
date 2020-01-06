@@ -51,6 +51,20 @@ vector<pair<K, V>> sortMapByValue(map<K, V> &m, bool reverse)
     return vec;
 }
 
+template <typename T>
+string vecToString(vector<T> vec)
+{
+    string res;
+    if (!vec.empty())
+    {
+        for (auto &ele: vec)
+        {
+            res.append(ele).append("-");
+        }
+        res.erase(res.size() - 1);
+    }
+    return res;
+}
 
 template <typename K, typename V>
 void printMap(const map<K, V> &m)

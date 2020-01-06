@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="toy_project" targetName="zjh_deps" />
-      <config projectName="toy_project" targetName="test_pid" />
-      <config projectName="toy_project" targetName="py_invoker" />
-      <config projectName="toy_project" targetName="lua_invoker" />
-      <config projectName="toy_project" targetName="crf_rsp" />
-      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
-      <config projectName="toy_project" targetName="generate_random" />
-      <config projectName="toy_project" targetName="cfr_kuhn" />
-      <config projectName="toy_project" targetName="crf_rsp_2" />
       <config projectName="toy_project" targetName="zjh" />
+      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
+      <config projectName="toy_project" targetName="lua_invoker" />
+      <config projectName="toy_project" targetName="zjh_deps" />
+      <config projectName="toy_project" targetName="crf_rsp" />
+      <config projectName="toy_project" targetName="test_pid" />
+      <config projectName="toy_project" targetName="cfr_kuhn" />
+      <config projectName="toy_project" targetName="py_invoker" />
+      <config projectName="toy_project" targetName="generate_random" />
+      <config projectName="toy_project" targetName="highlight" />
+      <config projectName="toy_project" targetName="crf_rsp_2" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -21,25 +22,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
+      <change afterPath="$PROJECT_DIR$/main/highlight_card.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/include/tools.h" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/tools.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/template_func.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/template_func.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/tools.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/tools.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/card.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,97 +61,6 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="round.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="151" column="25" lean-forward="true" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
-              <folding>
-                <element signature="e#55#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="207" column="5" lean-forward="true" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
-              <folding>
-                <element signature="e#55#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/card.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="round.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/round.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/player.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-427">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#114#131#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="e#55#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -150,99 +71,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" />
-        <option value="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" />
-        <option value="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" />
-        <option value="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" />
-        <option value="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" />
-        <option value="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="0-zjh_deps" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
   <component name="ProjectId" id="1VMby2iHNiYfmFBzTHYq8igZ5xY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="toy_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="toy-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="toy_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="toy-project" type="462c0819:PsiDirectoryNode" />
-              <item name="CFR" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="toy_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="toy-project" type="462c0819:PsiDirectoryNode" />
-              <item name="CFR" type="462c0819:PsiDirectoryNode" />
-              <item name="zhajinhua" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="toy_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="toy-project" type="462c0819:PsiDirectoryNode" />
-              <item name="CFR" type="462c0819:PsiDirectoryNode" />
-              <item name="zhajinhua" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="toy_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="toy-project" type="462c0819:PsiDirectoryNode" />
-              <item name="CFR" type="462c0819:PsiDirectoryNode" />
-              <item name="zhajinhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\documents\code\toy-project\Common\include" />
+      <recent name="D:\documents\code\toy-project\CFR\texas-20\include" />
+      <recent name="D:\documents\code\toy-project\main" />
+      <recent name="D:\documents\code\toy-project\python\test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\documents\code\toy-project\main" />
       <recent name="D:\documents\code\toy-project\Common\python36\lib" />
       <recent name="D:\documents\code\toy-project\Common\python36\include" />
       <recent name="D:\documents\code\toy-project\Common\include" />
       <recent name="D:\documents\code\toy-project\python\find_largest" />
-      <recent name="D:\documents\code\toy-project\python\test" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\documents\code\toy-project\CFR\texas-20\include" />
-      <recent name="D:\documents\code\toy-project\main" />
-      <recent name="D:\documents\code\toy-project\python\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,18 +108,67 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.zjh">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="cfr_kuhn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="cfr_kuhn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="cfr_kuhn_deps" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="cfr_kuhn_deps" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="crf_rsp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="crf_rsp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="crf_rsp_2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="crf_rsp_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="generate_random" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="generate_random" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="lua_invoker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="lua_invoker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="py_invoker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="py_invoker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="test_pid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_pid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="zjh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="zjh" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" />
-    <configuration name="zjh_deps" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="zjh_deps" CONFIG_NAME="Debug" />
+  <component name="RunManager" selected="CMake Application.zjh">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cfr_kuhn" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="cfr_kuhn" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cfr_kuhn_deps" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="cfr_kuhn_deps" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="crf_rsp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="crf_rsp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="crf_rsp_2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="crf_rsp_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate_random" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="generate_random" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="highlight" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="highlight" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="highlight">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lua_invoker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="lua_invoker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="py_invoker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="py_invoker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_pid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_pid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zjh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="zjh" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zjh_deps" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="zjh_deps" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="hand_evaluator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -286,6 +186,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="hand_highlight" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
@@ -304,6 +207,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="montecarlo_python" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
@@ -322,6 +228,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="test_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
@@ -340,6 +249,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="test_win_card_index" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
@@ -358,19 +270,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.cfr_kuhn" />
-      <item itemvalue="Application.cfr_kuhn_deps" />
-      <item itemvalue="Application.crf_rsp" />
-      <item itemvalue="Application.crf_rsp_2" />
-      <item itemvalue="Application.generate_random" />
-      <item itemvalue="Application.lua_invoker" />
-      <item itemvalue="Application.py_invoker" />
-      <item itemvalue="Application.test_pid" />
-      <item itemvalue="Application.zjh" />
-      <item itemvalue="Application.zjh_deps" />
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.cfr_kuhn" />
+      <item itemvalue="CMake Application.cfr_kuhn_deps" />
+      <item itemvalue="CMake Application.crf_rsp" />
+      <item itemvalue="CMake Application.crf_rsp_2" />
+      <item itemvalue="CMake Application.generate_random" />
+      <item itemvalue="CMake Application.highlight" />
+      <item itemvalue="CMake Application.lua_invoker" />
+      <item itemvalue="CMake Application.py_invoker" />
+      <item itemvalue="CMake Application.test_pid" />
+      <item itemvalue="CMake Application.zjh" />
+      <item itemvalue="CMake Application.zjh_deps" />
       <item itemvalue="Python.hand_evaluator" />
       <item itemvalue="Python.test_list" />
       <item itemvalue="Python.montecarlo_python" />
@@ -386,6 +302,16 @@
         <item itemvalue="Python.test_list" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -423,6 +349,10 @@
       <workItem from="1578030859417" duration="8659000" />
       <workItem from="1578100705029" duration="20003000" />
       <workItem from="1578129296021" duration="2986000" />
+      <workItem from="1578285261310" duration="5087000" />
+      <workItem from="1578293957929" duration="2482000" />
+      <workItem from="1578300208985" duration="8075000" />
+      <workItem from="1578311933098" duration="2502000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>
@@ -455,35 +385,6 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11147000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32857144" />
-      <window_info anchor="bottom" id="CMake" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="LuaCheck" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2952381" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -493,12 +394,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -529,130 +424,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="1" />
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/cfr_zjh.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/cfr_zjh.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/robot.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/cfr_zjh.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/tree.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/round.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding>
-            <element signature="e#55#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/player.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#114#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/include/card.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="207" column="5" lean-forward="true" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
-          <folding>
-            <element signature="e#55#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="151" column="25" lean-forward="true" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
-          <folding>
-            <element signature="e#55#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

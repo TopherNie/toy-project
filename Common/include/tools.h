@@ -9,12 +9,14 @@
 #include <sstream>
 #include <map>
 #include <vector>
-#include <../src/template_func.cpp>
+#include <template_func.cpp>
 
 using namespace std;
 
 int getRandom(int n);
 
 string arrayToStr(double arr[], int size);
+
+string char2String(char c);
 
 #endif //TOY_PROJECT_TOOLS_H

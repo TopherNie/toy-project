@@ -6,7 +6,7 @@
 #include <round.h>
 #include <robot.h>
 
-#define ROUND_NUM 20
+#define ROUND_NUM 1
 
 
 using namespace std;
@@ -24,13 +24,15 @@ int main()
 {
     Round round;
     auto you = new Player;
+    you->name = "You";
     round.addPlayer(you);
     auto robot = new Robot;
+    robot->name = "Robot";
     round.addPlayer(robot);
 
     for (unsigned int i = 0; i < ROUND_NUM;  i++)
     {
-        round.preFlop();
+        round.prepare();
         round.battle();
         round.settle();
         round.clear();

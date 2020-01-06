@@ -38,4 +38,9 @@ string arrayToStr(double arr[], int size)
     }
 }
 
-
+string char2String(char c)
+{
+    ostringstream oStr;
+    oStr << c;
+    return oStr.str();
+}

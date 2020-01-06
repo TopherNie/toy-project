@@ -4,8 +4,15 @@
 
 #include "robot.h"
 
+bool Robot::isRobot()
+{
+    return true;
+}
+
 Action* Robot::play()
 {
-
+    auto action = new Action;
+    action->type = CALL;
+    return action;
 }
 

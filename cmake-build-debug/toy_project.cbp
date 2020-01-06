@@ -8,591 +8,640 @@
 		<Option virtualFolders="CMake Files\;CMake Files\CFR\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="generate_random">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/generate_random.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 generate_random"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="generate_random/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/generate_random.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 generate_random/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lua_invoker">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/lua_invoker.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 lua_invoker"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lua_invoker/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/lua_invoker.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 lua_invoker/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="crf_rsp">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/crf_rsp.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="crf_rsp/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/crf_rsp.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="crf_rsp_2">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/crf_rsp_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp_2"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="crf_rsp_2/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/crf_rsp_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp_2/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="cfr_kuhn">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/cfr_kuhn.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 cfr_kuhn"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="cfr_kuhn/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/cfr_kuhn.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 cfr_kuhn/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test_pid">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/test_pid.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_pid"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test_pid/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/test_pid.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_pid/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="zjh">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/zjh.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 zjh"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="zjh/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/zjh.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 zjh/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="py_invoker">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/py_invoker.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 py_invoker"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="py_invoker/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/py_invoker.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 py_invoker/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="highlight">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/highlight.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 highlight"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="highlight/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/highlight.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 highlight/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="py_invoker">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/py_invoker.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 py_invoker"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="py_invoker/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/py_invoker.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 py_invoker/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lua_invoker">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/lua_invoker.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 lua_invoker"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lua_invoker/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/lua_invoker.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 lua_invoker/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crf_rsp_2">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/crf_rsp_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp_2"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crf_rsp_2/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/crf_rsp_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp_2/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_pid">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/test_pid.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_pid"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_pid/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/test_pid.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_pid/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zjh">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/zjh.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 zjh"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zjh/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/zjh.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 zjh/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate_random">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/generate_random.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 generate_random"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate_random/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/generate_random.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 generate_random/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crf_rsp">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/crf_rsp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crf_rsp/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/crf_rsp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 crf_rsp/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cfr_kuhn">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/cfr_kuhn.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 cfr_kuhn"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cfr_kuhn/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/cfr_kuhn.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 cfr_kuhn/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cfr_kuhn_deps">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/libcfr_kuhn_deps.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR"/>
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libcfr_kuhn_deps.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 cfr_kuhn_deps"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 cfr_kuhn_deps"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cfr_kuhn_deps/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/libcfr_kuhn_deps.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR"/>
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libcfr_kuhn_deps.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 cfr_kuhn_deps/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 cfr_kuhn_deps/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="zjh_deps">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/libzjh_deps.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR"/>
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libzjh_deps.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 zjh_deps"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 zjh_deps"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="zjh_deps/fast">
-				<Option output="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/libzjh_deps.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR"/>
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libzjh_deps.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/Common/python36/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/include"/>
-					<Add directory="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/i686-pc-mingw32"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include/c++/4.8.0/backward"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/../../../../include"/>
-					<Add directory="f:\c\mingw\install\mingw\bin\../lib/gcc/i686-pc-mingw32/4.8.0/include-fixed"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 zjh_deps/fast"/>
-					<CompileFile command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/C/mingw/install/MinGW/bin/make.exe -f &quot;D:/work/ChaosAILab/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 zjh_deps/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/src/cfr_kuhn.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/src/cfr_kuhn.cpp">
 			<Option target="cfr_kuhn"/>
 			<Option target="cfr_kuhn_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/src/cfr_rsp.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/src/cfr_rsp.cpp">
 			<Option target="crf_rsp"/>
 			<Option target="cfr_kuhn_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/src/cfr_rsp_2.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/src/cfr_rsp_2.cpp">
 			<Option target="crf_rsp_2"/>
 			<Option target="cfr_kuhn_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/card.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/card.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/cfr_zjh.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/cfr_zjh.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/main.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/main.cpp">
 			<Option target="zjh"/>
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/player.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/robot.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/zhajinhua/src/round.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/Common/src/template_func.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/Common/src/tools.cpp">
 			<Option target="cfr_kuhn_deps"/>
 			<Option target="zjh_deps"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/Common/src/tools.cpp">
-			<Option target="cfr_kuhn_deps"/>
-			<Option target="zjh_deps"/>
-		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/main/generate_random.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/main/generate_random.cpp">
 			<Option target="generate_random"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/main/lua_invoker.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/main/highlight_card.cpp">
+			<Option target="highlight"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/main/lua_invoker.cpp">
 			<Option target="lua_invoker"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/main/py_invoker.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/main/py_invoker.cpp">
 			<Option target="py_invoker"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/main/test_pid.cpp">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/main/test_pid.cpp">
 			<Option target="test_pid"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CMakeLists.txt">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="D:/work/ChaosAILab/toy-project/CFR/CMakeLists.txt">
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\CFR\"/>
 		</Unit>
 	</Project>

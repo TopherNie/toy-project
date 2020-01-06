@@ -23,16 +23,17 @@ struct Round
     vector<Player*> playerList;
     vector<string> allCards;
     vector<string> boardCards;
-    int lastUserBet;
+    Player* lastPlayer;
+    int lastBet;
 
-    int addPlayer(Player* player);
-    int nextRoundStartPlayer();
-    int nextPlayer();
+    void addPlayer(Player* player);
+    void nextRoundStartPlayer();
+    void nextPlayer();
 
-    int preFlop();
-    int settle();
-    int battle();
-    int clear();
+    void prepare();
+    void settle();
+    void battle();
+    void clear();
     vector<Player*> inPlayers();
     int inPlayerNum();
     

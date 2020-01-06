@@ -32,8 +32,8 @@
 
 using namespace std;
 
-extern const string CARD_SUITS[];
-extern const string CARD_RANKS[];
+extern const string CARD_SUITS;
+extern const string CARD_RANKS;
 
 extern map<int, string> TYPE_MAP;
 
@@ -45,7 +45,7 @@ void dealPublicCard(vector<string> &allCards, vector<string> &boardCards);
 
 void analyzeCards(const vector<string>& cards, int &type, int &maxRank);
 
-Player* findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards);
+vector<Player*>  findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards);
 
 Player* compareCards(Player* p0, Player* p1);
 

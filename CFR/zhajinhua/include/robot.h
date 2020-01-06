@@ -8,8 +8,8 @@
 #include <player.h>
 
 struct Robot: Player{
-    bool isRobot = true;
-    Action* play();
+    bool isRobot() override;
+    Action* play() override;
 };
 
 #endif //TOY_PROJECT_ROBOT_H

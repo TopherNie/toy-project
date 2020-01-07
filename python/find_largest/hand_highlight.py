@@ -158,13 +158,11 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
             r_count = rcount_dict[rank]
             multiple_indexes = [get_card_index(hand, card, i) for i in range(r_count)]
             res += multiple_indexes
-        if len(res) >= 5:
-            break
-    return sorted(res)
+    return sorted(res[:5])
 
 
 if __name__ == "__main__":
-    hand_str = "6s-3d-Ac-7c-7s-Td-7d"
+    hand_str = "Tc-Ks-Kc-5s-6c-4c-Jc"
     result = "ERROR:"
     try:
         result = cal_score_to_hot_encoding_str(hand_str)

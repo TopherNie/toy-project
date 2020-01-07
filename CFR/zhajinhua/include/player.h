@@ -23,7 +23,7 @@ using namespace std;
 struct Action
 {
     string type;
-    int bets;
+    int bets{};
     string toString();
 };
 

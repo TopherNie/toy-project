@@ -11,8 +11,8 @@
 #include <tools.h>
 #include <player.h>
 
-const string CARD_SUITS = "shcd";
-const string CARD_RANKS = "23456789TJQKA";
+const string CARD_SUITS = "shc";
+const string CARD_RANKS = "0123456";
 
 map<int, string> TYPE_MAP = {
         {SINGLE, "Single"},
@@ -105,13 +105,13 @@ void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
     if (rankSize >= 3)
     {
         // The map has been sorted by key automatically.
-        vector<pair<int, int>> rankPairs(rankCounts.begin(), rankCounts.end());
+        vector<pair<int, int>> rankPairs(rankCounts.rbegin(), rankCounts.rend());
         for (unsigned int i = 0; i <= rankSize - STD_HAND_NUM; i ++)
         {
             int sFirst = rankPairs.at(i).first;
             int sSecond = rankPairs.at(i + 1).first;
             int sThird = rankPairs.at(i + 2).first;
-            if (sFirst + 1 == sSecond && sSecond + 1 == sThird)
+            if (sFirst - 1 == sSecond && sSecond - 1 == sThird)
             {
                 straight = true;
                 maxRank = sThird;

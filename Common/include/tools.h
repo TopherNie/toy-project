@@ -19,4 +19,6 @@ string arrayToStr(double arr[], int size);
 
 string char2String(char c);
 
+string vecToString(const vector<string>& vec);
+
 #endif //TOY_PROJECT_TOOLS_H

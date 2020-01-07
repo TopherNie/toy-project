@@ -44,3 +44,17 @@ string char2String(char c)
     oStr << c;
     return oStr.str();
 }
+
+string vecToString(const vector<string>& vec)
+{
+    string res;
+    if (!vec.empty())
+    {
+        for (auto &str: vec)
+        {
+            res.append(str).append("-");
+        }
+        res.erase(res.size() - 1);
+    }
+    return res;
+}

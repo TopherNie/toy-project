@@ -111,7 +111,8 @@ void Round::battle()
                 // Information board for human player
                 if (!currentPlayer->isRobot())
                 {
-                    cout << "Your hole cards: " << vecToString(currentPlayer->cards) << " || Board: " << vecToString(boardCards)  << " || Round last bet: " << lastBet << endl;
+                    cout << "Your hole cards: " << vecToString(currentPlayer->cards) << " || Board: " << vecToString(boardCards)
+                            << " || Pot: " << pot << " || Round last bet: " << lastBet << endl;
                     cout << "Last player: " << lastPlayer->name << ". His/Her action: " << lastPlayer->getLastAction()->toString() << endl;
                 }
                 Action* action = currentPlayer->play();
@@ -133,6 +134,7 @@ void Round::battle()
                     continue;
                 }
                 currentPlayer->history.push_back(action);
+                pot += action->bets;
                 cout << currentPlayer->name << "'s action: " << action->toString() << endl;
                 cout << "=================================================================" << endl;
                 i ++;

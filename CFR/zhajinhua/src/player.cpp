@@ -50,7 +50,10 @@ Action* Player::play()
     action->type = type;
     if (type == RAISE)
     {
-        action->bets = actionStr[1] - '0';
+        if (actionStr.length() == 2)
+        {
+            action->bets = actionStr[1] - '0';
+        }
     }
     return action;
 }

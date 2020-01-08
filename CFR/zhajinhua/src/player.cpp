@@ -5,9 +5,13 @@
 #include <iostream>
 #include <player.h>
 #include <string>
+#include <algorithm>
+#include <cmath>
+#include <tools.h>
 
 using namespace std;
 
+const array<double, 3> BET_RATE = {0.5, 1.0, 1.5};
 
 string Action::toString()
 {
@@ -34,15 +38,12 @@ int Player::getRoundBets()
     return res;
 }
 
-Action* Player::getLastAction()
+Action* Player::play(Node* node)
 {
-    return history.at(history.size() - 1);
-}
-
-Action* Player::play()
-{
+    const array<int, 3> betSizes{0};
+    transform(BET_RATE.begin(), BET_RATE.end(), betSizes.begin(), [node](double x) { return round(x * node->pot);});
+    cout << "Please input your action: " << "( Raise bets: " << arrayToString(betSizes, "|") << " )";
     string actionStr;
-    cout << "Please input your action: ";
     cin >> actionStr;
     auto* action = new Action;
     string type;
@@ -52,7 +53,13 @@ Action* Player::play()
     {
         if (actionStr.length() == 2)
         {
-            action->bets = actionStr[1] - '0';
+            int bets = actionStr[1] - '0';
+            if (find(betSizes.begin(), betSizes.end(), bets) == betSizes.end())
+            {
+                cout << "The bet size should be one of the options provided above!" << endl;
+                bets = 0;
+            }
+            action->bets = bets;
         }
     }
     return action;

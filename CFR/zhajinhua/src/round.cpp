@@ -49,7 +49,6 @@ void Round::addPlayer(Player * player)
 
 void Round::nextPlayer()
 {
-    lastPlayer = currentPlayer;
     do{
         currentPlayer = playerList.at((currentPlayer->id + 1) % playerList.size());
     }while (currentPlayer->isOut);
@@ -63,6 +62,7 @@ void Round::nextRoundStartPlayer()
 
 void Round::prepare()
 {
+    cout << "Round " << serial << " begins!" << endl;
     initCards(allCards);
 
     dealHoleCards(allCards, playerList);
@@ -77,6 +77,7 @@ void Round::prepare()
     auto* sbAction = new Action;
     sbAction->type = SMALL_BLIND;
     sbAction->bets = BASIC_BET;
+    pot += sbAction->bets;
     currentPlayer->history.push_back(sbAction);
     nextPlayer();
 
@@ -85,11 +86,17 @@ void Round::prepare()
     bbAction->type = BIG_BLIND;
     int bbBets = BASIC_BET * 2;
     bbAction->bets = bbBets;
+    pot += bbAction->bets;
     lastBet = bbBets;
     currentPlayer->history.push_back(bbAction);
     nextPlayer();
 }
 
+Node* Round::buildNode()
+{
+    Node* node = new Node;
+    node->board = boardCards;
+}
 
 void Round::battle()
 {
@@ -113,7 +120,6 @@ void Round::battle()
                 {
                     cout << "Your hole cards: " << vecToString(currentPlayer->cards) << " || Board: " << vecToString(boardCards)
                             << " || Pot: " << pot << " || Round last bet: " << lastBet << endl;
-                    cout << "Last player: " << lastPlayer->name << ". His/Her action: " << lastPlayer->getLastAction()->toString() << endl;
                 }
                 Action* action = currentPlayer->play();
                 if (action->type == FOLD)
@@ -125,7 +131,7 @@ void Round::battle()
                     }
                 } else if (action->type == CHECK){
                     // Nothing to do
-                } else if (action->type == CALL){
+                } else if (action->type == CALL && action->bets > 0){
                     action->bets = lastBet;
                 } else if (action->type == RAISE){
                     lastBet = action->bets;
@@ -136,14 +142,15 @@ void Round::battle()
                 currentPlayer->history.push_back(action);
                 pot += action->bets;
                 cout << currentPlayer->name << "'s action: " << action->toString() << endl;
-                cout << "=================================================================" << endl;
-                i ++;
+                cout << "--------------------------------------------------------------------" << endl;
+
             }
+            nextPlayer();
             if (s == TURN && i == playerSize - 1)
             {
                 return;
             }
-            nextPlayer();
+            i ++;
         }
         s ++;
     }
@@ -175,11 +182,21 @@ void Round::settle()
             cout << p->name << "(" << TYPE_MAP[p->cardsType] << " | " << vecToString(p->cards) << " | -" << loseChips << " Chips" << "); ";
         }
     }
+    if (winBets == 0)
+    {
+        cout << "None";
+    }
     cout << endl;
 
     unsigned int winnerCount = winnerList.size();
     unsigned int winBetsPerWinner = winBets / winnerCount;
-    cout << "Winners: ";
+
+    if (winBets == 0)
+    {
+        cout << "Draw: ";
+    } else{
+        cout << "Winners: ";
+    }
     for (auto &winner: winnerList)
     {
         // Win chips
@@ -191,5 +208,24 @@ void Round::settle()
 
 void Round::clear()
 {
-
+    pot = 0;
+    boardCards.clear();
+    for (auto &p: playerList)
+    {
+        p->cards.clear();
+        p->cardsType = SINGLE;
+        p->cardTypeIndexes.clear();
+        p->isOut = false;
+        int actionCount = p->history.size();
+        for (int i = 0; i < actionCount; i ++)
+        {
+            delete(p->history.at(i));
+        }
+        p->history.clear();
+    }
+    nextRoundStartPlayer();
+    cout << "Round " << serial << " finish!" << endl;
+    cout << "======================================================" << endl;
+    cout << "======================================================" << endl;
+    serial ++;
 }

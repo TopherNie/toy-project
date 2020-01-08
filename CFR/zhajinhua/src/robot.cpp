@@ -9,7 +9,7 @@ bool Robot::isRobot()
     return true;
 }
 
-Action* Robot::play()
+Action* Robot::play(Node* node)
 {
     auto action = new Action;
     action->type = CALL;

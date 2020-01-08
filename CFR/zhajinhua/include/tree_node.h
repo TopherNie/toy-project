@@ -23,9 +23,5 @@ struct Node
     double** strategy;
 };
 
-struct Tree
-{
-    Node* root;
-};
 
 #endif //TOY_PROJECT_TREE_H

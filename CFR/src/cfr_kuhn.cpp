@@ -41,7 +41,7 @@ double* Node::getStrategy(double realizationWeight)
         }
         strategySum[a] += realizationWeight * strategy[a];
     }
-//    cout << arrayToStr(strategy, NUM_ACTIONS) << endl;
+//    cout << oriArrToStr(strategy, NUM_ACTIONS) << endl;
     return strategy;
 }
 
@@ -69,7 +69,7 @@ double* Node::getAverageStrategy()
 string Node::toString() {
     ostringstream oStr;
     oStr.str("");
-    oStr << infoSet << " " << arrayToStr(getAverageStrategy(), NUM_ACTIONS);
+    oStr << infoSet << " " << oriArrToStr(getAverageStrategy(), NUM_ACTIONS);
     return oStr.str();
 }
 
@@ -161,7 +161,7 @@ void train(int iterations)
         util += cfr(cards, "", 1, 1);
 //        for (auto & entry: nodeMap)
 //        {
-//            cout << entry.first << ": " << arrayToStr(entry.second -> strategy, NUM_ACTIONS) << endl;
+//            cout << entry.first << ": " << oriArrToStr(entry.second -> strategy, NUM_ACTIONS) << endl;
 //        }
 //        cout << "========================================================================" << endl;
     }

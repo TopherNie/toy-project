@@ -16,13 +16,6 @@
 
 #define BASIC_BET 1
 
-#define RANK_NUM 10
-#define SUIT_NUM 3
-#define CARD_NUM RANK_NUM * SUIT_NUM
-#define STD_HAND_NUM 3
-#define HAND_NUM 4
-#define HOLE_NUM 2
-
 #define SINGLE 1
 #define PAIR 2
 #define STRAIGHT 3
@@ -34,6 +27,7 @@ using namespace std;
 
 extern const string CARD_SUITS;
 extern const string CARD_RANKS;
+extern const unsigned long CARD_NUM;
 
 extern map<int, string> TYPE_MAP;
 
@@ -43,7 +37,7 @@ void dealHoleCards(vector<string> &allCards, vector<Player *> &players);
 
 void dealPublicCard(vector<string> &allCards, vector<string> &boardCards);
 
-void analyzeCards(const vector<string>& cards, int &type, int &maxRank);
+void analyzeCards(const vector<string>& cards, int &type, int &maxRank, vector<int> &winCardIndexes);
 
 vector<Player*>  findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards);
 

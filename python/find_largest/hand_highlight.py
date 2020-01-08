@@ -53,7 +53,7 @@ def calc_score(hand):
         score = (4,)
         # sorted_card_ranks = sorted(card_ranks, reverse=True)  # avoid for example 11,8,9
         # card_ranks = (sorted_card_ranks[0], sorted_card_ranks[1])
-        card_ranks = (card_ranks[0], card_ranks[1])
+        # card_ranks = (card_ranks[0], card_ranks[1])
     elif len(score) >= 5:  # high card, flush, straight and straight flush
         # straight
         if 12 in card_ranks:  # adjust if 5 high straight
@@ -156,13 +156,20 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
             res.append(get_card_index(hand, card, 0))
         else:
             r_count = rcount_dict[rank]
-            multiple_indexes = [get_card_index(hand, card, i) for i in range(r_count)]
+            multiple_indexes = [get_card_index(hand, card, j) for j in range(r_count)]
             res += multiple_indexes
+            # Special case: Four of a kind
+            if len(multiple_indexes) == 4:
+                sorted_ranks = sorted(card_ranks, reverse=True)
+                new_sorted_ranks = filter(lambda x: x != rank, sorted_ranks)
+                second_highest_index = get_card_index(hand, CARD_RANKS_ORIGINAL[list(new_sorted_ranks)[0]], 0)
+                res.append(second_highest_index)
+                break
     return sorted(res[:5])
 
 
 if __name__ == "__main__":
-    hand_str = "Tc-Ks-Kc-5s-6c-4c-Jc"
+    hand_str = "2c-Ks-Kc-Ks-Th-Kd"
     result = "ERROR:"
     try:
         result = cal_score_to_hot_encoding_str(hand_str)

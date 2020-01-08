@@ -18,7 +18,7 @@ int getRandom(int n)
     return u(e);
 }
 
-string arrayToStr(double arr[], int size)
+string oriArrToStr(double *arr, int size)
 {
     string res;
     ostringstream oStr;
@@ -45,16 +45,30 @@ string char2String(char c)
     return oStr.str();
 }
 
-string vecToString(const vector<string>& vec)
-{
+string vecToString(const vector<int> &vec, const string& separator) {
     string res;
-    if (!vec.empty())
-    {
-        for (auto &str: vec)
-        {
-            res.append(str).append("-");
+    if (!vec.empty()) {
+        for (auto &ele: vec) {
+            res.append(to_string(ele)).append(separator);
         }
         res.erase(res.size() - 1);
     }
     return res;
 }
+
+string vecToString(const vector<string>& vec, const string& separator)
+{
+    string res;
+    if (!vec.empty())
+    {
+        for (auto &ele: vec)
+        {
+            res.append(ele).append(separator);
+        }
+        res.erase(res.size() - 1);
+    }
+    return res;
+}
+
+
+

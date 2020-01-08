@@ -38,9 +38,8 @@ struct CmpByValue {
     }
 };
 
-
 template <typename K, typename V>
-vector<pair<K, V>> sortMapByValue(map<K, V> &m, bool reverse)
+vector<pair<K, V>> sortMapByValue(const map<K, V> &m, bool reverse)
 {
     vector<pair<K, V>> vec(m.begin(), m.end());
     if (reverse){
@@ -51,6 +50,17 @@ vector<pair<K, V>> sortMapByValue(map<K, V> &m, bool reverse)
     return vec;
 }
 
+template <unsigned long N>
+string arrayToString(const array<int, N> &arr, const string& separator) {
+    string res;
+    if (!arr.empty()) {
+        for (auto &ele: arr) {
+            res.append(to_string(ele)).append(separator);
+        }
+        res.erase(res.size() - 1);
+    }
+    return res;
+}
 
 template <typename K, typename V>
 void printMap(const map<K, V> &m)

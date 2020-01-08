@@ -4,6 +4,7 @@
 
 #include <random>
 #include <vector>
+#include <set>
 #include <map>
 #include <algorithm>
 
@@ -11,8 +12,9 @@
 #include <tools.h>
 #include <player.h>
 
-const string CARD_SUITS = "shc";
-const string CARD_RANKS = "0123456";
+const string CARD_SUITS = "shcd";
+const string CARD_RANKS = "01234567";
+const unsigned long CARD_NUM = CARD_SUITS.size() * CARD_RANKS.size();
 
 map<int, string> TYPE_MAP = {
         {SINGLE, "Single"},
@@ -69,90 +71,234 @@ char card2Suit(const string &card)
     return card[1];
 }
 
-void analyzeCards(const vector<string>& cards, int &type, int &maxRank)
+int getCountFromPairs(const vector<pair<int, int>> &rankCounts, const int rank)
+{
+    for (auto &rc: rankCounts)
+    {
+        if (rc.first == rank)
+        {
+            return rc.second;
+        }
+    }
+    return 0;
+}
+
+vector<int> getRanksOfSuit(const vector<string> &cards, char suit)
+{
+    vector<int> ranksOfSuit;
+    for (auto &c: cards)
+    {
+        if (card2Suit(c) == suit)
+        {
+            ranksOfSuit.push_back(card2Rank(c));
+        }
+    }
+    return ranksOfSuit;
+}
+
+int getCardIndex(const vector<string>& cards, const string &findCard, int i)
+{
+    int count = 0;
+    int len = cards.size();
+    for (int j = 0; j < len; j ++)
+    {
+        string card = cards.at(j);
+        if (card.find(findCard) != string::npos)
+        {
+            if (count == i)
+            {
+                return j;
+            }
+            count ++;
+        }
+    }
+    return -1;
+}
+
+// For all types except Straight and Straight-flush.
+void setWinCardIndexes(const vector<string>& cards, const vector<int> &rSortedCardRanks,
+                       const vector<pair<int, int>> &sortedRankCounts, char flushSuit, vector<int> &winCardIndexes)
+{
+    int rankSize;
+    string card;
+    int cardIndex;
+    if (flushSuit)
+    {
+        rankSize = rSortedCardRanks.size();
+        for (int i = 0; i < rankSize && winCardIndexes.size() < STD_HAND_NUM; i ++)
+        {
+            card = char2String(CARD_RANKS[rSortedCardRanks.at(i)]);
+            card.append(char2String(flushSuit));
+            cardIndex = getCardIndex(cards, card, 0);
+            if (cardIndex != -1)
+            {
+                winCardIndexes.push_back(cardIndex);
+            }
+        }
+    } else{
+        rankSize = sortedRankCounts.size();
+        for (int i = 0; i < rankSize; i ++)
+        {
+            int r = sortedRankCounts.at(i).first;
+            card = char2String(CARD_RANKS[r]);
+            int rCount = getCountFromPairs(sortedRankCounts, r);
+            for (int j = 0; j < rCount && winCardIndexes.size() < STD_HAND_NUM; j ++)
+            {
+                cardIndex = getCardIndex(cards, card, j);
+                if (cardIndex != -1)
+                {
+                    winCardIndexes.push_back(cardIndex);
+                }
+            }
+            // Special case: Four of a kind
+            if (i == 0 && winCardIndexes.size() == STD_HAND_NUM - 1)
+            {
+                int rSortedRankSize = rSortedCardRanks.size();
+                for (int j = 0; j < rSortedRankSize; j ++)
+                {
+                    if (rSortedCardRanks.at(j) != r)
+                    {
+                        cardIndex = getCardIndex(cards, char2String(CARD_RANKS[rSortedCardRanks.at(j)]), 0);
+                        if (cardIndex != -1)
+                        {
+                            winCardIndexes.push_back(cardIndex);
+                        }
+                        return;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// For Straight and Straight-flush
+void analyzeStraight(const vector<string> &cards, const vector<int> &rSortedCardRanks, char flushSuit, bool &result, int &maxRank, vector<int> &winCardIndexes)
+{
+    int rankSize = rSortedCardRanks.size();
+    if (rankSize >= STD_HAND_NUM)
+    {
+        vector<int> new_rSortedCardRanks;
+        new_rSortedCardRanks.insert(new_rSortedCardRanks.end(), rSortedCardRanks.begin(), rSortedCardRanks.end());
+        for (unsigned int i = 0; i <= rankSize - STD_HAND_NUM; i ++)
+        {
+            unsigned int j = i;
+            while(j < i + STD_HAND_NUM - 1)
+            {
+                if (new_rSortedCardRanks.at(j) - 1 != new_rSortedCardRanks.at(j + 1))
+                {
+                    break;
+                }
+                j ++;
+            }
+            if (j == i + STD_HAND_NUM - 1)
+            {
+                string card;
+                int cardIndex;
+                int rank;
+                for (unsigned int k = i; k < i + STD_HAND_NUM; k ++)
+                {
+                    rank = new_rSortedCardRanks.at(k);
+                    card = char2String(CARD_RANKS[rank]);
+                    if (flushSuit)
+                    {
+                        card.append(char2String(flushSuit));
+                    }
+                    cardIndex = getCardIndex(cards, card, 0);
+                    if (cardIndex != -1)
+                    {
+                        winCardIndexes.push_back(cardIndex);
+                    }
+                }
+                result = true;
+                break;
+            }
+        }
+    }
+}
+
+
+void analyzeCards(const vector<string>& cards, int &type, int &maxRank, vector<int> &winCardIndexes)
 {
     unsigned int cardSize = cards.size();
     vector<int> cardRanks(cardSize);
     transform(cards.begin(), cards.end(), cardRanks.begin(), card2Rank);
+
     map<int, int> rankCounts = countVecEle<int>(cardRanks);
-//    printMap(rankCounts);
-    vector<pair<int, int>> sortedRankCounts =  sortMapByValue(rankCounts, true);
-//    printPairVector(sortedCounts);
-    const pair<int, int> maxCardCount = sortedRankCounts.at(0);
-    maxRank = maxCardCount.first;
+    vector<pair<int, int>> rSortedRankCounts = sortMapByValue(rankCounts, true);
+
+    // Unique
+    set<int> cardRankSet(cardRanks.begin(), cardRanks.end());
+    // Reverse the order
+    vector<int> rSortedCardRanks(cardRankSet.rbegin(), cardRankSet.rend());
 
     // Leopard
-    if (maxCardCount.second >= 3)
+    if (rSortedRankCounts.at(0).second == STD_HAND_NUM)
     {
         type = LEOPARD;
+        maxRank = rSortedRankCounts.at(0).first;
+        setWinCardIndexes(cards, rSortedCardRanks, rSortedRankCounts, false, winCardIndexes);
         return;
     }
 
+    char flushSuit = 0;
+    bool straight = false;
+
     // Flush
-    bool flush = false;
     vector<char> cardSuits(cardSize);
     transform(cards.begin(), cards.end(), cardSuits.begin(), card2Suit);
     map<char, int> suitCounts = countVecEle<char>(cardSuits);
     vector<pair<char, int>> sortedSuitCounts =  sortMapByValue(suitCounts, true);
-    if (sortedSuitCounts.at(0).second >= 3)
+    if (sortedSuitCounts.at(0).second >= STD_HAND_NUM)
     {
-        flush = true;
+        flushSuit = sortedSuitCounts.at(0).first;
     }
 
-    // Straight
-    bool straight = false;
-    int rankSize = rankCounts.size();
-    if (rankSize >= 3)
+
+    if (flushSuit)
     {
-        // The map has been sorted by key automatically.
-        vector<pair<int, int>> rankPairs(rankCounts.rbegin(), rankCounts.rend());
-        for (unsigned int i = 0; i <= rankSize - STD_HAND_NUM; i ++)
+        vector<int> ranksOfSuit = getRanksOfSuit(cards, flushSuit);
+        sort(ranksOfSuit.rbegin(), ranksOfSuit.rend());
+        // Straight flush
+        analyzeStraight(cards, ranksOfSuit, flushSuit, straight, maxRank, winCardIndexes);
+        if (straight)
         {
-            int sFirst = rankPairs.at(i).first;
-            int sSecond = rankPairs.at(i + 1).first;
-            int sThird = rankPairs.at(i + 2).first;
-            if (sFirst - 1 == sSecond && sSecond - 1 == sThird)
-            {
-                straight = true;
-                maxRank = sThird;
-                break;
-            }
-
+            type = FLUSH_STRAIGHT;
+            return;
         }
-    }
 
-    //Flush-straight
-    if (straight && flush)
-    {
-        type = FLUSH_STRAIGHT;
-        return;
-    }
-
-    // Only flush
-    if (!straight && flush)
-    {
+        // Only flush
         type = FLUSH;
+        maxRank = ranksOfSuit.at(0);
+        setWinCardIndexes(cards, ranksOfSuit, rSortedRankCounts, flushSuit, winCardIndexes);
         return;
     }
 
     // Only straight
-    if (straight && !flush)
+    analyzeStraight(cards, rSortedCardRanks, 0, straight,  maxRank, winCardIndexes);
+    if (straight)
     {
         type = STRAIGHT;
         return;
     }
 
+    // Other types
+    setWinCardIndexes(cards, rSortedCardRanks, rSortedRankCounts, false, winCardIndexes);
+
+
     // Pair
-    if (maxCardCount.second == 2)
+    if (rSortedRankCounts.at(0).second == 2)
     {
         type = PAIR;
+        maxRank = rSortedRankCounts.at(0).first;
         return;
     }
 
     // Single
     type = SINGLE;
-
+    maxRank = rSortedCardRanks.at(0);
 }
+
+
 
 vector<Player*> findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards)
 {
@@ -190,8 +336,8 @@ vector<Player*> findWinnerByCard(const vector<Player*> &playerList, vector<strin
 Player* compareCards(Player* p0, Player* p1)
 {
     int p0MaxRank, p1MaxRank;
-    analyzeCards(p0->cards, p0->cardsType, p0MaxRank);
-    analyzeCards(p1->cards, p1->cardsType, p1MaxRank);
+    analyzeCards(p0->cards, p0->cardsType, p0MaxRank, p0->cardTypeIndexes);
+    analyzeCards(p1->cards, p1->cardsType, p1MaxRank, p1->cardTypeIndexes);
     if (p0->cardsType == p1->cardsType)
     {
         if (p0MaxRank == p1MaxRank)

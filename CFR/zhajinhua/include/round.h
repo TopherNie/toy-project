@@ -13,18 +13,18 @@
 
 using namespace std;
 
+
+
 struct Round
 {
-    int serial;
-    int pot;
-    int currentStreet;
+    int serial{};
+    int pot{};
     Player* startPlayer;
     Player* currentPlayer;
     vector<Player*> playerList;
     vector<string> allCards;
     vector<string> boardCards;
-    Player* lastPlayer;
-    int lastBet;
+    int lastBet{};
 
     void addPlayer(Player* player);
     void nextRoundStartPlayer();
@@ -36,6 +36,8 @@ struct Round
     void clear();
     vector<Player*> inPlayers();
     int inPlayerNum();
+
+    Node* buildNode();
     
 };
 

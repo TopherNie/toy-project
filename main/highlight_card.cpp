@@ -83,7 +83,7 @@ struct CmpByValue {
 
 
 template <typename K, typename V>
-vector<pair<K, V>> sortMapByValue(map<K, V> &m, bool reverse)
+vector<pair<K, V>> sortMapByValue(const map<K, V> &m, bool reverse)
 {
     vector<pair<K, V>> vec(m.begin(), m.end());
     if (reverse){
@@ -105,10 +105,13 @@ string vecToString(const vector<int> &vec) {
     return res;
 }
 
-string vecToString(const vector<string> &vec) {
+string vecToString(const vector<string>& vec)
+{
     string res;
-    if (!vec.empty()) {
-        for (auto &ele: vec) {
+    if (!vec.empty())
+    {
+        for (auto &ele: vec)
+        {
             res.append(ele).append("-");
         }
         res.erase(res.size() - 1);
@@ -136,7 +139,7 @@ int getCardIndex(const vector<string>& cards, const string &findCard, int i)
     return -1;
 }
 
-int getCountFromPairs(vector<pair<int, int>> &rankCounts, const int rank)
+int getCountFromPairs(const vector<pair<int, int>> &rankCounts, const int rank)
 {
     for (auto &rc: rankCounts)
     {
@@ -169,9 +172,9 @@ void hotEncoding(const vector<int>& indexes, vector<int> &encodingIndexes)
     }
 }
 
-
-void setWinCardIndexes(const vector<string>& cards, vector<int> &rSortedCardRanks,
-                           vector<pair<int, int>> &sortedRankCounts, char flushSuit, vector<int> &winCardIndexes)
+// For all types except Straight and Straight-flush.
+void setWinCardIndexes(const vector<string>& cards, const vector<int> &rSortedCardRanks,
+                       const vector<pair<int, int>> &rSortedRankCounts, char flushSuit, vector<int> &winCardIndexes)
 {
     int rankSize;
     string card;
@@ -190,12 +193,12 @@ void setWinCardIndexes(const vector<string>& cards, vector<int> &rSortedCardRank
             }
         }
     } else{
-        rankSize = sortedRankCounts.size();
+        rankSize = rSortedRankCounts.size();
         for (int i = 0; i < rankSize; i ++)
         {
-            int r = sortedRankCounts.at(i).first;
+            int r = rSortedRankCounts.at(i).first;
             card = char2String(CARD_RANKS[r]);
-            int rCount = getCountFromPairs(sortedRankCounts, r);
+            int rCount = getCountFromPairs(rSortedRankCounts, r);
             for (int j = 0; j < rCount && winCardIndexes.size() < STD_HAND_NUM; j ++)
             {
                 cardIndex = getCardIndex(cards, card, j);
@@ -225,7 +228,7 @@ void setWinCardIndexes(const vector<string>& cards, vector<int> &rSortedCardRank
     }
 }
 
-
+// For Straight and Straight-flush
 void analyzeStraight(const vector<string> &cards, const vector<int> &rSortedCardRanks, char flushSuit, bool &result, vector<int> &winCardIndexes)
 {
     int rankSize = rSortedCardRanks.size();
@@ -253,7 +256,6 @@ void analyzeStraight(const vector<string> &cards, const vector<int> &rSortedCard
             if (j == i + STD_HAND_NUM - 1)
             {
                 string card;
-                vector<int> tempIndexes;
                 int cardIndex;
                 int rank;
                 for (unsigned int k = i; k < i + STD_HAND_NUM; k ++)
@@ -272,15 +274,11 @@ void analyzeStraight(const vector<string> &cards, const vector<int> &rSortedCard
                     cardIndex = getCardIndex(cards, card, 0);
                     if (cardIndex != -1)
                     {
-                        tempIndexes.push_back(cardIndex);
+                        winCardIndexes.push_back(cardIndex);
                     }
                 }
-                if (tempIndexes.size() == STD_HAND_NUM)
-                {
-                    result = true;
-                    winCardIndexes.insert(winCardIndexes.begin(), tempIndexes.begin(), tempIndexes.end());
-                    break;
-                }
+                result = true;
+                break;
             }
         }
     }
@@ -294,7 +292,7 @@ void analyzeCards(const vector<string>& cards, int &type, vector<int> &winCardIn
     transform(cards.begin(), cards.end(), cardRanks.begin(), card2Rank);
 
     map<int, int> rankCounts = countVecEle<int>(cardRanks);
-    vector<pair<int, int>> sortedRankCounts = sortMapByValue(rankCounts, true);
+    vector<pair<int, int>> rSortedRankCounts = sortMapByValue(rankCounts, true);
 
     // Unique
     set<int> cardRankSet(cardRanks.begin(), cardRanks.end());
@@ -302,18 +300,18 @@ void analyzeCards(const vector<string>& cards, int &type, vector<int> &winCardIn
     vector<int> rSortedCardRanks(cardRankSet.rbegin(), cardRankSet.rend());
 
     // Four of a kind
-    if (sortedRankCounts.at(0).second == 4)
+    if (rSortedRankCounts.at(0).second == 4)
     {
         type = FOUR_OF_A_KIND;
-        setWinCardIndexes(cards, rSortedCardRanks, sortedRankCounts, false, winCardIndexes);
+        setWinCardIndexes(cards, rSortedCardRanks, rSortedRankCounts, false, winCardIndexes);
         return;
     }
 
     // Full house
-    if (sortedRankCounts.at(0).second == 3 && sortedRankCounts.size() > 1 && sortedRankCounts.at(1).second >= 2)
+    if (rSortedRankCounts.at(0).second == 3 && rSortedRankCounts.size() > 1 && rSortedRankCounts.at(1).second >= 2)
     {
         type = FULL_HOUSE;
-        setWinCardIndexes(cards, rSortedCardRanks, sortedRankCounts, false, winCardIndexes);
+        setWinCardIndexes(cards, rSortedCardRanks, rSortedRankCounts, false, winCardIndexes);
         return;
     }
 
@@ -330,23 +328,22 @@ void analyzeCards(const vector<string>& cards, int &type, vector<int> &winCardIn
         flushSuit = sortedSuitCounts.at(0).first;
     }
 
-    // Straight flush
+
     if (flushSuit)
     {
+        // Straight flush
         vector<int> ranksOfSuit = getRanksOfSuit(cards, flushSuit);
-        analyzeStraight(cards, rSortedCardRanks, flushSuit, straight, winCardIndexes);
+        sort(ranksOfSuit.rbegin(), ranksOfSuit.rend());
+        analyzeStraight(cards, ranksOfSuit, flushSuit, straight, winCardIndexes);
         if (straight)
         {
             type = STRAIGHT_FLUSH;
             return;
         }
-    }
 
-    // Only flush
-    if (flushSuit)
-    {
+        // Only flush
         type = FLUSH;
-        setWinCardIndexes(cards, rSortedCardRanks, sortedRankCounts, flushSuit, winCardIndexes);
+        setWinCardIndexes(cards, ranksOfSuit, rSortedRankCounts, flushSuit, winCardIndexes);
         return;
     }
 
@@ -359,24 +356,24 @@ void analyzeCards(const vector<string>& cards, int &type, vector<int> &winCardIn
     }
 
     // Other types
-    setWinCardIndexes(cards, rSortedCardRanks, sortedRankCounts, false, winCardIndexes);
+    setWinCardIndexes(cards, rSortedCardRanks, rSortedRankCounts, false, winCardIndexes);
 
     // Three of a kind
-    if (sortedRankCounts.at(0).second >= 3)
+    if (rSortedRankCounts.at(0).second >= 3)
     {
         type = THREE_OF_A_KIND;
         return;
     }
 
     // Two Pair
-    if (sortedRankCounts.at(0).second == 2 && sortedRankCounts.size() > 1 && sortedRankCounts.at(1).second == 2)
+    if (rSortedRankCounts.at(0).second == 2 && rSortedRankCounts.size() > 1 && rSortedRankCounts.at(1).second == 2)
     {
         type = TWO_PAIR;
         return;
     }
 
     // Pair
-    if (sortedRankCounts.at(0).second == 2)
+    if (rSortedRankCounts.at(0).second == 2)
     {
         type = PAIR;
         return;
@@ -386,15 +383,24 @@ void analyzeCards(const vector<string>& cards, int &type, vector<int> &winCardIn
     type = HIGH_CARD;
 }
 
-int main()
+void hotEncodingWinCardIndexes(const vector<string> &cards, int& type, vector<int> &winCardEncoding)
 {
-    vector<string> cards{"5c", "Ks", "3c", "Ac", "4c", "6h", "2c"};
-    int type{};
     vector<int> winCardIndexes;
-    vector<int> winCardEncoding(cards.size());
     analyzeCards(cards, type, winCardIndexes);
     hotEncoding(winCardIndexes, winCardEncoding);
-    cout << "Cards: " << vecToString(cards) << endl;
-    cout << TYPE_MAP[type] << " " << vecToString(winCardEncoding) << endl;
+}
+
+int main()
+{
+    const int ITE_NUM = 1;
+    for (int i = 0; i < ITE_NUM; i ++)
+    {
+        vector<string> cards{"5c", "Ts", "Js", "9s", "8s", "Qh", "7h"};
+        int type{};
+        vector<int> winCardEncoding(cards.size());
+        hotEncodingWinCardIndexes(cards, type, winCardEncoding);
+        cout << "Cards: " << vecToString(cards) << endl;
+        cout << TYPE_MAP[type] << " " << vecToString(winCardEncoding) << endl;
+    }
 }
 

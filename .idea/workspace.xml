@@ -2,17 +2,17 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="toy_project" targetName="zjh" />
+      <config projectName="toy_project" targetName="highlight" />
+      <config projectName="toy_project" targetName="generate_random" />
       <config projectName="toy_project" targetName="cfr_kuhn_deps" />
       <config projectName="toy_project" targetName="lua_invoker" />
       <config projectName="toy_project" targetName="zjh_deps" />
       <config projectName="toy_project" targetName="crf_rsp" />
-      <config projectName="toy_project" targetName="test_pid" />
+      <config projectName="toy_project" targetName="zjh" />
       <config projectName="toy_project" targetName="cfr_kuhn" />
       <config projectName="toy_project" targetName="py_invoker" />
-      <config projectName="toy_project" targetName="generate_random" />
-      <config projectName="toy_project" targetName="highlight" />
       <config projectName="toy_project" targetName="crf_rsp_2" />
+      <config projectName="toy_project" targetName="test_only" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -23,17 +23,30 @@
   <component name="ChangeListManager">
     <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/src/cfr_kuhn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/src/cfr_kuhn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree_node.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/include/template_func.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/template_func.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/include/tools.h" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/tools.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/src/tools.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/tools.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/highlight_card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main/highlight_card.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/test_pid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main/test_only.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/view_random_number.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python/view_random_number.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.zjh">
+  <component name="RunManager" selected="CMake Application.highlight">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -138,7 +151,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_pid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_pid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
+    <configuration name="test_only" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_only" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="test_only">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -268,7 +281,7 @@
       <item itemvalue="CMake Application.highlight" />
       <item itemvalue="CMake Application.lua_invoker" />
       <item itemvalue="CMake Application.py_invoker" />
-      <item itemvalue="CMake Application.test_pid" />
+      <item itemvalue="CMake Application.test_only" />
       <item itemvalue="CMake Application.zjh" />
       <item itemvalue="CMake Application.zjh_deps" />
       <item itemvalue="Python.hand_evaluator" />
@@ -338,7 +351,9 @@
       <workItem from="1578300208985" duration="8075000" />
       <workItem from="1578311933098" duration="2990000" />
       <workItem from="1578359720177" duration="4310000" />
-      <workItem from="1578364224750" duration="28178000" />
+      <workItem from="1578364224750" duration="28417000" />
+      <workItem from="1578446529950" duration="26222000" />
+      <workItem from="1578486223487" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>
@@ -401,6 +416,16 @@
           <url>file://$PROJECT_DIR$/python/find_largest/hand_evaluator.py</url>
           <line>119</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/find_largest/hand_highlight.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main/highlight_card.cpp</url>
+          <line>392</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

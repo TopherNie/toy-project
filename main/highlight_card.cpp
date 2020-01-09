@@ -94,25 +94,18 @@ vector<pair<K, V>> sortMapByValue(const map<K, V> &m, bool reverse)
     return vec;
 }
 
-string vecToString(const vector<int> &vec) {
-    string res;
-    if (!vec.empty()) {
-        for (auto &ele: vec) {
-            res.append(to_string(ele)).append("-");
-        }
-        res.erase(res.size() - 1);
-    }
-    return res;
-}
-
-string vecToString(const vector<string>& vec)
+template <typename T>
+string vecToString(const vector<T>& vec, const string& separator="-")
 {
     string res;
+    ostringstream oss;
     if (!vec.empty())
     {
         for (auto &ele: vec)
         {
-            res.append(ele).append("-");
+            oss.str("");
+            oss << ele;
+            res.append(oss.str()).append(separator);
         }
         res.erase(res.size() - 1);
     }

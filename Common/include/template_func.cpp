@@ -7,8 +7,11 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <sstream>
 
 using namespace std;
+
+#define DEFAULT_SEP "-"
 
 /**
  * Count elements of a vector
@@ -50,16 +53,59 @@ vector<pair<K, V>> sortMapByValue(const map<K, V> &m, bool reverse)
     return vec;
 }
 
-template <unsigned long N>
-string arrayToString(const array<int, N> &arr, const string& separator) {
+template <unsigned long N, typename T>
+string arrayToString(const array<T, N> &arr, const string& separator=DEFAULT_SEP)
+{
     string res;
-    if (!arr.empty()) {
-        for (auto &ele: arr) {
-            res.append(to_string(ele)).append(separator);
+    ostringstream oss;
+    if (!arr.empty())
+    {
+        for (auto &ele: arr)
+        {
+            oss.str("");
+            oss << ele;
+            res.append(oss.str()).append(separator);
         }
         res.erase(res.size() - 1);
     }
     return res;
+}
+
+template <typename T>
+string vecToString(const vector<T>& vec, const string& separator=DEFAULT_SEP)
+{
+    string res;
+    ostringstream oss;
+    if (!vec.empty())
+    {
+        for (auto &ele: vec)
+        {
+            oss.str("");
+            oss << ele;
+            res.append(oss.str()).append(separator);
+        }
+        res.erase(res.size() - 1);
+    }
+    return res;
+}
+
+
+template <typename T>
+int compareEleOneByOne(const vector<T> &vec0, const vector<T> &vec1)
+{
+    int size0 = vec0.size();
+    int size1 = vec1.size();
+    int size = min(size0, size1);
+    for (int i = 0; i < size;  i++)
+    {
+        if (vec0.at(i) > vec1.at(i))
+        {
+            return 1;
+        } else if (vec0.at(i) < vec1.at(i)){
+            return -1;
+        }
+    }
+    return 0;
 }
 
 template <typename K, typename V>

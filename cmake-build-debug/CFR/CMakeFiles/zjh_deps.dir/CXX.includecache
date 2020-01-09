@@ -19,13 +19,11 @@ player.h
 ../CFR/zhajinhua/include/player.h
 vector
 -
+array
+-
 string
 -
-tree_node.h
--
-
-../CFR/zhajinhua/include/robot.h
-player.h
+tree.h
 -
 
 ../CFR/zhajinhua/include/round.h
@@ -38,7 +36,7 @@ player.h
 card.h
 -
 
-../CFR/zhajinhua/include/tree_node.h
+../CFR/zhajinhua/include/tree.h
 vector
 -
 string
@@ -55,6 +53,8 @@ iostream
 -
 algorithm
 -
+sstream
+-
 
 ../Common/include/tools.h
 string
@@ -65,48 +65,10 @@ map
 -
 vector
 -
-template_func.cpp
--
-
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/card.cpp
-random
--
-vector
--
-set
--
-map
--
-algorithm
--
-card.h
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/card.h
-tools.h
--
-player.h
--
-
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/main.cpp
-iostream
--
-round.h
--
-robot.h
--
-
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp
-iostream
--
-player.h
--
-string
--
 array
 -
-
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp
-robot.h
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.h
+template_func.cpp
+-
 
 /cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp
 iostream
@@ -116,15 +78,5 @@ round.h
 algorithm
 -
 tools.h
--
-
-/cygdrive/d/documents/code/toy-project/Common/src/tools.cpp
-tools.h
--
-random
--
-iostream
--
-algorithm
 -
 

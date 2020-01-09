@@ -10,6 +10,7 @@
 struct Robot: Player{
     bool isRobot() override;
     Action* play(Node* node) override;
+    void confirmToContinue() override;
 };
 
 #endif //TOY_PROJECT_ROBOT_H

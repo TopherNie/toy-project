@@ -13,6 +13,11 @@ using namespace std;
 
 const array<double, 3> BET_RATE = {0.5, 1.0, 1.5};
 
+bool Player::operator==(Player *player)
+{
+    return this->id == player->id;
+}
+
 string Action::toString()
 {
     string res;
@@ -40,32 +45,38 @@ int Player::getRoundBets()
 
 Action* Player::play(Node* node)
 {
-    const array<int, 3> betSizes{0};
-    transform(BET_RATE.begin(), BET_RATE.end(), betSizes.begin(), [node](double x) { return round(x * node->pot);});
-    cout << "Please input your action: " << "( Raise bets: " << arrayToString(betSizes, "|") << " )";
+    auto* action = new Action;
+    array<string, 3> betSizeStrArr;
+    transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [node](double x) { return to_string((int)round(x * node->pot));});
+    cout << "Please input your action" << "( Raise bets: " << arrayToString(betSizeStrArr) << " ): ";
     string actionStr;
     cin >> actionStr;
-    auto* action = new Action;
     string type;
-    type = actionStr.substr(0, 1);
-    action->type = type;
-    if (type == RAISE)
+    int strLen = actionStr.size();
+    if (strLen > 0)
     {
-        if (actionStr.length() == 2)
+        type = actionStr.substr(0, 1);
+        action->type = type;
+        if (type == RAISE)
         {
-            int bets = actionStr[1] - '0';
-            if (find(betSizes.begin(), betSizes.end(), bets) == betSizes.end())
+            if (strLen >= 2)
             {
-                cout << "The bet size should be one of the options provided above!" << endl;
-                bets = 0;
+                string betsStr = actionStr.substr(1, strLen - 1);
+                if (find(betSizeStrArr.begin(), betSizeStrArr.end(), betsStr) != betSizeStrArr.end())
+                {
+                    action->bets = stoi(betsStr);
+                } else{
+                    cout << "The bet size should be one of the options provided above!" << endl;
+                }
             }
-            action->bets = bets;
         }
     }
     return action;
 }
 
-bool Player::operator==(Player *player)
+void Player::confirmToContinue()
 {
-    return this->id == player->id;
+    cout << "Input anything to continue:" << endl;
+    string inputStr;
+    cin >> inputStr;
 }

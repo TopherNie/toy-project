@@ -5,6 +5,7 @@
 #include <iostream>
 #include <round.h>
 #include <robot.h>
+#include <tools.h>
 
 #define ROUND_NUM 5
 
@@ -15,10 +16,10 @@ void testCard()
 {
     vector<string> testCards{"7s", "2s", "6c", "6h"};
     int type{};
-    int maxRank{};
+    vector<int> winRanks;
     vector<int> winCardIndexes(testCards.size());
-    analyzeCards(testCards, type, maxRank, winCardIndexes);
-    cout << "Type: " << TYPE_MAP[type] << "; " << "maxRank: "  << maxRank << endl;
+    analyzeCards(testCards, type, winRanks, winCardIndexes);
+    cout << "Type: " << TYPE_MAP[type] << "; " << "winRanks: "  << vecToString(winRanks) << endl;
 }
 
 int main()

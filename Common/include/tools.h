@@ -20,8 +20,4 @@ string oriArrToStr(double *arr, int size);
 
 string char2String(char c);
 
-string vecToString(const vector<int> &vec, const string& separator="-");
-
-string vecToString(const vector<string>& vec, const string& separator="-");
-
 #endif //TOY_PROJECT_TOOLS_H

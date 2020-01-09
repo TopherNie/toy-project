@@ -16,3 +16,8 @@ Action* Robot::play(Node* node)
     return action;
 }
 
+
+void Robot::confirmToContinue()
+{
+    // Nothing to do
+}

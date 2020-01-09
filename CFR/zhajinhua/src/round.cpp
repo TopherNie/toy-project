@@ -96,6 +96,8 @@ Node* Round::buildNode()
 {
     Node* node = new Node;
     node->board = boardCards;
+    node->pot = pot;
+
 }
 
 void Round::battle()
@@ -119,9 +121,10 @@ void Round::battle()
                 if (!currentPlayer->isRobot())
                 {
                     cout << "Your hole cards: " << vecToString(currentPlayer->cards) << " || Board: " << vecToString(boardCards)
-                            << " || Pot: " << pot << " || Round last bet: " << lastBet << endl;
+                            << " || Your round bets: " << currentPlayer->getRoundBets() << " || Pot: " << pot << endl;
                 }
-                Action* action = currentPlayer->play();
+                Node* node = buildNode();
+                Action* action = currentPlayer->play(node);
                 if (action->type == FOLD)
                 {
                     currentPlayer->isOut = true;
@@ -131,9 +134,9 @@ void Round::battle()
                     }
                 } else if (action->type == CHECK){
                     // Nothing to do
-                } else if (action->type == CALL && action->bets > 0){
+                } else if (action->type == CALL){
                     action->bets = lastBet;
-                } else if (action->type == RAISE){
+                } else if (action->type == RAISE && action->bets > 0){
                     lastBet = action->bets;
                 } else{
                     cout << "Wrong action type!" << endl;
@@ -226,6 +229,10 @@ void Round::clear()
     nextRoundStartPlayer();
     cout << "Round " << serial << " finish!" << endl;
     cout << "======================================================" << endl;
+    for (auto &p: playerList)
+    {
+        p->confirmToContinue();
+    }
     cout << "======================================================" << endl;
     serial ++;
 }

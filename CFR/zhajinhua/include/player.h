@@ -8,7 +8,7 @@
 #include <vector>
 #include <array>
 #include <string>
-#include <tree_node.h>
+#include <tree.h>
 
 #define STD_HAND_NUM 3
 #define HAND_NUM 4
@@ -44,12 +44,15 @@ struct Player
     unsigned int totalChips{};
     bool isOut{};
 
+    bool operator==(Player *player);
+
     virtual bool isRobot();
     int getRoundBets();
 
     virtual Action* play(Node* node);
 
-    bool operator==(Player *player);
+    virtual void confirmToContinue();
+
 };
 
 #endif //TOY_PROJECT_PLAYER_H

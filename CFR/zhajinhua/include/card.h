@@ -37,7 +37,7 @@ void dealHoleCards(vector<string> &allCards, vector<Player *> &players);
 
 void dealPublicCard(vector<string> &allCards, vector<string> &boardCards);
 
-void analyzeCards(const vector<string>& cards, int &type, int &maxRank, vector<int> &winCardIndexes);
+void analyzeCards(const vector<string>& cards, int &type, vector<int>& winRanks, vector<int> &winCardIndexes);
 
 vector<Player*>  findWinnerByCard(const vector<Player*> &playerList, vector<string> boardCards);
 

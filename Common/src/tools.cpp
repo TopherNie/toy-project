@@ -45,30 +45,5 @@ string char2String(char c)
     return oStr.str();
 }
 
-string vecToString(const vector<int> &vec, const string& separator) {
-    string res;
-    if (!vec.empty()) {
-        for (auto &ele: vec) {
-            res.append(to_string(ele)).append(separator);
-        }
-        res.erase(res.size() - 1);
-    }
-    return res;
-}
-
-string vecToString(const vector<string>& vec, const string& separator)
-{
-    string res;
-    if (!vec.empty())
-    {
-        for (auto &ele: vec)
-        {
-            res.append(ele).append(separator);
-        }
-        res.erase(res.size() - 1);
-    }
-    return res;
-}
-
 
 

@@ -7,9 +7,6 @@
 #include <robot.h>
 #include <tools.h>
 
-#define ROUND_NUM 5
-
-
 using namespace std;
 
 void testCard()
@@ -31,14 +28,7 @@ int main()
     auto robot = new Robot;
     robot->name = "Robot";
     round.addPlayer(robot);
-
-    for (unsigned int i = 0; i < ROUND_NUM;  i++)
-    {
-        round.prepare();
-        round.battle();
-        round.settle();
-        round.clear();
-    }
-
+    round.roundNum = 5;
+    round.run();
 }
 

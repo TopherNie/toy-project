@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <string>
+#include <array>
 
 using namespace std;
 
@@ -15,12 +16,11 @@ struct Node
     int nodeType;
     int currentPlayer;
     int street;
-    vector<string> board;
+    vector<string> boardCards;
     vector<int> bets;
     bool isTerminal;
     int depth;
     int pot;
-    double** strategy;
 };
 
 

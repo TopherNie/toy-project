@@ -45,6 +45,8 @@ int Player::getRoundBets()
 
 Action* Player::play(Node* node)
 {
+    cout << "Your hole cards: " << vecToString(cards) << " || Board: " << vecToString(node->boardCards)
+         << " || Your round bets: " << getRoundBets() << " || Pot: " << node->pot << " || Your chips: " << totalChips << endl;
     auto* action = new Action;
     array<string, 3> betSizeStrArr;
     transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [node](double x) { return to_string((int)round(x * node->pot));});

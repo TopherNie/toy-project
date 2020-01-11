@@ -41,7 +41,7 @@ struct Player
     int cardsType{};
     vector<int> cardTypeIndexes;
     vector<Action*> history;
-    unsigned int totalChips{};
+    int totalChips{};
     bool isOut{};
 
     bool operator==(Player *player);

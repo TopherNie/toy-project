@@ -95,7 +95,7 @@ void Round::prepare()
 Node* Round::buildNode()
 {
     Node* node = new Node;
-    node->board = boardCards;
+    node->boardCards = boardCards;
     node->pot = pot;
 
 }
@@ -103,26 +103,21 @@ Node* Round::buildNode()
 void Round::battle()
 {
     int playerSize = playerList.size();
+
     // Street
     int s = PRE_FLOP;
-
     while (s <= TURN)
     {
         if (s != PRE_FLOP)
         {
             dealPublicCard(allCards, boardCards);
         }
+        vector<pair<int, Action*>> actionOfUsers;
         int i = 0;
         while (i < playerSize)
         {
             if (!currentPlayer->isOut)
             {
-                // Information board for human player
-                if (!currentPlayer->isRobot())
-                {
-                    cout << "Your hole cards: " << vecToString(currentPlayer->cards) << " || Board: " << vecToString(boardCards)
-                            << " || Your round bets: " << currentPlayer->getRoundBets() << " || Pot: " << pot << endl;
-                }
                 Node* node = buildNode();
                 Action* action = currentPlayer->play(node);
                 if (action->type == FOLD)
@@ -133,8 +128,18 @@ void Round::battle()
                         return;
                     }
                 } else if (action->type == CHECK){
-                    // Nothing to do
+                    // Can check only if the first player of the current street checked
+                    if (!actionOfUsers.empty() && actionOfUsers.at(0).second->type == RAISE)
+                    {
+                        cout << "Cannot check because the street's first player raised." << endl;
+                        continue;
+                    }
                 } else if (action->type == CALL){
+                    if (i == 0)
+                    {
+                        cout << "You are the first player of the street. Don't call. Raise or check instead." << endl;
+                        continue;
+                    }
                     action->bets = lastBet;
                 } else if (action->type == RAISE && action->bets > 0){
                     lastBet = action->bets;
@@ -143,6 +148,7 @@ void Round::battle()
                     continue;
                 }
                 currentPlayer->history.push_back(action);
+                actionOfUsers.emplace_back(currentPlayer->id, action);
                 pot += action->bets;
                 cout << currentPlayer->name << "'s action: " << action->toString() << endl;
                 cout << "--------------------------------------------------------------------" << endl;
@@ -155,6 +161,7 @@ void Round::battle()
             }
             i ++;
         }
+        streetActions.emplace_back(s, actionOfUsers);
         s ++;
     }
 }
@@ -170,7 +177,7 @@ void Round::settle()
     } else{
         winnerList = findWinnerByCard(playerList, boardCards);
     }
-    unsigned int winBets = 0;
+    int winBets = 0;
 
     cout << "Losers: ";
     for (auto &p: playerList)
@@ -191,8 +198,8 @@ void Round::settle()
     }
     cout << endl;
 
-    unsigned int winnerCount = winnerList.size();
-    unsigned int winBetsPerWinner = winBets / winnerCount;
+    int winnerCount = winnerList.size();
+    int winBetsPerWinner = winBets / winnerCount;
 
     if (winBets == 0)
     {
@@ -211,8 +218,6 @@ void Round::settle()
 
 void Round::clear()
 {
-    pot = 0;
-    boardCards.clear();
     for (auto &p: playerList)
     {
         p->cards.clear();
@@ -226,6 +231,9 @@ void Round::clear()
         }
         p->history.clear();
     }
+    pot = 0;
+    boardCards.clear();
+    streetActions.clear();
     nextRoundStartPlayer();
     cout << "Round " << serial << " finish!" << endl;
     cout << "======================================================" << endl;
@@ -234,5 +242,16 @@ void Round::clear()
         p->confirmToContinue();
     }
     cout << "======================================================" << endl;
-    serial ++;
+}
+
+void Round::run()
+{
+    while (serial < roundNum)
+    {
+        prepare();
+        battle();
+        settle();
+        clear();
+        serial ++;
+    }
 }

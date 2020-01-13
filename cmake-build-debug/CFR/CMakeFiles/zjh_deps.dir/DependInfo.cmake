@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp" "/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o"
   "/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp" "/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o"
   "/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp" "/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o"
+  "/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/state.cpp" "/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

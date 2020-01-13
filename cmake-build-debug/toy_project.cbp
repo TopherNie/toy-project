@@ -619,6 +619,9 @@
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/state.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/Common/src/tools.cpp">
 			<Option target="cfr_kuhn_deps"/>
 			<Option target="zjh_deps"/>

@@ -16,7 +16,9 @@ const string CARD_SUITS = "shcd";
 const string CARD_RANKS = "01234567";
 const unsigned long CARD_NUM = CARD_SUITS.size() * CARD_RANKS.size();
 
-map<int, string> TYPE_MAP = {
+const map<int, string> TYPE_MAP = {
+        {TYPE_FOLD, "Fold"},
+        {TYPE_OPPONENT_FOLD, "Opponent-Fold"},
         {SINGLE, "Single"},
         {PAIR, "Pair"},
         {STRAIGHT, "Straight"},

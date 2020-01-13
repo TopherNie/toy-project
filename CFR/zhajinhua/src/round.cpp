@@ -92,12 +92,13 @@ void Round::prepare()
     nextPlayer();
 }
 
-Node* Round::buildNode()
+State* Round::buildState(int currentStreet)
 {
-    Node* node = new Node;
-    node->boardCards = boardCards;
-    node->pot = pot;
-
+    auto* state = new State;
+    state->boardCards = boardCards;
+    state->streetActionMap = streetActionMap;
+    state->pot = pot;
+    state->currentStreet = currentStreet;
 }
 
 void Round::battle()
@@ -112,14 +113,18 @@ void Round::battle()
         {
             dealPublicCard(allCards, boardCards);
         }
-        vector<pair<int, Action*>> actionOfUsers;
+        if (!streetActionMap.count(s))
+        {
+            vector<pair<int, Action*>> actionOfUsers;
+            streetActionMap[s] = actionOfUsers;
+        }
         int i = 0;
         while (i < playerSize)
         {
             if (!currentPlayer->isOut)
             {
-                Node* node = buildNode();
-                Action* action = currentPlayer->play(node);
+                State* state = buildState(s);
+                Action* action = currentPlayer->play(state);
                 if (action->type == FOLD)
                 {
                     currentPlayer->isOut = true;
@@ -129,7 +134,7 @@ void Round::battle()
                     }
                 } else if (action->type == CHECK){
                     // Can check only if the first player of the current street checked
-                    if (!actionOfUsers.empty() && actionOfUsers.at(0).second->type == RAISE)
+                    if (!streetActionMap[s].empty() && streetActionMap[s].at(0).second->type == RAISE)
                     {
                         cout << "Cannot check because the street's first player raised." << endl;
                         continue;
@@ -148,7 +153,7 @@ void Round::battle()
                     continue;
                 }
                 currentPlayer->history.push_back(action);
-                actionOfUsers.emplace_back(currentPlayer->id, action);
+                streetActionMap[s].emplace_back(currentPlayer->id, action);
                 pot += action->bets;
                 cout << currentPlayer->name << "'s action: " << action->toString() << endl;
                 cout << "--------------------------------------------------------------------" << endl;
@@ -161,7 +166,6 @@ void Round::battle()
             }
             i ++;
         }
-        streetActions.emplace_back(s, actionOfUsers);
         s ++;
     }
 }
@@ -185,11 +189,15 @@ void Round::settle()
         // Losers
         if (count(winnerList.begin(), winnerList.end(), p) == 0)
         {
+            if (p->isOut)
+            {
+                p->cardsType = TYPE_FOLD;
+            }
             // Lose chips
             int loseChips = p->getRoundBets();
             p->totalChips -= loseChips;
             winBets += loseChips;
-            cout << p->name << "(" << TYPE_MAP[p->cardsType] << " | " << vecToString(p->cards) << " | -" << loseChips << " Chips" << "); ";
+            cout << p->name << "(" << TYPE_MAP.at(p->cardsType) << " | " << vecToString(p->cards) << " | -" << loseChips << " Chips" << "); ";
         }
     }
     if (winBets == 0)
@@ -211,7 +219,7 @@ void Round::settle()
     {
         // Win chips
         winner->totalChips += winBetsPerWinner;
-        cout << winner->name << "(" << TYPE_MAP[winner->cardsType] << " | " << vecToString(winner->cards) << " | +" << winBetsPerWinner << " Chips" << "); ";
+        cout << winner->name << "(" << TYPE_MAP.at(winner->cardsType) << " | " << vecToString(winner->cards) << " | +" << winBetsPerWinner << " Chips" << "); ";
     }
     cout << endl;
 }
@@ -233,7 +241,7 @@ void Round::clear()
     }
     pot = 0;
     boardCards.clear();
-    streetActions.clear();
+    streetActionMap.clear();
     nextRoundStartPlayer();
     cout << "Round " << serial << " finish!" << endl;
     cout << "======================================================" << endl;

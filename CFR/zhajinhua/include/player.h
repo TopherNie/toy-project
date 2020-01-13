@@ -8,7 +8,7 @@
 #include <vector>
 #include <array>
 #include <string>
-#include <tree.h>
+#include <state.h>
 
 #define STD_HAND_NUM 3
 #define HAND_NUM 4
@@ -24,14 +24,6 @@
 using namespace std;
 
 extern const array<double, 3> BET_RATE;
-
-struct Action
-{
-    string type;
-    int bets{};
-
-    string toString();
-};
 
 struct Player
 {
@@ -49,7 +41,7 @@ struct Player
     virtual bool isRobot();
     int getRoundBets();
 
-    virtual Action* play(Node* node);
+    virtual Action* play(const State* state);
 
     virtual void confirmToContinue();
 

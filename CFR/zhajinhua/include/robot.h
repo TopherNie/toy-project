@@ -9,7 +9,7 @@
 
 struct Robot: Player{
     bool isRobot() override;
-    Action* play(Node* node) override;
+    Action* play(const State* state) override;
     void confirmToContinue() override;
 };
 

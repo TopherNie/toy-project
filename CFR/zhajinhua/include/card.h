@@ -16,6 +16,8 @@
 
 #define BASIC_BET 1
 
+#define TYPE_FOLD -1
+#define TYPE_OPPONENT_FOLD 0
 #define SINGLE 1
 #define PAIR 2
 #define STRAIGHT 3
@@ -29,7 +31,7 @@ extern const string CARD_SUITS;
 extern const string CARD_RANKS;
 extern const unsigned long CARD_NUM;
 
-extern map<int, string> TYPE_MAP;
+extern const map<int, string> TYPE_MAP;
 
 void initCards(vector<string> &cardList);
 

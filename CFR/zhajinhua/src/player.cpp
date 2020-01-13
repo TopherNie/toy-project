@@ -18,13 +18,6 @@ bool Player::operator==(Player *player)
     return this->id == player->id;
 }
 
-string Action::toString()
-{
-    string res;
-    res.append(type).append(to_string(bets));
-    return res;
-}
-
 bool Player::isRobot()
 {
     return false;
@@ -43,13 +36,13 @@ int Player::getRoundBets()
     return res;
 }
 
-Action* Player::play(Node* node)
+Action* Player::play(const State* state)
 {
-    cout << "Your hole cards: " << vecToString(cards) << " || Board: " << vecToString(node->boardCards)
-         << " || Your round bets: " << getRoundBets() << " || Pot: " << node->pot << " || Your chips: " << totalChips << endl;
+    cout << "Your hole cards: " << vecToString(cards) << " || Board: " << vecToString(state->boardCards)
+         << " || Your round bets: " << getRoundBets() << " || Pot: " << state->pot << " || Your chips: " << totalChips << endl;
     auto* action = new Action;
     array<string, 3> betSizeStrArr;
-    transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [node](double x) { return to_string((int)round(x * node->pot));});
+    transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [state](double x) { return to_string((int)round(x * state->pot));});
     cout << "Please input your action" << "( Raise bets: " << arrayToString(betSizeStrArr) << " ): ";
     string actionStr;
     cin >> actionStr;

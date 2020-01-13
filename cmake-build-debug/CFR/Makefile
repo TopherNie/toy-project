@@ -413,6 +413,33 @@ zhajinhua/src/round.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.s
 .PHONY : zhajinhua/src/round.cpp.s
 
+zhajinhua/src/state.o: zhajinhua/src/state.cpp.o
+
+.PHONY : zhajinhua/src/state.o
+
+# target to build an object file
+zhajinhua/src/state.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.o
+.PHONY : zhajinhua/src/state.cpp.o
+
+zhajinhua/src/state.i: zhajinhua/src/state.cpp.i
+
+.PHONY : zhajinhua/src/state.i
+
+# target to preprocess a source file
+zhajinhua/src/state.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.i
+.PHONY : zhajinhua/src/state.cpp.i
+
+zhajinhua/src/state.s: zhajinhua/src/state.cpp.s
+
+.PHONY : zhajinhua/src/state.s
+
+# target to generate assembly for a file
+zhajinhua/src/state.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.s
+.PHONY : zhajinhua/src/state.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -453,6 +480,9 @@ help:
 	@echo "... zhajinhua/src/round.o"
 	@echo "... zhajinhua/src/round.i"
 	@echo "... zhajinhua/src/round.s"
+	@echo "... zhajinhua/src/state.o"
+	@echo "... zhajinhua/src/state.i"
+	@echo "... zhajinhua/src/state.s"
 .PHONY : help
 
 

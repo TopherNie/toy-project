@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o"
   "CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o"
   "CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o"
+  "CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.o"
   "libzjh_deps.a"
   "libzjh_deps.pdb"
 )

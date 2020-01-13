@@ -23,7 +23,7 @@ array
 -
 string
 -
-tree.h
+state.h
 -
 
 ../CFR/zhajinhua/include/robot.h
@@ -40,12 +40,10 @@ player.h
 card.h
 -
 
-../CFR/zhajinhua/include/tree.h
+../CFR/zhajinhua/include/state.h
+map
+-
 vector
--
-string
--
-array
 -
 
 ../Common/include/template_func.cpp
@@ -103,24 +101,6 @@ robot.h
 -
 tools.h
 -
-
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp
-iostream
--
-player.h
--
-string
--
-algorithm
--
-cmath
--
-tools.h
--
-
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp
-robot.h
-/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.h
 
 /cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/round.cpp
 iostream

@@ -17,15 +17,15 @@ struct Round
 {
     int serial{};
     int pot{};
-    Player* startPlayer;
-    Player* currentPlayer;
+    Player* startPlayer = nullptr;
+    Player* currentPlayer = nullptr;
     vector<Player*> playerList;
     vector<string> allCards;
     vector<string> boardCards;
     int lastBet{};
     int roundNum = 1;
     //<street: <playerId: action>>
-    vector<pair<int, vector<pair<int, Action*>>>> streetActions;
+    map<int, vector<pair<int, Action*>>> streetActionMap;
 
     void addPlayer(Player* player);
     void nextRoundStartPlayer();
@@ -39,7 +39,7 @@ struct Round
     vector<Player*> inPlayers();
     int inPlayerNum();
 
-    Node* buildNode();
+    State* buildState(int currentStreet);
     
 };
 

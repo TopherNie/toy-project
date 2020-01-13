@@ -7,11 +7,11 @@
       <config projectName="toy_project" targetName="cfr_kuhn_deps" />
       <config projectName="toy_project" targetName="lua_invoker" />
       <config projectName="toy_project" targetName="zjh_deps" />
-      <config projectName="toy_project" targetName="crf_rsp_2" />
       <config projectName="toy_project" targetName="crf_rsp" />
+      <config projectName="toy_project" targetName="zjh" />
       <config projectName="toy_project" targetName="cfr_kuhn" />
       <config projectName="toy_project" targetName="py_invoker" />
-      <config projectName="toy_project" targetName="zjh" />
+      <config projectName="toy_project" targetName="crf_rsp_2" />
       <config projectName="toy_project" targetName="test_only" />
     </generated>
   </component>
@@ -21,7 +21,37 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs." />
+    <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/state.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/data_analyze/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/data_analyze/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,28 +73,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-zjh_deps" />
+  </component>
   <component name="ProjectId" id="1VMby2iHNiYfmFBzTHYq8igZ5xY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/python/data_analyze" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\documents\code\toy-project\python\data_analyze" />
+      <recent name="D:\documents\code\toy-project\main" />
+      <recent name="D:\documents\code\toy-project\Common\python36\lib" />
+      <recent name="D:\documents\code\toy-project\Common\python36\include" />
+      <recent name="D:\documents\code\toy-project\Common\include" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\documents\code\toy-project\Common\include" />
       <recent name="D:\documents\code\toy-project\CFR\texas-20\include" />
       <recent name="D:\documents\code\toy-project\main" />
       <recent name="D:\documents\code\toy-project\python\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\documents\code\toy-project\main" />
-      <recent name="D:\documents\code\toy-project\Common\python36\lib" />
-      <recent name="D:\documents\code\toy-project\Common\python36\include" />
-      <recent name="D:\documents\code\toy-project\Common\include" />
-      <recent name="D:\documents\code\toy-project\python\find_largest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -161,27 +194,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hand_evaluator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="toy-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/find_largest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/find_largest/hand_evaluator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="hand_highlight" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,6 +236,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="show" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="toy-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\software\Python\Miniconda\install\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/data_analyze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/data_analyze/show.py" />
+      <option name="PARAMETERS" value="60049" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_win_card_index" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="toy-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,19 +291,19 @@
       <item itemvalue="CMake Application.test_only" />
       <item itemvalue="CMake Application.zjh" />
       <item itemvalue="CMake Application.zjh_deps" />
-      <item itemvalue="Python.hand_evaluator" />
       <item itemvalue="Python.montecarlo_python" />
       <item itemvalue="Python.hand_highlight" />
       <item itemvalue="Python.test_win_card_index" />
       <item itemvalue="Python.draw_tree" />
+      <item itemvalue="Python.show" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.show" />
         <item itemvalue="Python.draw_tree" />
         <item itemvalue="Python.hand_highlight" />
         <item itemvalue="Python.test_win_card_index" />
         <item itemvalue="Python.montecarlo_python" />
-        <item itemvalue="Python.hand_evaluator" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +366,9 @@
       <workItem from="1578532881598" duration="13346000" />
       <workItem from="1578619374532" duration="6303000" />
       <workItem from="1578705742578" duration="680000" />
-      <workItem from="1578706442653" duration="8220000" />
+      <workItem from="1578706442653" duration="8482000" />
+      <workItem from="1578878517624" duration="15457000" />
+      <workItem from="1578916732766" duration="1889000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>
@@ -402,15 +437,15 @@
           <line>170</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python/data_analyze/show.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main/highlight_card.cpp</url>
           <line>385</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp</url>
-          <line>69</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

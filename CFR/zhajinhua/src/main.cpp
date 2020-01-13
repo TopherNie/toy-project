@@ -16,7 +16,7 @@ void testCard()
     vector<int> winRanks;
     vector<int> winCardIndexes(testCards.size());
     analyzeCards(testCards, type, winRanks, winCardIndexes);
-    cout << "Type: " << TYPE_MAP[type] << "; " << "winRanks: "  << vecToString(winRanks) << endl;
+    cout << "Type: " << TYPE_MAP.at(type) << "; " << "winRanks: "  << vecToString(winRanks) << endl;
 }
 
 int main()

@@ -2,17 +2,18 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="toy_project" targetName="highlight" />
-      <config projectName="toy_project" targetName="generate_random" />
-      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
-      <config projectName="toy_project" targetName="lua_invoker" />
       <config projectName="toy_project" targetName="zjh_deps" />
-      <config projectName="toy_project" targetName="crf_rsp" />
-      <config projectName="toy_project" targetName="zjh" />
-      <config projectName="toy_project" targetName="cfr_kuhn" />
       <config projectName="toy_project" targetName="py_invoker" />
-      <config projectName="toy_project" targetName="crf_rsp_2" />
       <config projectName="toy_project" targetName="test_only" />
+      <config projectName="toy_project" targetName="test_zjh" />
+      <config projectName="toy_project" targetName="lua_invoker" />
+      <config projectName="toy_project" targetName="crf_rsp" />
+      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
+      <config projectName="toy_project" targetName="generate_random" />
+      <config projectName="toy_project" targetName="cfr_kuhn" />
+      <config projectName="toy_project" targetName="crf_rsp_2" />
+      <config projectName="toy_project" targetName="highlight" />
+      <config projectName="toy_project" targetName="zjh" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -22,21 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
-      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/state.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/data_analyze/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/data_analyze/show.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/tree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/test/test_zjh.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/card.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/card.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/robot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/state.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/state.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/include/template_func.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/template_func.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/include/tools.h" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/tools.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/tools.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/tools.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" afterDir="false" />
@@ -51,6 +52,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/data_analyze/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/data_analyze/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/find_largest/hand_highlight.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +64,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -73,9 +75,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="0-zjh_deps" />
-  </component>
   <component name="ProjectId" id="1VMby2iHNiYfmFBzTHYq8igZ5xY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -112,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.zjh">
+  <component name="RunManager" selected="Python.hand_highlight">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -159,6 +158,11 @@
       </method>
     </configuration>
     <configuration name="test_only" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_only" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="test_only">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_zjh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_zjh" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="test_zjh">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -249,7 +253,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/data_analyze/show.py" />
-      <option name="PARAMETERS" value="60049" />
+      <option name="PARAMETERS" value="142101283" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -289,6 +293,7 @@
       <item itemvalue="CMake Application.lua_invoker" />
       <item itemvalue="CMake Application.py_invoker" />
       <item itemvalue="CMake Application.test_only" />
+      <item itemvalue="CMake Application.test_zjh" />
       <item itemvalue="CMake Application.zjh" />
       <item itemvalue="CMake Application.zjh_deps" />
       <item itemvalue="Python.montecarlo_python" />
@@ -299,9 +304,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hand_highlight" />
         <item itemvalue="Python.show" />
         <item itemvalue="Python.draw_tree" />
-        <item itemvalue="Python.hand_highlight" />
         <item itemvalue="Python.test_win_card_index" />
         <item itemvalue="Python.montecarlo_python" />
       </list>
@@ -368,7 +373,10 @@
       <workItem from="1578705742578" duration="680000" />
       <workItem from="1578706442653" duration="8482000" />
       <workItem from="1578878517624" duration="15457000" />
-      <workItem from="1578916732766" duration="1889000" />
+      <workItem from="1578916732766" duration="2201000" />
+      <workItem from="1578919000023" duration="550000" />
+      <workItem from="1578965046447" duration="3050000" />
+      <workItem from="1578968114555" duration="17843000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>

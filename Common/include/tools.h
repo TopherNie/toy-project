@@ -10,7 +10,7 @@
 #include <map>
 #include <vector>
 #include <array>
-#include <template_func.cpp>
+#include <template_func.hpp>
 
 using namespace std;
 
@@ -19,5 +19,6 @@ int getRandom(int n);
 string oriArrToStr(double *arr, int size);
 
 string char2String(char c);
+
 
 #endif //TOY_PROJECT_TOOLS_H

@@ -13,8 +13,9 @@
 
 using namespace std;
 
-struct Round
+class Round
 {
+public:
     int serial{};
     int pot{};
     Player* startPlayer = nullptr;

@@ -161,6 +161,19 @@ CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.s"
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/state.cpp -o CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.s
 
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o: CFR/CMakeFiles/zjh_deps.dir/flags.make
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o: ../CFR/zhajinhua/src/tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/d/documents/code/toy-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o"
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o -c /cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/tree.cpp
+
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.i"
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/tree.cpp > CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.i
+
+CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.s"
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/tree.cpp -o CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.s
+
 # Object files for target zjh_deps
 zjh_deps_OBJECTS = \
 "CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.o" \
@@ -170,7 +183,8 @@ zjh_deps_OBJECTS = \
 "CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o" \
 "CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o" \
 "CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o" \
-"CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.o"
+"CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.o" \
+"CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o"
 
 # External object files for target zjh_deps
 zjh_deps_EXTERNAL_OBJECTS =
@@ -183,9 +197,10 @@ CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.o
 CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/robot.cpp.o
 CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/round.cpp.o
 CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.o
+CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o
 CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/build.make
 CFR/libzjh_deps.a: CFR/CMakeFiles/zjh_deps.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/documents/code/toy-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libzjh_deps.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/d/documents/code/toy-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libzjh_deps.a"
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR && $(CMAKE_COMMAND) -P CMakeFiles/zjh_deps.dir/cmake_clean_target.cmake
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zjh_deps.dir/link.txt --verbose=$(VERBOSE)
 

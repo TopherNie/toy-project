@@ -37,6 +37,56 @@
 					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test_zjh">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/test_zjh.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_zjh"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_zjh/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/test_zjh.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_zjh/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="py_invoker">
 				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/py_invoker.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
@@ -621,6 +671,12 @@
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/state.cpp">
 			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/tree.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/test/test_zjh.cpp">
+			<Option target="test_zjh"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/Common/src/tools.cpp">
 			<Option target="cfr_kuhn_deps"/>

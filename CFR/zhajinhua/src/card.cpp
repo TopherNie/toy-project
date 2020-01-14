@@ -162,28 +162,6 @@ void setWinCardIndexes(const vector<string>& cards, const vector<int> &rSortedCa
                     }
                 }
             }
-
-            // Special case: Four of a kind
-            if (i == 0 && winCardIndexes.size() == STD_HAND_NUM - 1)
-            {
-                int rSortedRankSize = rSortedCardRanks.size();
-                for (int j = 0; j < rSortedRankSize; j ++)
-                {
-                    if (rSortedCardRanks.at(j) != r)
-                    {
-                        cardIndex = getCardIndex(cards, char2String(CARD_RANKS[rSortedCardRanks.at(j)]), 0);
-                        if (cardIndex != -1)
-                        {
-                            winCardIndexes.push_back(cardIndex);
-                            if (find(winRanks.begin(), winRanks.end(), r) == winRanks.end())
-                            {
-                                winRanks.push_back(r);
-                            }
-                        }
-                        return;
-                    }
-                }
-            }
         }
     }
 }

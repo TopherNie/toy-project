@@ -44,14 +44,15 @@ def draw_period(roleid, data):
     score_data_period_win = filter(lambda x: x > 0, score_data_period)
     score_data_period_draw = filter(lambda x: x == 0, score_data_period)
     score_data_period_lose = filter(lambda x: x < 0, score_data_period)
-    win_count = len(list(score_data_period_win))
+    score_data_period_win_list = sorted(list(score_data_period_win), reverse=True)
+    win_count = len(score_data_period_win_list)
     draw_count = len(list(score_data_period_draw))
     lose_count = len(list(score_data_period_lose))
     print("Data count: ", data_count)
     print("Win count: %d; Win rate: %f" % (win_count, win_count / data_count))
     print("Draw count: %d; Draw rate: %f" % (draw_count, draw_count / data_count))
     print("Lose count: %d; Lose rate: %f" % (lose_count, lose_count / data_count))
-    print("Win data: ", score_data_period_win)
+    print("Win data: ", sorted(score_data_period_win_list, reverse=True))
 
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
@@ -59,6 +60,7 @@ def draw_period(roleid, data):
     df = pd.DataFrame(score_data_period)
     df[0].hist(bins=data_count-1)
     plt.show()
+
 
 
 def process(roleid):

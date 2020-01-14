@@ -17,12 +17,13 @@ add_executable(cfr_kuhn CFR/src/cfr_kuhn.cpp)
 add_executable(test_only main/test_only.cpp)
 add_executable(py_invoker main/py_invoker.cpp)
 add_executable(zjh CFR/zhajinhua/src/main.cpp)
+add_executable(test_zjh CFR/zhajinhua/test/test_zjh.cpp)
 add_executable(highlight main/highlight_card.cpp)
 
 add_subdirectory(CFR)
 
 target_link_libraries(cfr_kuhn cfr_kuhn_deps)
 target_link_libraries(zjh zjh_deps)
-
+target_link_libraries(test_zjh zjh_deps)
 
 

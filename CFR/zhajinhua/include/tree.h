@@ -11,18 +11,34 @@
 
 using namespace std;
 
+template <typename T>
 struct Node
 {
-    int nodeType;
-    int currentPlayer;
-    int street;
-    vector<string> boardCards;
-    vector<int> bets;
-    bool isTerminal;
-    int depth;
-    int pot;
+    T _val;
+    vector<Node<T>*> _children;
+
+    Node(const T val, const vector<Node<T>*>& children): _val(val), _children(children){};
+
+    void print();
 };
 
+
+template <class T>
+class Tree{
+
+public:
+    Node<T>* _root;
+
+    explicit Tree(Node<T>* root): _root(root){};
+
+    Node<T>* find(T val);
+    bool addNode(T parentVal, T childVal);
+
+private:
+    Node<T>* find_r(Node<T>* root, T val);
+
+
+};
 
 
 

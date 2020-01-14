@@ -25,8 +25,9 @@ using namespace std;
 
 extern const array<double, 3> BET_RATE;
 
-struct Player
+class Player
 {
+public:
     int id;
     string name;
     vector<string> cards;

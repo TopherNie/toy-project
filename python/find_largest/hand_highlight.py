@@ -169,7 +169,7 @@ def get_win_card_indexes(hand, card_ranks, rcount_dict, flush_suit, is_straight)
 
 
 if __name__ == "__main__":
-    hand_str = "2c-Ks-Kc-Ks-Th-Kd"
+    hand_str = "8h-Qh-4s-Ks-9h-Qd"
     result = "ERROR:"
     try:
         result = cal_score_to_hot_encoding_str(hand_str)

@@ -27,3 +27,5 @@ void Robot::confirmToContinue()
 {
     // Nothing to do
 }
+
+

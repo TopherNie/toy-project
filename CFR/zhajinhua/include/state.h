@@ -21,18 +21,20 @@ public:
 };
 
 struct State{
-    int pot;
-    int currentStreet;
+    int pot{};
+    int currentStreet{};
+    int nextPlayerId{};
     vector<string> boardCards;
     map<int, vector<pair<int, Action*>>> streetActionMap;
 };
 
 struct NodeVal{
-    int nodeType{};
-    int currentPlayer{};
+    int type{};
+    int currentPlayerId{};
+    int nextPlayerId{};
     int street{};
     vector<string> boardCards;
-    vector<int> bets;
+    int bets;
     bool isTerminal{};
     int depth{};
     int pot{};

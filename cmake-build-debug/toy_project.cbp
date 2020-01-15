@@ -663,6 +663,9 @@
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/player.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/resolve.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/robot.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
@@ -673,6 +676,9 @@
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/tree.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/tree_builder.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/test/test_zjh.cpp">

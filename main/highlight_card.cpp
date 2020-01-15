@@ -30,7 +30,7 @@ const string CARD_RANKS = "23456789TJQKA";
 const int ACE_RANK = CARD_RANKS.find('A');
 const int ACE_LOW_RANK = -1;
 
-map<int, string> TYPE_MAP = {
+const map<int, string> TYPE_MAP = {
         {HIGH_CARD, "HighCard"},
         {PAIR, "Pair"},
         {TWO_PAIR, "TwoPair"},

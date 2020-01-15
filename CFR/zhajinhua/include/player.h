@@ -10,16 +10,7 @@
 #include <string>
 #include <state.h>
 
-#define STD_HAND_NUM 3
-#define HAND_NUM 4
-#define HOLE_NUM 2
-
-#define SMALL_BLIND "s"
-#define BIG_BLIND "b"
-#define CHECK "k"
-#define FOLD "f"
-#define CALL "c"
-#define RAISE "r"
+#include <constants.h>
 
 using namespace std;
 

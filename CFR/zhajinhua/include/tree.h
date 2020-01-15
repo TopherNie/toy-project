@@ -17,6 +17,7 @@ struct Node
     T _val;
     vector<Node<T>*> _children;
 
+    Node(const T val): _val(val){};
     Node(const T val, const vector<Node<T>*>& children): _val(val), _children(children){};
 
     void print();

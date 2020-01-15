@@ -30,6 +30,7 @@ public:
 
     void addPlayer(Player* player);
     void nextRoundStartPlayer();
+    Player* getNextPlayer();
     void nextPlayer();
 
     void prepare();

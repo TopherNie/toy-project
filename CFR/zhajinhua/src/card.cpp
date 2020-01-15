@@ -27,6 +27,12 @@ const map<int, string> TYPE_MAP = {
         {LEOPARD, "Leopard"}
 };
 
+const map<int, string> STREET_MAP = {
+        {PRE_FLOP, "PreFlop"},
+        {FLOP, "Flop"},
+        {TURN, "Turn"}
+};
+
 void initCards(vector<string> &cardList)
 {
     if (cardList.size() != CARD_NUM)

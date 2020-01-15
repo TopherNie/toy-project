@@ -10,21 +10,6 @@
 #include <map>
 #include "player.h"
 
-#define PRE_FLOP 0
-#define FLOP 1
-#define TURN 2
-
-#define BASIC_BET 1
-
-#define TYPE_FOLD -1
-#define TYPE_OPPONENT_FOLD 0
-#define SINGLE 1
-#define PAIR 2
-#define STRAIGHT 3
-#define FLUSH 4
-#define FLUSH_STRAIGHT 5
-#define LEOPARD 6
-
 using namespace std;
 
 extern const string CARD_SUITS;
@@ -32,6 +17,7 @@ extern const string CARD_RANKS;
 extern const unsigned long CARD_NUM;
 
 extern const map<int, string> TYPE_MAP;
+extern const map<int, string> STREET_MAP;
 
 void initCards(vector<string> &cardList);
 

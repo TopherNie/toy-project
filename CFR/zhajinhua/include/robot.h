@@ -12,6 +12,7 @@ struct Robot: Player{
     bool isRobot() override;
     Action* play(const State* state) override;
     void confirmToContinue() override;
+    
 };
 
 #endif //TOY_PROJECT_ROBOT_H

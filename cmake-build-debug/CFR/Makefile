@@ -359,6 +359,33 @@ zhajinhua/src/player.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/player.cpp.s
 .PHONY : zhajinhua/src/player.cpp.s
 
+zhajinhua/src/resolve.o: zhajinhua/src/resolve.cpp.o
+
+.PHONY : zhajinhua/src/resolve.o
+
+# target to build an object file
+zhajinhua/src/resolve.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/resolve.cpp.o
+.PHONY : zhajinhua/src/resolve.cpp.o
+
+zhajinhua/src/resolve.i: zhajinhua/src/resolve.cpp.i
+
+.PHONY : zhajinhua/src/resolve.i
+
+# target to preprocess a source file
+zhajinhua/src/resolve.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/resolve.cpp.i
+.PHONY : zhajinhua/src/resolve.cpp.i
+
+zhajinhua/src/resolve.s: zhajinhua/src/resolve.cpp.s
+
+.PHONY : zhajinhua/src/resolve.s
+
+# target to generate assembly for a file
+zhajinhua/src/resolve.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/resolve.cpp.s
+.PHONY : zhajinhua/src/resolve.cpp.s
+
 zhajinhua/src/robot.o: zhajinhua/src/robot.cpp.o
 
 .PHONY : zhajinhua/src/robot.o
@@ -467,6 +494,33 @@ zhajinhua/src/tree.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.s
 .PHONY : zhajinhua/src/tree.cpp.s
 
+zhajinhua/src/tree_builder.o: zhajinhua/src/tree_builder.cpp.o
+
+.PHONY : zhajinhua/src/tree_builder.o
+
+# target to build an object file
+zhajinhua/src/tree_builder.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree_builder.cpp.o
+.PHONY : zhajinhua/src/tree_builder.cpp.o
+
+zhajinhua/src/tree_builder.i: zhajinhua/src/tree_builder.cpp.i
+
+.PHONY : zhajinhua/src/tree_builder.i
+
+# target to preprocess a source file
+zhajinhua/src/tree_builder.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree_builder.cpp.i
+.PHONY : zhajinhua/src/tree_builder.cpp.i
+
+zhajinhua/src/tree_builder.s: zhajinhua/src/tree_builder.cpp.s
+
+.PHONY : zhajinhua/src/tree_builder.s
+
+# target to generate assembly for a file
+zhajinhua/src/tree_builder.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree_builder.cpp.s
+.PHONY : zhajinhua/src/tree_builder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -501,6 +555,9 @@ help:
 	@echo "... zhajinhua/src/player.o"
 	@echo "... zhajinhua/src/player.i"
 	@echo "... zhajinhua/src/player.s"
+	@echo "... zhajinhua/src/resolve.o"
+	@echo "... zhajinhua/src/resolve.i"
+	@echo "... zhajinhua/src/resolve.s"
 	@echo "... zhajinhua/src/robot.o"
 	@echo "... zhajinhua/src/robot.i"
 	@echo "... zhajinhua/src/robot.s"
@@ -513,6 +570,9 @@ help:
 	@echo "... zhajinhua/src/tree.o"
 	@echo "... zhajinhua/src/tree.i"
 	@echo "... zhajinhua/src/tree.s"
+	@echo "... zhajinhua/src/tree_builder.o"
+	@echo "... zhajinhua/src/tree_builder.i"
+	@echo "... zhajinhua/src/tree_builder.s"
 .PHONY : help
 
 

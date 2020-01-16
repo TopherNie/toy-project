@@ -39,11 +39,11 @@ int Player::getRoundBets()
 Action* Player::play(const State* state)
 {
     cout << "Your hole cards: " << vecToString(cards) << " || Board: " << vecToString(state->boardCards)
-         << " || Your round bets: " << getRoundBets() << " || Pot: " << state->pot << " || Your chips: " << totalChips << endl;
+         << " || Your round bet: " << getRoundBets() << " || Pot: " << state->pot << " || Your chips: " << totalChips << endl;
     auto* action = new Action;
     array<string, 3> betSizeStrArr;
     transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [state](double x) { return to_string((int)round(x * state->pot));});
-    cout << "Please input your action" << "( Raise bets: " << arrayToString(betSizeStrArr) << " ): ";
+    cout << "Please input your action" << "( Raise bet: " << arrayToString(betSizeStrArr) << " ): ";
     string actionStr;
     cin >> actionStr;
     string type;

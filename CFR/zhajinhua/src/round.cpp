@@ -142,25 +142,14 @@ void Round::battle()
                     {
                         return;
                     }
-                } else if (action->type == CHECK){
-                    // Can check only if the first player of the current street checked
-                    if (!streetActionMap[s].empty() && streetActionMap[s].at(streetActionMap[s].size() - 1).second->type != CHECK)
-                    {
-                        cout << "Cannot check because last player of current street did not check." << endl;
-                        continue;
-                    }
                 } else if (action->type == CALL){
                     if (i == 0)
                     {
-                        cout << "You are the first player of the street. Don't call. Raise or check instead." << endl;
-                        continue;
+                        action->bets = 0;
+                        lastBet = 0;
+                    }else{
+                        action->bets = lastBet;
                     }
-                    if (!streetActionMap[s].empty() && streetActionMap[s].at(streetActionMap[s].size() - 1).second->type == CHECK)
-                    {
-                        cout << "Last player checked. Don't call. Raise or check instead." << endl;
-                        continue;
-                    }
-                    action->bets = lastBet;
                 } else if (action->type == RAISE && action->bets > 0){
                     lastBet = action->bets;
                 } else{
@@ -181,7 +170,7 @@ void Round::battle()
                 {
                     return;
                 }
-                if (action != nullptr && (action->type == CALL || action->type == CHECK))
+                if (action != nullptr && action->type == CALL)
                 {
                     // Enter next street.
                     break;

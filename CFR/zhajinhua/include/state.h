@@ -29,12 +29,12 @@ struct State{
 };
 
 struct NodeVal{
-    int type{};
+    string type{};
     int currentPlayerId{};
     int nextPlayerId{};
     int street{};
     vector<string> boardCards;
-    int bets;
+    int bet{};
     bool isTerminal{};
     int depth{};
     int pot{};

@@ -11,7 +11,6 @@
 
 #define SMALL_BLIND "s"
 #define BIG_BLIND "b"
-#define CHECK "k"
 #define FOLD "f"
 #define CALL "c"
 #define RAISE "r"
@@ -35,8 +34,8 @@
 
 #define NODE_TYPE_TERMINAL_FOLD -2
 #define NODE_TYPE_TERMINAL_CALL -1
-#define NODE_TYPE_CHECK -1
+#define NODE_TYPE_CALL -1
 #define NODE_TYPE_CHANCE_NODE 0
-#define INNER_NODE 1     //Any other node
+#define NODE_TYPE_INNER_NODE 1     //Any other node
 
 #endif //TOY_PROJECT_CONSTANTS_H

@@ -18,7 +18,7 @@ ostream& operator<<(ostream & os, const NodeVal* nodeVal)
             << ", currentPlayerId:" << nodeVal->currentPlayerId
             << ", street:" << nodeVal->street
             << ", boardCards:" << vecToString(nodeVal->boardCards)
-            << ", bets:" << nodeVal->bets
+            << ", bet:" << nodeVal->bet
             << ", isTerminal:" << nodeVal->isTerminal
             << ", depth:" << nodeVal->depth
             << ", pot:" << nodeVal->pot

@@ -5,13 +5,13 @@
 
 #include <tree_builder.h>
 
-static vector<Node<NodeVal*>*> getChildren(NodeVal* parentVal)
+static vector<Node<NodeVal*>*> getPlayChildren(NodeVal* parentVal)
 {
     vector<Node<NodeVal*>*> children;
 
     // Fold
     auto* foldVal = new NodeVal;
-    foldVal->type = NODE_TYPE_TERMINAL_FOLD;
+    foldVal->type = FOLD;
     foldVal->isTerminal = true;
     foldVal->currentPlayerId = parentVal->nextPlayerId;
     foldVal->street = parentVal->street;
@@ -19,7 +19,9 @@ static vector<Node<NodeVal*>*> getChildren(NodeVal* parentVal)
     auto* foldNode = new Node<NodeVal*>(foldVal);
     children.push_back(foldNode);
 
-    //
+    // Check/call within a street
+
+
 }
 
 static void buildTreeR(Node<NodeVal*>* root)

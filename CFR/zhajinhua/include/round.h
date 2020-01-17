@@ -39,6 +39,7 @@ public:
     void clear();
     void run();
     vector<Player*> inPlayers();
+    vector<int> inPlayerIDs();
     int inPlayerNum();
 
     State* buildState(int currentStreet);

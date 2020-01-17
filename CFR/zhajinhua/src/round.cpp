@@ -22,6 +22,19 @@ vector<Player*> Round::inPlayers()
     return vec;
 }
 
+vector<int> Round::inPlayerIDs()
+{
+    vector<int> res;
+    for (auto &p: playerList)
+    {
+        if (!p->isOut)
+        {
+            res.push_back(p->id);
+        }
+    }
+    return res;
+}
+
 int Round::inPlayerNum()
 {
     int num = 0;
@@ -102,7 +115,7 @@ void Round::prepare()
 State* Round::buildState(int currentStreet)
 {
     auto* state = new State;
-    state->nextPlayerId = getNextPlayer()->id;
+    state->inPlayerIDs = inPlayerIDs();
     state->boardCards = boardCards;
     state->streetActionMap = streetActionMap;
     state->pot = pot;

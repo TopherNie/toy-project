@@ -32,8 +32,7 @@
 #define FLUSH_STRAIGHT 5
 #define LEOPARD 6
 
-#define NODE_TYPE_TERMINAL_FOLD -2
-#define NODE_TYPE_TERMINAL_CALL -1
+#define NODE_TYPE_FOLD -2
 #define NODE_TYPE_CALL -1
 #define NODE_TYPE_CHANCE_NODE 0
 #define NODE_TYPE_INNER_NODE 1     //Any other node

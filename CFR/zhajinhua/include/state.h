@@ -23,19 +23,20 @@ public:
 struct State{
     int pot{};
     int currentStreet{};
-    int nextPlayerId{};
+    vector<int> inPlayerIDs;
     vector<string> boardCards;
     map<int, vector<pair<int, Action*>>> streetActionMap;
 };
 
 struct NodeVal{
-    string type{};
+
+    int type{};
     int currentPlayerId{};
-    int nextPlayerId{};
     int street{};
     vector<string> boardCards;
     int bet{};
     bool isTerminal{};
+    bool isTransitional{};
     int depth{};
     int pot{};
 

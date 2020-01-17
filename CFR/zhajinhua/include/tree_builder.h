@@ -9,6 +9,17 @@
 #include <state.h>
 #include <constants.h>
 
-void buildTree();
+class TreeBuilder
+{
+private:
+    int getNextPlayerID(int currentPlayerId);
+    vector<Node<NodeVal*>*> getPlayChildren(NodeVal* parentVal);
+    void buildTreeR(Node<NodeVal*>* root);
+
+public:
+    vector<int> inPlayersId;
+    void buildTree();
+
+};
 
 #endif //TOY_PROJECT_TREE_BUILDER_H

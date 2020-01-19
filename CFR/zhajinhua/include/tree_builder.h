@@ -17,7 +17,8 @@ private:
     void buildTreeR(Node<NodeVal*>* root);
 
 public:
-    vector<int> inPlayersId;
+    // The first ID in this vector is the first player of this round
+    vector<int> inPlayerIDs;
     void buildTree();
 
 };

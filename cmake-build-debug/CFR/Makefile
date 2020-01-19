@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+CFR/CMakeFiles/holdem_deps.dir/rule:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CFR/CMakeFiles/holdem_deps.dir/rule
+.PHONY : CFR/CMakeFiles/holdem_deps.dir/rule
+
+# Convenience name for target.
+holdem_deps: CFR/CMakeFiles/holdem_deps.dir/rule
+
+.PHONY : holdem_deps
+
+# fast build rule for target.
+holdem_deps/fast:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/build
+.PHONY : holdem_deps/fast
+
+# Convenience name for target.
 CFR/CMakeFiles/cfr_kuhn_deps.dir/rule:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 CFR/CMakeFiles/cfr_kuhn_deps.dir/rule
 .PHONY : CFR/CMakeFiles/cfr_kuhn_deps.dir/rule
@@ -146,6 +161,7 @@ __/Common/src/tools.o: __/Common/src/tools.cpp.o
 
 # target to build an object file
 __/Common/src/tools.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/__/Common/src/tools.cpp.o
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/cfr_kuhn_deps.dir/build.make CFR/CMakeFiles/cfr_kuhn_deps.dir/__/Common/src/tools.cpp.o
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.o
 .PHONY : __/Common/src/tools.cpp.o
@@ -156,6 +172,7 @@ __/Common/src/tools.i: __/Common/src/tools.cpp.i
 
 # target to preprocess a source file
 __/Common/src/tools.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/__/Common/src/tools.cpp.i
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/cfr_kuhn_deps.dir/build.make CFR/CMakeFiles/cfr_kuhn_deps.dir/__/Common/src/tools.cpp.i
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.i
 .PHONY : __/Common/src/tools.cpp.i
@@ -166,9 +183,64 @@ __/Common/src/tools.s: __/Common/src/tools.cpp.s
 
 # target to generate assembly for a file
 __/Common/src/tools.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/__/Common/src/tools.cpp.s
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/cfr_kuhn_deps.dir/build.make CFR/CMakeFiles/cfr_kuhn_deps.dir/__/Common/src/tools.cpp.s
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/__/Common/src/tools.cpp.s
 .PHONY : __/Common/src/tools.cpp.s
+
+holdem/card_analyze.o: holdem/card_analyze.cpp.o
+
+.PHONY : holdem/card_analyze.o
+
+# target to build an object file
+holdem/card_analyze.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/holdem/card_analyze.cpp.o
+.PHONY : holdem/card_analyze.cpp.o
+
+holdem/card_analyze.i: holdem/card_analyze.cpp.i
+
+.PHONY : holdem/card_analyze.i
+
+# target to preprocess a source file
+holdem/card_analyze.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/holdem/card_analyze.cpp.i
+.PHONY : holdem/card_analyze.cpp.i
+
+holdem/card_analyze.s: holdem/card_analyze.cpp.s
+
+.PHONY : holdem/card_analyze.s
+
+# target to generate assembly for a file
+holdem/card_analyze.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/holdem/card_analyze.cpp.s
+.PHONY : holdem/card_analyze.cpp.s
+
+holdem/win_lose_count.o: holdem/win_lose_count.cpp.o
+
+.PHONY : holdem/win_lose_count.o
+
+# target to build an object file
+holdem/win_lose_count.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/holdem/win_lose_count.cpp.o
+.PHONY : holdem/win_lose_count.cpp.o
+
+holdem/win_lose_count.i: holdem/win_lose_count.cpp.i
+
+.PHONY : holdem/win_lose_count.i
+
+# target to preprocess a source file
+holdem/win_lose_count.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/holdem/win_lose_count.cpp.i
+.PHONY : holdem/win_lose_count.cpp.i
+
+holdem/win_lose_count.s: holdem/win_lose_count.cpp.s
+
+.PHONY : holdem/win_lose_count.s
+
+# target to generate assembly for a file
+holdem/win_lose_count.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/holdem_deps.dir/build.make CFR/CMakeFiles/holdem_deps.dir/holdem/win_lose_count.cpp.s
+.PHONY : holdem/win_lose_count.cpp.s
 
 src/cfr_kuhn.o: src/cfr_kuhn.cpp.o
 
@@ -304,6 +376,33 @@ zhajinhua/src/cfr_zjh.s: zhajinhua/src/cfr_zjh.cpp.s
 zhajinhua/src/cfr_zjh.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/cfr_zjh.cpp.s
 .PHONY : zhajinhua/src/cfr_zjh.cpp.s
+
+zhajinhua/src/constants.o: zhajinhua/src/constants.cpp.o
+
+.PHONY : zhajinhua/src/constants.o
+
+# target to build an object file
+zhajinhua/src/constants.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/constants.cpp.o
+.PHONY : zhajinhua/src/constants.cpp.o
+
+zhajinhua/src/constants.i: zhajinhua/src/constants.cpp.i
+
+.PHONY : zhajinhua/src/constants.i
+
+# target to preprocess a source file
+zhajinhua/src/constants.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/constants.cpp.i
+.PHONY : zhajinhua/src/constants.cpp.i
+
+zhajinhua/src/constants.s: zhajinhua/src/constants.cpp.s
+
+.PHONY : zhajinhua/src/constants.s
+
+# target to generate assembly for a file
+zhajinhua/src/constants.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/constants.cpp.s
+.PHONY : zhajinhua/src/constants.cpp.s
 
 zhajinhua/src/main.o: zhajinhua/src/main.cpp.o
 
@@ -529,11 +628,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... holdem_deps"
 	@echo "... cfr_kuhn_deps"
 	@echo "... zjh_deps"
 	@echo "... __/Common/src/tools.o"
 	@echo "... __/Common/src/tools.i"
 	@echo "... __/Common/src/tools.s"
+	@echo "... holdem/card_analyze.o"
+	@echo "... holdem/card_analyze.i"
+	@echo "... holdem/card_analyze.s"
+	@echo "... holdem/win_lose_count.o"
+	@echo "... holdem/win_lose_count.i"
+	@echo "... holdem/win_lose_count.s"
 	@echo "... src/cfr_kuhn.o"
 	@echo "... src/cfr_kuhn.i"
 	@echo "... src/cfr_kuhn.s"
@@ -549,6 +655,9 @@ help:
 	@echo "... zhajinhua/src/cfr_zjh.o"
 	@echo "... zhajinhua/src/cfr_zjh.i"
 	@echo "... zhajinhua/src/cfr_zjh.s"
+	@echo "... zhajinhua/src/constants.o"
+	@echo "... zhajinhua/src/constants.i"
+	@echo "... zhajinhua/src/constants.s"
 	@echo "... zhajinhua/src/main.o"
 	@echo "... zhajinhua/src/main.i"
 	@echo "... zhajinhua/src/main.s"

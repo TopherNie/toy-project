@@ -107,7 +107,7 @@ void Round::prepare()
     int bbBets = BASIC_BET * 2;
     bbAction->bets = bbBets;
     pot += bbAction->bets;
-    lastBet = bbBets;
+    streetLastBet = bbBets;
     currentPlayer->history.push_back(bbAction);
     nextPlayer();
 }
@@ -120,6 +120,7 @@ State* Round::buildState(int currentStreet)
     state->streetActionMap = streetActionMap;
     state->pot = pot;
     state->currentStreet = currentStreet;
+    state->streetLastBet = streetLastBet;
 }
 
 void Round::battle()
@@ -159,14 +160,14 @@ void Round::battle()
                     if (i == 0)
                     {
                         action->bets = 0;
-                        lastBet = 0;
+                        streetLastBet = 0;
                     }else{
-                        action->bets = lastBet;
+                        action->bets = streetLastBet;
                     }
                 } else if (action->type == RAISE && action->bets > 0){
-                    lastBet = action->bets;
+                    streetLastBet = action->bets;
                 } else{
-                    cout << "Wrong action type!" << endl;
+                    cout << "Wrong action type or raise amount!" << endl;
                     continue;
                 }
                 currentPlayer->history.push_back(action);

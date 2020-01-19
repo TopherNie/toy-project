@@ -37,6 +37,56 @@
 					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="win_lose_count">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/win_lose_count.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 win_lose_count"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="win_lose_count/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/win_lose_count.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 win_lose_count/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="test_zjh">
 				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/test_zjh.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug"/>
@@ -537,6 +587,56 @@
 					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="holdem_deps">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libholdem_deps.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 holdem_deps"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="holdem_deps/fast">
+				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libholdem_deps.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/Common/python36/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/include"/>
+					<Add directory="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 holdem_deps/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="cfr_kuhn_deps">
 				<Option output="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR/libcfr_kuhn_deps.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/documents/code/toy-project/cmake-build-debug/CFR"/>
@@ -638,6 +738,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/holdem/card_analyze.cpp">
+			<Option target="holdem_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/holdem/win_lose_count.cpp">
+			<Option target="win_lose_count"/>
+			<Option target="holdem_deps"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/src/cfr_kuhn.cpp">
 			<Option target="cfr_kuhn"/>
 			<Option target="cfr_kuhn_deps"/>
@@ -654,6 +761,9 @@
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/cfr_zjh.cpp">
+			<Option target="zjh_deps"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/constants.cpp">
 			<Option target="zjh_deps"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/CFR/zhajinhua/src/main.cpp">
@@ -685,6 +795,7 @@
 			<Option target="test_zjh"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/documents/code/toy-project/Common/src/tools.cpp">
+			<Option target="holdem_deps"/>
 			<Option target="cfr_kuhn_deps"/>
 			<Option target="zjh_deps"/>
 		</Unit>

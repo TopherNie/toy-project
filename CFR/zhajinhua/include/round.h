@@ -23,7 +23,7 @@ public:
     vector<Player*> playerList;
     vector<string> allCards;
     vector<string> boardCards;
-    int lastBet{};
+    int streetLastBet{};
     int roundNum = 1;
     //<street: <playerId: action>>
     map<int, vector<pair<int, Action*>>> streetActionMap;

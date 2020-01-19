@@ -11,8 +11,6 @@
 
 using namespace std;
 
-const array<double, 3> BET_RATE = {0.5, 1.0, 1.5};
-
 bool Player::operator==(Player *player)
 {
     return this->id == player->id;
@@ -42,7 +40,15 @@ Action* Player::play(const State* state)
          << " || Your round bet: " << getRoundBets() << " || Pot: " << state->pot << " || Your chips: " << totalChips << endl;
     auto* action = new Action;
     array<string, 3> betSizeStrArr;
-    transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [state](double x) { return to_string((int)round(x * state->pot));});
+    transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [state](double x) {
+        int bet = (int)round(x * state->pot);
+        if (x <= state->streetLastBet)
+        {
+            // To mark illegal bet
+            bet = -99999;
+        }
+        return to_string(bet);
+    });
     cout << "Please input your action" << "( Raise bet: " << arrayToString(betSizeStrArr) << " ): ";
     string actionStr;
     cin >> actionStr;

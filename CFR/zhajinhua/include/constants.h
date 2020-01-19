@@ -2,6 +2,8 @@
 // Created by Administrator on 2020/1/15 0015.
 //
 
+#include <array>
+
 #ifndef TOY_PROJECT_CONSTANTS_H
 #define TOY_PROJECT_CONSTANTS_H
 
@@ -34,7 +36,11 @@
 
 #define NODE_TYPE_FOLD -2
 #define NODE_TYPE_CALL -1
-#define NODE_TYPE_CHANCE_NODE 0
-#define NODE_TYPE_INNER_NODE 1     //Any other node
+#define NODE_TYPE_CHANCE 0
+#define NODE_TYPE_RAISE 1     //Any other node
+
+using namespace std;
+
+extern const array<double, 3> BET_RATE;
 
 #endif //TOY_PROJECT_CONSTANTS_H

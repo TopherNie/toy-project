@@ -2,18 +2,20 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="toy_project" targetName="py_invoker" />
-      <config projectName="toy_project" targetName="generate_random" />
-      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
-      <config projectName="toy_project" targetName="test_zjh" />
-      <config projectName="toy_project" targetName="zjh_deps" />
-      <config projectName="toy_project" targetName="test_only" />
-      <config projectName="toy_project" targetName="crf_rsp" />
-      <config projectName="toy_project" targetName="lua_invoker" />
-      <config projectName="toy_project" targetName="zjh" />
       <config projectName="toy_project" targetName="cfr_kuhn" />
+      <config projectName="toy_project" targetName="win_lose_count" />
+      <config projectName="toy_project" targetName="zjh_deps" />
+      <config projectName="toy_project" targetName="py_invoker" />
+      <config projectName="toy_project" targetName="lua_invoker" />
+      <config projectName="toy_project" targetName="cfr_kuhn_deps" />
+      <config projectName="toy_project" targetName="crf_rsp" />
       <config projectName="toy_project" targetName="highlight" />
+      <config projectName="toy_project" targetName="test_zjh" />
       <config projectName="toy_project" targetName="crf_rsp_2" />
+      <config projectName="toy_project" targetName="holdem_deps" />
+      <config projectName="toy_project" targetName="generate_random" />
+      <config projectName="toy_project" targetName="zjh" />
+      <config projectName="toy_project" targetName="test_only" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -23,14 +25,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
+      <change afterPath="$PROJECT_DIR$/CFR/holdem/card_analyze.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/holdem/win_lose_count.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/constants.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/constants.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree_builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree_builder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/tree_builder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/tree_builder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/data_analyze/WhyHeWins_onlyScore.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/highlight_card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main/highlight_card.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,31 +72,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="0-zjh_deps" />
-  </component>
   <component name="ProjectId" id="1VMby2iHNiYfmFBzTHYq8igZ5xY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/python/data_analyze" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CFR/holdem" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\documents\code\toy-project\CFR\holdem" />
+      <recent name="D:\documents\code\toy-project\python\data_analyze" />
+      <recent name="D:\documents\code\toy-project\main" />
+      <recent name="D:\documents\code\toy-project\Common\python36\lib" />
+      <recent name="D:\documents\code\toy-project\Common\python36\include" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\documents\code\toy-project\Common\include" />
       <recent name="D:\documents\code\toy-project\CFR\texas-20\include" />
       <recent name="D:\documents\code\toy-project\main" />
       <recent name="D:\documents\code\toy-project\python\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\documents\code\toy-project\python\data_analyze" />
-      <recent name="D:\documents\code\toy-project\main" />
-      <recent name="D:\documents\code\toy-project\Common\python36\lib" />
-      <recent name="D:\documents\code\toy-project\Common\python36\include" />
-      <recent name="D:\documents\code\toy-project\Common\include" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -92,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.zjh">
+  <component name="RunManager" selected="CMake Application.win_lose_count">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -128,6 +144,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="holdem_deps" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="holdem_deps" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="lua_invoker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="lua_invoker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -144,6 +165,11 @@
       </method>
     </configuration>
     <configuration name="test_zjh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="test_zjh" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="test_zjh">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="win_lose_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="toy_project" TARGET_NAME="win_lose_count" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="win_lose_count">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -267,6 +293,7 @@
       <item itemvalue="CMake Application.Build All" />
       <item itemvalue="CMake Application.cfr_kuhn" />
       <item itemvalue="CMake Application.cfr_kuhn_deps" />
+      <item itemvalue="CMake Application.holdem_deps" />
       <item itemvalue="CMake Application.crf_rsp" />
       <item itemvalue="CMake Application.crf_rsp_2" />
       <item itemvalue="CMake Application.generate_random" />
@@ -275,6 +302,7 @@
       <item itemvalue="CMake Application.py_invoker" />
       <item itemvalue="CMake Application.test_only" />
       <item itemvalue="CMake Application.test_zjh" />
+      <item itemvalue="CMake Application.win_lose_count" />
       <item itemvalue="CMake Application.zjh" />
       <item itemvalue="CMake Application.zjh_deps" />
       <item itemvalue="Python.montecarlo_python" />
@@ -361,7 +389,9 @@
       <workItem from="1579050985188" duration="1055000" />
       <workItem from="1579052712629" duration="16051000" />
       <workItem from="1579137396412" duration="8373000" />
-      <workItem from="1579224001034" duration="7286000" />
+      <workItem from="1579224001034" duration="7396000" />
+      <workItem from="1579396615876" duration="15116000" />
+      <workItem from="1579431732013" duration="6105000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>
@@ -439,6 +469,11 @@
           <url>file://$PROJECT_DIR$/main/highlight_card.cpp</url>
           <line>385</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/CFR/holdem/win_lose_count.cpp</url>
+          <line>33</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -23,6 +23,7 @@ public:
 struct State{
     int pot{};
     int currentStreet{};
+    int streetLastBet{};
     vector<int> inPlayerIDs;
     vector<string> boardCards;
     map<int, vector<pair<int, Action*>>> streetActionMap;

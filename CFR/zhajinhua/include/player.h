@@ -6,15 +6,12 @@
 #define TOY_PROJECT_PLAYER_H
 
 #include <vector>
-#include <array>
 #include <string>
 #include <state.h>
 
 #include <constants.h>
 
 using namespace std;
-
-extern const array<double, 3> BET_RATE;
 
 class Player
 {

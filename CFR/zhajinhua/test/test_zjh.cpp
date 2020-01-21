@@ -4,6 +4,7 @@
 
 #include <card.h>
 #include <tools.h>
+#include <tree_builder.h>
 
 void testCardAnalyze()
 {
@@ -15,7 +16,23 @@ void testCardAnalyze()
     cout << vecToString(winRanks_1) << endl;
 }
 
+void testTreeBuild()
+{
+    auto* treeBuilder = new TreeBuilder;
+    auto* playInfo0 = new PlayerNodeInfo;
+    playInfo0->roundBet = BASIC_BET;
+    auto* playInfo1 = new PlayerNodeInfo;
+    playInfo1->roundBet = 2 * BASIC_BET;
+    auto* rootVal = new NodeVal;
+    rootVal->playerNodeInfoVec.push_back(playInfo0);
+    rootVal->playerNodeInfoVec.push_back(playInfo1);
+    rootVal->currentPlayerId = playInfo0->playerID;
+    auto* root = new Node<NodeVal*>(rootVal);
+    treeBuilder->buildTreeR(root);
+    root->print();
+}
+
 int main()
 {
-    testCardAnalyze();
+    testTreeBuild();
 }

@@ -385,10 +385,11 @@ void hotEncodingWinCardIndexes(const vector<string> &cards, int& type, vector<in
 
 int main()
 {
-    const int ITE_NUM = 1;
+    const int ITE_NUM = 1000000000;
+    // Use loop to test memory overflow
     for (int i = 0; i < ITE_NUM; i ++)
     {
-        vector<string> cards{"5c", "Ts", "Js", "9s", "8s", "Qh", "7h"};
+        vector<string> cards{"7c", "Ts", "As", "6s", "8s", "Kh", "3d"};
         int type{};
         vector<int> winCardEncoding(cards.size());
         hotEncodingWinCardIndexes(cards, type, winCardEncoding);

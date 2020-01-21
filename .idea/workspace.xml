@@ -25,29 +25,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fd92070-5824-4a1e-90ce-9fbf6481973e" name="Default Changelist" comment="Some small programs.">
-      <change afterPath="$PROJECT_DIR$/CFR/holdem/card_analyze.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CFR/holdem/win_lose_count.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/constants.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/zjh_utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/zjh_utils.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/holdem/card_analyze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/holdem/card_analyze.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/holdem/win_lose_count.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/holdem/win_lose_count.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/constants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/round.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/robot.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/state.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/include/tree_builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/include/tree_builder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/constants.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/constants.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/round.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/tree.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/src/tree_builder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/src/tree_builder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CFR/zhajinhua/test/test_zjh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CFR/zhajinhua/test/test_zjh.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/include/tools.h" beforeDir="false" afterPath="$PROJECT_DIR$/Common/include/tools.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/tools.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/tools.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/CMakeFiles/zjh_deps.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CFR/libzjh_deps.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/toy_project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/highlight_card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main/highlight_card.cpp" afterDir="false" />
     </list>
@@ -82,18 +86,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\documents\code\toy-project\Common\include" />
+      <recent name="D:\documents\code\toy-project\CFR\texas-20\include" />
+      <recent name="D:\documents\code\toy-project\main" />
+      <recent name="D:\documents\code\toy-project\python\test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\documents\code\toy-project\CFR\holdem" />
       <recent name="D:\documents\code\toy-project\python\data_analyze" />
       <recent name="D:\documents\code\toy-project\main" />
       <recent name="D:\documents\code\toy-project\Common\python36\lib" />
       <recent name="D:\documents\code\toy-project\Common\python36\include" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\documents\code\toy-project\Common\include" />
-      <recent name="D:\documents\code\toy-project\CFR\texas-20\include" />
-      <recent name="D:\documents\code\toy-project\main" />
-      <recent name="D:\documents\code\toy-project\python\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -108,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.win_lose_count">
+  <component name="RunManager" selected="CMake Application.test_zjh">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="toy_project" RUN_TARGET_NAME="zjh" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -391,7 +395,10 @@
       <workItem from="1579137396412" duration="8373000" />
       <workItem from="1579224001034" duration="7396000" />
       <workItem from="1579396615876" duration="15116000" />
-      <workItem from="1579431732013" duration="6105000" />
+      <workItem from="1579431732013" duration="6338000" />
+      <workItem from="1579482573372" duration="4863000" />
+      <workItem from="1579569356635" duration="12990000" />
+      <workItem from="1579587306985" duration="6204000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit in CLion">
       <created>1577509824424</created>
@@ -464,16 +471,6 @@
           <url>file://$PROJECT_DIR$/python/data_analyze/show.py</url>
           <line>11</line>
           <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main/highlight_card.cpp</url>
-          <line>385</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CFR/holdem/win_lose_count.cpp</url>
-          <line>33</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

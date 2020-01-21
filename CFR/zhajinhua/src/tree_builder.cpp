@@ -6,24 +6,29 @@
 #include <tree_builder.h>
 #include <algorithm>
 #include <cmath>
+#include <zjh_utils.h>
 
-int TreeBuilder::getNextPlayerID(int currentPlayerId)
+PlayerNodeInfo* TreeBuilder::getNextPlayerInfo(int currentPlayerId, const vector<PlayerNodeInfo*>& playerNodeInfoVec)
 {
-    return inPlayerIDs.at((currentPlayerId + 1) % inPlayerIDs.size());
+    return playerNodeInfoVec.at((currentPlayerId + 1) % playerNodeInfoVec.size());
 }
 
 vector<Node<NodeVal*>*> TreeBuilder::getPlayChildren(NodeVal* parentVal)
 {
     vector<Node<NodeVal*>*> children;
+    if (parentVal->isTerminal || parentVal->isTransitional)
+    {
+        return children;
+    }
 
-    int nextPlayerID = getNextPlayerID(parentVal->currentPlayerId);
+    PlayerNodeInfo* nextPlayerInfo = getNextPlayerInfo(parentVal->currentPlayerId, parentVal->playerNodeInfoVec);
 
     // Fold
     auto* foldVal = new NodeVal;
     foldVal->depth = parentVal->depth + 1;
     foldVal->type = NODE_TYPE_FOLD;
     foldVal->isTerminal = true;
-    foldVal->currentPlayerId = nextPlayerID;
+    foldVal->currentPlayerId = nextPlayerInfo->playerID;
     foldVal->street = parentVal->street;
     foldVal->boardCards = parentVal->boardCards;
     auto* foldNode = new Node<NodeVal*>(foldVal);
@@ -32,13 +37,17 @@ vector<Node<NodeVal*>*> TreeBuilder::getPlayChildren(NodeVal* parentVal)
     // Check/call
     auto* callVal = new NodeVal;
     callVal->depth = parentVal->depth + 1;
-    callVal->currentPlayerId = nextPlayerID;
+    callVal->currentPlayerId = nextPlayerInfo->playerID;
     callVal->street = parentVal->street;
     callVal->boardCards = parentVal->boardCards;
     // Within a street
     callVal->type = NODE_TYPE_CALL;
     callVal->bet = parentVal->bet;
-    if (!inPlayerIDs.empty() && inPlayerIDs.at(0) == nextPlayerID)
+    callVal->pot = parentVal->pot + callVal->bet;
+    callVal->playerNodeInfoVec = parentVal->playerNodeInfoVec;
+    callVal->playerNodeInfoVec.at(callVal->currentPlayerId)->roundBet += callVal->bet;
+
+    if (nextPlayerInfo->playerID == parentVal->playerNodeInfoVec.at(0)->playerID)
     {
         if (parentVal->street == TURN)
         {
@@ -53,29 +62,35 @@ vector<Node<NodeVal*>*> TreeBuilder::getPlayChildren(NodeVal* parentVal)
     children.push_back(callNode);
 
     // Bet
-    array<int, 3> betSizeArr{0};
-    transform(BET_RATE.begin(), BET_RATE.end(), betSizeArr.begin(), [parentVal](double x) { return (int)round(x * parentVal->pot);});
-    for (auto &betSize: betSizeArr)
+    vector<int> betSizeStrVec = getBetSizeVec(nextPlayerInfo->roundBet, parentVal->pot, parentVal->bet);
+    for (auto &betSize: betSizeStrVec)
     {
         if (betSize > parentVal->bet)
         {
             auto* raiseVal = new NodeVal;
             raiseVal->depth = parentVal->depth + 1;
-            raiseVal->currentPlayerId = nextPlayerID;
+            raiseVal->currentPlayerId = nextPlayerInfo->playerID;
             raiseVal->street = parentVal->street;
             raiseVal->boardCards = parentVal->boardCards;
             raiseVal->type = NODE_TYPE_RAISE;
             raiseVal->bet = betSize;
+            raiseVal->pot = parentVal->pot + betSize;
+            raiseVal->playerNodeInfoVec = parentVal->playerNodeInfoVec;
+            raiseVal->playerNodeInfoVec.at(raiseVal->currentPlayerId)->roundBet += betSize;
+            auto* raiseNode = new Node<NodeVal*>(raiseVal);
+            children.push_back(raiseNode);
         }
     }
+    return children;
 }
 
 void TreeBuilder::buildTreeR(Node<NodeVal*>* root)
 {
-
+    vector<Node<NodeVal*>*> children = getPlayChildren(root->_val);
+    root->_children = children;
+    for (auto* child: children)
+    {
+        buildTreeR(child);
+    }
 }
 
-void TreeBuilder::buildTree()
-{
-
-}

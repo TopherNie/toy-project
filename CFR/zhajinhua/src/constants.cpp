@@ -4,5 +4,5 @@
 
 #include <constants.h>
 
-const array<double, 3> BET_RATE = {0.5, 1.0, 1.5};
+const array<double, 3> BET_RATE = {0.5, 1.0, 2.0};
 

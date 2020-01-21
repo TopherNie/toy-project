@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <cmath>
 #include <tools.h>
+#include <zjh_utils.h>
 
 using namespace std;
 
@@ -36,34 +37,28 @@ int Player::getRoundBets()
 
 Action* Player::play(const State* state)
 {
+    int roundBets = getRoundBets();
     cout << "Your hole cards: " << vecToString(cards) << " || Board: " << vecToString(state->boardCards)
-         << " || Your round bet: " << getRoundBets() << " || Pot: " << state->pot << " || Your chips: " << totalChips << endl;
+         << " || Your round bet: " << roundBets << " || Pot: " << state->pot << " || Your chips: " << totalChips << endl;
     auto* action = new Action;
-    array<string, 3> betSizeStrArr;
-    transform(BET_RATE.begin(), BET_RATE.end(), betSizeStrArr.begin(), [state](double x) {
-        int bet = (int)round(x * state->pot);
-        if (x <= state->streetLastBet)
-        {
-            // To mark illegal bet
-            bet = -99999;
-        }
-        return to_string(bet);
-    });
-    cout << "Please input your action" << "( Raise bet: " << arrayToString(betSizeStrArr) << " ): ";
+    vector<string> betSizeStrVec = getBetSizeStrVec(roundBets, state->pot, state->streetLastBet);
+    cout << "Please input your action" << "( Raise bet: " << vecToString(betSizeStrVec) << " ): ";
     string actionStr;
     cin >> actionStr;
-    string type;
     int strLen = actionStr.size();
     if (strLen > 0)
     {
-        type = actionStr.substr(0, 1);
-        action->type = type;
-        if (type == RAISE)
+        action->type = actionStr.substr(0, 1);
+        if (action->type == ALL_IN)
+        {
+            action->bets = MAX_BET - roundBets;
+        }
+        if (action->type == RAISE)
         {
             if (strLen >= 2)
             {
                 string betsStr = actionStr.substr(1, strLen - 1);
-                if (find(betSizeStrArr.begin(), betSizeStrArr.end(), betsStr) != betSizeStrArr.end())
+                if (find(betSizeStrVec.begin(), betSizeStrVec.end(), betsStr) != betSizeStrVec.end())
                 {
                     action->bets = stoi(betsStr);
                 } else{

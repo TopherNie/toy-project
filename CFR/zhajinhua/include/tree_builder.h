@@ -5,21 +5,19 @@
 #ifndef TOY_PROJECT_TREE_BUILDER_H
 #define TOY_PROJECT_TREE_BUILDER_H
 
-#include <tree.h>
+#include <tree.hpp>
 #include <state.h>
 #include <constants.h>
 
 class TreeBuilder
 {
 private:
-    int getNextPlayerID(int currentPlayerId);
+    static PlayerNodeInfo* getNextPlayerInfo(int currentPlayerId, const vector<PlayerNodeInfo*>& playerNodeInfoVec);
     vector<Node<NodeVal*>*> getPlayChildren(NodeVal* parentVal);
-    void buildTreeR(Node<NodeVal*>* root);
 
 public:
     // The first ID in this vector is the first player of this round
-    vector<int> inPlayerIDs;
-    void buildTree();
+    void buildTreeR(Node<NodeVal*>* root);
 
 };
 

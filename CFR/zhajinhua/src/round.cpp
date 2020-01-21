@@ -159,12 +159,14 @@ void Round::battle()
                 } else if (action->type == CALL){
                     if (i == 0)
                     {
+                        // Check
                         action->bets = 0;
                         streetLastBet = 0;
                     }else{
+                        // Call
                         action->bets = streetLastBet;
                     }
-                } else if (action->type == RAISE && action->bets > 0){
+                } else if ((action->type == RAISE || action->type == ALL_IN) && action->bets > 0){
                     streetLastBet = action->bets;
                 } else{
                     cout << "Wrong action type or raise amount!" << endl;
@@ -180,7 +182,7 @@ void Round::battle()
             nextPlayer();
             if (i >= playerSize - 1)
             {
-                if (s == TURN || i >= STREET_MAX_BET_COUNT * playerSize - 1)
+                if (s == TURN || currentPlayer->getRoundBets() >= MAX_BET)
                 {
                     return;
                 }
@@ -205,6 +207,15 @@ void Round::settle()
         // All players have folded except the winner.
         winnerList.push_back(inPlayers().at(0));
     } else{
+        int boardSize = boardCards.size();
+        // ALL IN
+        if (boardSize < BOARD_NUM)
+        {
+            for (int i = 0; i < BOARD_NUM - boardSize;  i ++)
+            {
+                dealPublicCard(allCards, boardCards);
+            }
+        }
         winnerList = findWinnerByCard(playerList, boardCards);
     }
     int winBets = 0;

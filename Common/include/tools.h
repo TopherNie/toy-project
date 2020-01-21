@@ -20,5 +20,6 @@ string oriArrToStr(double *arr, int size);
 
 string char2String(char c);
 
+string repeatStr(const string& str, int n);
 
 #endif //TOY_PROJECT_TOOLS_H

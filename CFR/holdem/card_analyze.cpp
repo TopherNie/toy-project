@@ -137,6 +137,24 @@ int compareEleOneByOne(const vector<T> &vec0, const vector<T> &vec1)
     return 0;
 }
 
+vector<string> initCards(vector<string> excludeVec)
+{
+    vector<string> cardList;
+    for (char s : CARD_SUITS)
+    {
+        for (char r : CARD_RANKS)
+        {
+            string card;
+            card.append(char2String(r)).append(char2String(s));
+            if (!excludeVec.empty() && find(excludeVec.begin(), excludeVec.end(), card) == excludeVec.end())
+            {
+                cardList.push_back(card);
+            }
+        }
+    }
+    return cardList;
+}
+
 int getCardIndex(const vector<string>& cards, const string &findCard, int i)
 {
     int count = 0;

@@ -45,6 +45,19 @@ string char2String(char c)
     return oStr.str();
 }
 
+string repeatStr(const string& str, int n)
+{
+    string res;
+    if (n > 0)
+    {
+        for (int i =0; i < n; i ++)
+        {
+            res.append(str);
+        }
+    }
+    return res;
+}
+
 
 
 

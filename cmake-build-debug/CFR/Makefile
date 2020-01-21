@@ -566,33 +566,6 @@ zhajinhua/src/state.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/state.cpp.s
 .PHONY : zhajinhua/src/state.cpp.s
 
-zhajinhua/src/tree.o: zhajinhua/src/tree.cpp.o
-
-.PHONY : zhajinhua/src/tree.o
-
-# target to build an object file
-zhajinhua/src/tree.cpp.o:
-	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.o
-.PHONY : zhajinhua/src/tree.cpp.o
-
-zhajinhua/src/tree.i: zhajinhua/src/tree.cpp.i
-
-.PHONY : zhajinhua/src/tree.i
-
-# target to preprocess a source file
-zhajinhua/src/tree.cpp.i:
-	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.i
-.PHONY : zhajinhua/src/tree.cpp.i
-
-zhajinhua/src/tree.s: zhajinhua/src/tree.cpp.s
-
-.PHONY : zhajinhua/src/tree.s
-
-# target to generate assembly for a file
-zhajinhua/src/tree.cpp.s:
-	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree.cpp.s
-.PHONY : zhajinhua/src/tree.cpp.s
-
 zhajinhua/src/tree_builder.o: zhajinhua/src/tree_builder.cpp.o
 
 .PHONY : zhajinhua/src/tree_builder.o
@@ -619,6 +592,33 @@ zhajinhua/src/tree_builder.s: zhajinhua/src/tree_builder.cpp.s
 zhajinhua/src/tree_builder.cpp.s:
 	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/tree_builder.cpp.s
 .PHONY : zhajinhua/src/tree_builder.cpp.s
+
+zhajinhua/src/zjh_utils.o: zhajinhua/src/zjh_utils.cpp.o
+
+.PHONY : zhajinhua/src/zjh_utils.o
+
+# target to build an object file
+zhajinhua/src/zjh_utils.cpp.o:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/zjh_utils.cpp.o
+.PHONY : zhajinhua/src/zjh_utils.cpp.o
+
+zhajinhua/src/zjh_utils.i: zhajinhua/src/zjh_utils.cpp.i
+
+.PHONY : zhajinhua/src/zjh_utils.i
+
+# target to preprocess a source file
+zhajinhua/src/zjh_utils.cpp.i:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/zjh_utils.cpp.i
+.PHONY : zhajinhua/src/zjh_utils.cpp.i
+
+zhajinhua/src/zjh_utils.s: zhajinhua/src/zjh_utils.cpp.s
+
+.PHONY : zhajinhua/src/zjh_utils.s
+
+# target to generate assembly for a file
+zhajinhua/src/zjh_utils.cpp.s:
+	cd /cygdrive/d/documents/code/toy-project/cmake-build-debug && $(MAKE) -f CFR/CMakeFiles/zjh_deps.dir/build.make CFR/CMakeFiles/zjh_deps.dir/zhajinhua/src/zjh_utils.cpp.s
+.PHONY : zhajinhua/src/zjh_utils.cpp.s
 
 # Help Target
 help:
@@ -676,12 +676,12 @@ help:
 	@echo "... zhajinhua/src/state.o"
 	@echo "... zhajinhua/src/state.i"
 	@echo "... zhajinhua/src/state.s"
-	@echo "... zhajinhua/src/tree.o"
-	@echo "... zhajinhua/src/tree.i"
-	@echo "... zhajinhua/src/tree.s"
 	@echo "... zhajinhua/src/tree_builder.o"
 	@echo "... zhajinhua/src/tree_builder.i"
 	@echo "... zhajinhua/src/tree_builder.s"
+	@echo "... zhajinhua/src/zjh_utils.o"
+	@echo "... zhajinhua/src/zjh_utils.i"
+	@echo "... zhajinhua/src/zjh_utils.s"
 .PHONY : help
 
 

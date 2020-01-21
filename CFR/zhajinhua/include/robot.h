@@ -6,7 +6,7 @@
 #define TOY_PROJECT_ROBOT_H
 
 #include <player.h>
-#include <tree.h>
+#include <tree.hpp>
 
 struct Robot: Player{
     bool isRobot() override;

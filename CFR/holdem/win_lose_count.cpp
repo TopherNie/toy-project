@@ -4,7 +4,7 @@
 
 #include "card_analyze.cpp"
 
-int howManyBetter(const vector<string> &baseHoleCards, const vector<string> &boardCards)
+int howManyWin(const vector<string> &baseHoleCards, const vector<string> &boardCards)
 {
     auto* baseRes = new CardsRes;
     vector<int> baseWinCardIndexes;
@@ -24,19 +24,7 @@ int howManyBetter(const vector<string> &baseHoleCards, const vector<string> &boa
     int winCount{}, loseCount{}, tieCount{};
     CardsRes* compRes;
 
-    vector<string> cardList;
-    for (char s : CARD_SUITS)
-    {
-        for (char r : CARD_RANKS)
-        {
-            string card;
-            card.append(char2String(r)).append(char2String(s));
-            if (find(baseRes->cards.begin(), baseRes->cards.end(), card) == baseRes->cards.end())
-            {
-                cardList.push_back(card);
-            }
-        }
-    }
+    vector<string> cardList = initCards(baseRes->cards);
 
     const int cardSize = cardList.size();
     string holeCard0, holeCard1;
@@ -83,5 +71,5 @@ int main()
     vector<string> baseBoardCards{"4c", "2d", "2c", "Kc", "7c"};
 //    vector<string> baseHoleCards{"Kd", "3h"};
 //    vector<string> baseBoardCards{"Ac", "Ad", "Ah", "As", "Kc"};
-    howManyBetter(baseHoleCards, baseBoardCards);
+    howManyWin(baseHoleCards, baseBoardCards);
 }
